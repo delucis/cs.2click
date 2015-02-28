@@ -1,7 +1,7 @@
 # `[cs.audio-harmonizer]`
 Module for the [Music 264 “Modular”](https://github.com/mus264/music-264-modular).
 
-Will receive audio input, combine it with pitch-shifted versions of itself and output a harmonized version of the audio.
+Will receive audio signal, combine it with pitch-shifted versions of itself and output a harmonized version of the audio.
 
 ## Goals
 
@@ -23,4 +23,4 @@ Will receive audio input, combine it with pitch-shifted versions of itself and o
 
 ### Other
 
-* [pattrstorage] to store presets
+* `[pattrstorage]` to store presets
