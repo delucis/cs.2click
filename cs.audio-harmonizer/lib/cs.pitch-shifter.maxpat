@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 581.0, 200.0, 524.0, 279.0 ],
+		"rect" : [ 784.0, 457.0, 524.0, 279.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -67,7 +67,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 240.0, 47.0, 21.0 ],
 					"saved_object_attributes" : 					{
-						"attr_comment" : ""
+						"attr_comment" : [ "Harmonized", "audio", "signal", "out" ]
 					}
 ,
 					"text" : "out~ 1"
@@ -250,7 +250,7 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 15.0, 60.0, 39.0, 21.0 ],
 					"saved_object_attributes" : 					{
-						"attr_comment" : ""
+						"attr_comment" : [ "Audio", "signal", "to", "be", "harmonized", "in" ]
 					}
 ,
 					"text" : "in~ 1"
