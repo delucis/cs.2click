@@ -7,20 +7,20 @@ Will receive audio signal, combine it with pitch-shifted versions of itself and 
 
 ### Input
 
-* Accept stereo audio input
+* ~~Accept stereo audio input~~
 * Accept some kind of syntax to control harmonization
 
 ### Interface
 
-* Build a graphical interface to control harmonization
+* ~~Build a graphical interface to control harmonization~~
 
 ### DSP
 
-* No click when pitches change
+* ~~No click when pitches change~~
 * Flexible number of voices
 * Separate UI from DSP?
-* Permit individual control of each pitch-shift volume?
+* ~~Permit individual control of each pitch-shift volume?~~
 
 ### Other
 
-* `[pattrstorage]` to store presets
+* ~~`[pattrstorage]` to store presets~~
