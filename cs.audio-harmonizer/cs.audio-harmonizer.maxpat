@@ -106,6 +106,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 225.0, 30.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 0.0, 30.0, 30.0 ],
 					"varname" : "control-poly-status-i"
 				}
 
@@ -185,16 +187,17 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 11.0,
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
 					"frgb" : 0.0,
 					"id" : "obj-30",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 105.0, 165.0, 47.0, 19.0 ],
+					"patching_rect" : [ 105.0, 165.0, 49.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 129.833008, 73.5, 47.0, 19.0 ],
+					"presentation_rect" : [ 133.0, 77.5, 49.0, 18.0 ],
 					"text" : "volume",
 					"textjustification" : 1
 				}
@@ -202,16 +205,17 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 11.0,
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
 					"frgb" : 0.0,
 					"id" : "obj-28",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 165.0, 75.0, 19.0 ],
+					"patching_rect" : [ 15.0, 165.0, 77.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.833, 73.5, 75.0, 19.0 ],
+					"presentation_rect" : [ 14.0, 77.5, 77.0, 18.0 ],
 					"text" : "transposition",
 					"textjustification" : 1
 				}
@@ -292,12 +296,12 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 105.0, 179.5, 66.666, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 120.0, 94.0, 66.666, 50.0 ],
+					"presentation_rect" : [ 105.0, 94.0, 105.0, 50.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"signed" : 1,
 					"size" : 8,
 					"slidercolor" : [ 0.25, 0.25, 0.25, 1.0 ],
-					"spacing" : 2,
+					"spacing" : 3,
 					"thickness" : 4,
 					"varname" : "transp-vol"
 				}
@@ -322,12 +326,12 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 15.0, 179.5, 66.666, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 94.0, 66.666, 50.0 ],
+					"presentation_rect" : [ 0.0, 94.0, 105.0, 50.0 ],
 					"setminmax" : [ -12.0, 12.0 ],
 					"signed" : 1,
 					"size" : 8,
 					"slidercolor" : [ 0.25, 0.25, 0.25, 1.0 ],
-					"spacing" : 2,
+					"spacing" : 3,
 					"thickness" : 4,
 					"varname" : "transp-amt"
 				}
