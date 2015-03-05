@@ -319,8 +319,12 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.5 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
+					"hbgcolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
+					"htricolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
 					"id" : "obj-34",
 					"maxclass" : "number",
 					"maximum" : 32,
@@ -345,6 +349,8 @@
 
 					}
 ,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"tricolor" : [ 1.0, 1.0, 1.0, 0.75 ],
 					"triscale" : 0.8,
 					"varname" : "#1-voices"
 				}
@@ -494,16 +500,17 @@
 				"box" : 				{
 					"fontface" : 3,
 					"fontname" : "Helvetica Neue",
-					"fontsize" : 14.0,
+					"fontsize" : 16.0,
 					"frgb" : 0.0,
 					"id" : "obj-40",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 185.0, 23.0 ],
+					"patching_rect" : [ 0.0, 0.0, 214.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 0.0, 151.0, 23.0 ],
-					"text" : "cs.audio-harmonizer"
+					"presentation_rect" : [ -1.0, -3.0, 176.0, 26.0 ],
+					"text" : "cs.audio-harmonizer",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.2 ]
 				}
 
 			}
@@ -630,7 +637,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.960784, 0.960784, 0.960784, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.04 ],
 					"border_bottom" : 0,
 					"border_right" : 0,
 					"border_top" : 0,
@@ -650,7 +657,7 @@
 					"presentation_rect" : [ 105.0, 80.0, 105.0, 50.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"signed" : 1,
-					"size" : 8,
+					"size" : 7,
 					"slidercolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
 					"thickness" : 4,
 					"varname" : "transp-vol"
@@ -659,7 +666,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.960784, 0.960784, 0.960784, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.04 ],
 					"border_bottom" : 0,
 					"border_right" : 0,
 					"border_top" : 0,
@@ -679,7 +686,7 @@
 					"presentation_rect" : [ 0.0, 80.0, 105.0, 50.0 ],
 					"setminmax" : [ -12.0, 12.0 ],
 					"signed" : 1,
-					"size" : 8,
+					"size" : 7,
 					"slidercolor" : [ 0.94902, 0.376471, 0.0, 1.0 ],
 					"thickness" : 4,
 					"varname" : "transp-amt"
@@ -819,14 +826,14 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 735.0, 30.0, 59.5, 20.0 ],
 					"restore" : 					{
-						"#1-voices" : [ 8 ],
+						"#1-voices" : [ 7 ],
 						"live.gain~" : [ 0.0 ],
-						"transp-amt" : [ 4.32, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-						"transp-vol" : [ 0.38, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+						"transp-amt" : [ 4.32, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+						"transp-vol" : [ 0.38, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u315004886"
+					"varname" : "u952006839"
 				}
 
 			}
