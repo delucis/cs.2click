@@ -29,6 +29,39 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"activebgcolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-63",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 15.0, 165.0, 120.0, 20.0 ],
+					"rounded" : 1.0,
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_linknames" : 1,
+							"parameter_longname" : "ddui-livetext",
+							"parameter_shortname" : "text",
+							"parameter_type" : 2,
+							"parameter_mmax" : 1.0,
+							"parameter_enum" : [ "val1", "val2" ]
+						}
+
+					}
+,
+					"text" : "ddui-livetext",
+					"varname" : "ddui-livetext"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"border" : 3,
 					"bordercolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
@@ -60,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 105.0, 87.0, 18.0 ],
+					"patching_rect" : [ 15.0, 105.0, 120.0, 18.0 ],
 					"text" : "ddui-message",
 					"varname" : "ddui-message"
 				}
@@ -68,7 +101,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
+					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
@@ -78,6 +111,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 75.0, 120.0, 20.0 ],
 					"text" : "ddui-comment",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "ddui-comment"
 				}
 
@@ -1680,7 +1714,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 525.0, 251.0, 21.0 ],
-					"text" : "83. 8."
+					"text" : "100. 5."
 				}
 
 			}
@@ -1778,7 +1812,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "629. 649."
+					"text" : "157. 318."
 				}
 
 			}
@@ -1827,7 +1861,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "98. 143."
+					"text" : "512. 515."
 				}
 
 			}
@@ -1876,7 +1910,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 225.0, 255.0, 21.0 ],
-					"text" : "ddui-textbutton"
+					"text" : "0"
 				}
 
 			}
@@ -3279,7 +3313,8 @@
  ],
 		"parameters" : 		{
 			"obj-52" : [ "textbutton", "textbutton", 0 ],
-			"obj-67" : [ "#0-ddui-grid-factor", "#0-ddui-grid-factor", 0 ]
+			"obj-67" : [ "#0-ddui-grid-factor", "#0-ddui-grid-factor", 0 ],
+			"obj-63" : [ "ddui-livetext", "text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
