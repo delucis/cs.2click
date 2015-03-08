@@ -29,6 +29,42 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-74",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 45.0, 420.0, 45.0 ],
+					"presentation_rect" : [ 245.0, 449.5, 0.0, 0.0 ],
+					"text" : "By default, objects with scripting names prefixed by “ddui-” are movable even when the patch is locked. NB: [bpatcher] and [comment] objects don’t work! They are here just to demonstrate that.",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
+					"fontface" : 1,
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-66",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 15.0, 420.0, 18.0 ],
+					"presentation_rect" : [ 15.0, 274.0, 0.0, 0.0 ],
+					"text" : "DRAG AND DROP TEST OBJECTS",
+					"textcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"activebgcolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
 					"fontface" : 0,
 					"fontname" : "Helvetica Neue",
@@ -40,7 +76,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 15.0, 165.0, 120.0, 20.0 ],
+					"patching_rect" : [ 225.0, 210.0, 120.0, 20.0 ],
 					"rounded" : 1.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -74,7 +110,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 135.0, 120.0, 20.0 ],
+					"patching_rect" : [ 105.0, 285.0, 120.0, 20.0 ],
 					"rounded" : 10.0,
 					"text" : "ddui-textbutton",
 					"varname" : "ddui-textbutton"
@@ -93,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 105.0, 120.0, 18.0 ],
+					"patching_rect" : [ 45.0, 165.0, 120.0, 18.0 ],
 					"text" : "ddui-message",
 					"varname" : "ddui-message"
 				}
@@ -109,7 +145,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 75.0, 120.0, 20.0 ],
+					"patching_rect" : [ 150.0, 105.0, 120.0, 20.0 ],
 					"text" : "ddui-comment",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"varname" : "ddui-comment"
@@ -125,22 +161,8 @@
 					"name" : "ddui.module-label.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 45.0, 120.0, 20.0 ],
+					"patching_rect" : [ 15.0, 105.0, 120.0, 20.0 ],
 					"varname" : "ddui-bpatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "ddui-bpatcher-2" ],
-					"border" : 1,
-					"id" : "obj-1",
-					"maxclass" : "bpatcher",
-					"name" : "ddui.module-label.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 15.0, 120.0, 20.0 ],
-					"varname" : "ddui-bpatcher-2"
 				}
 
 			}
@@ -253,7 +275,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 210.0, 15.0, 225.0, 18.0 ],
+					"patching_rect" : [ 465.0, 558.0, 435.0, 18.0 ],
 					"text" : "POTENTIAL UI AND INPUT ELEMENTS",
 					"textcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"textjustification" : 1
@@ -279,7 +301,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 330.0, 45.0, 100.503899, 21.40625 ],
+					"patching_rect" : [ 585.0, 588.0, 100.503899, 21.40625 ],
 					"presentation_rect" : [ 0.0, 0.0, 100.503899, 21.40625 ],
 					"prototypename" : "M4L.toggle1",
 					"rounded" : 0.0,
@@ -316,7 +338,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 75.0, 105.0, 20.0 ],
+					"patching_rect" : [ 585.0, 618.0, 105.0, 20.0 ],
 					"text" : "v #0-grid-on-off 1"
 				}
 
@@ -889,7 +911,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 450.0, 495.0, 168.0, 20.0 ],
+					"patching_rect" : [ 495.0, 495.0, 168.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -917,7 +939,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 75.0, 111.0, 20.0 ],
+					"patching_rect" : [ 465.0, 618.0, 111.0, 20.0 ],
 					"text" : "v #0-grid-factor 15"
 				}
 
@@ -933,7 +955,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 210.0, 45.0, 50.0, 20.0 ],
+					"patching_rect" : [ 465.0, 588.0, 50.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "#0-ddui-grid-factor",
@@ -1238,7 +1260,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 495.0, 450.0, 154.0, 20.0 ],
+					"patching_rect" : [ 510.0, 450.0, 154.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -1448,7 +1470,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 685.5, 420.0, 119.0, 20.0 ],
+					"patching_rect" : [ 700.5, 420.0, 119.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -1652,7 +1674,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 660.0, 450.0, 97.0, 20.0 ],
+					"patching_rect" : [ 675.0, 450.0, 97.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -1688,21 +1710,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-57",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 600.0, 45.0, 210.0, 48.0 ],
-					"text" : "By default, objects with scripting names prefixed by “ddui-” are movable out of edit mode."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.956005, 0.956005, 0.956005, 1.0 ],
 					"bgcolor2" : [ 0.952213, 0.952213, 0.952213, 1.0 ],
 					"fontname" : "Input",
@@ -1714,7 +1721,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 525.0, 251.0, 21.0 ],
-					"text" : "100. 5."
+					"text" : "104."
 				}
 
 			}
@@ -1763,7 +1770,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 450.0, 255.0, 21.0 ],
-					"text" : "15. 135. 120. 20."
+					"text" : "0"
 				}
 
 			}
@@ -1812,7 +1819,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "157. 318."
+					"text" : "862. 478."
 				}
 
 			}
@@ -1861,7 +1868,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "512. 515."
+					"text" : "35. 297."
 				}
 
 			}
@@ -1956,7 +1963,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "bang", "bang" ],
-					"patching_rect" : [ 645.0, 390.0, 59.5, 20.0 ],
+					"patching_rect" : [ 660.0, 390.0, 59.5, 20.0 ],
 					"text" : "b 4"
 				}
 
@@ -1986,7 +1993,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.0, 390.0, 141.0, 20.0 ],
+					"patching_rect" : [ 510.0, 390.0, 141.0, 20.0 ],
 					"text" : "v #0-current-mouse-pos"
 				}
 
@@ -2001,7 +2008,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 495.0, 360.0, 58.0, 20.0 ],
+					"patching_rect" : [ 510.0, 360.0, 58.0, 20.0 ],
 					"text" : "metro 50"
 				}
 
@@ -2138,7 +2145,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 780.0, 390.0, 46.0, 20.0 ],
-					"restore" : [ 15.0, 135.0, 120.0, 20.0 ],
+					"restore" : [ 0.0, 120.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -2434,7 +2441,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 210.0, 120.0, 180.0, 45.0 ],
+					"patching_rect" : [ 705.0, 588.0, 180.0, 45.0 ],
 					"text" : "To accomodate different scripting name prefixes, add an input or argument mechanism here",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -2624,7 +2631,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 210.0, 165.0, 165.0, 20.0 ],
+					"patching_rect" : [ 705.0, 633.0, 165.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -3139,7 +3146,6 @@
 					"destination" : [ "obj-48", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 504.5, 351.0, 480.0, 351.0, 480.0, 487.0, 459.5, 487.0 ],
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -3167,7 +3173,7 @@
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 459.5, 521.0, 847.5, 521.0, 847.5, 384.0, 789.5, 384.0 ],
+					"midpoints" : [ 504.5, 521.0, 847.5, 521.0, 847.5, 385.0, 789.5, 385.0 ],
 					"source" : [ "obj-48", 0 ]
 				}
 
@@ -3195,6 +3201,7 @@
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 714.5, 662.0, 975.5, 662.0, 975.5, 290.0, 504.5, 290.0 ],
 					"source" : [ "obj-59", 0 ]
 				}
 
@@ -3267,7 +3274,7 @@
 					"destination" : [ "obj-48", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 459.5, 480.0, 608.5, 480.0 ],
+					"midpoints" : [ 459.5, 488.0, 653.5, 488.0 ],
 					"source" : [ "obj-70", 0 ]
 				}
 
@@ -3277,7 +3284,7 @@
 					"destination" : [ "obj-58", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 474.5, 357.0, 504.5, 357.0 ],
+					"midpoints" : [ 474.5, 355.0, 519.5, 355.0 ],
 					"source" : [ "obj-70", 1 ]
 				}
 
@@ -3305,7 +3312,7 @@
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 504.5, 476.0, 837.5, 476.0, 837.5, 385.0, 789.5, 385.0 ],
+					"midpoints" : [ 519.5, 475.0, 837.5, 475.0, 837.5, 385.0, 789.5, 385.0 ],
 					"source" : [ "obj-94", 0 ]
 				}
 
