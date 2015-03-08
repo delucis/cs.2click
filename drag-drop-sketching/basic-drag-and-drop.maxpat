@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 0.0, 44.0, 1277.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,89 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"border" : 3,
+					"bordercolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
+					"borderoncolor" : [ 0.8, 0.839216, 0.709804, 1.0 ],
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-56",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 15.0, 135.0, 120.0, 20.0 ],
+					"rounded" : 10.0,
+					"text" : "ddui-textbutton",
+					"varname" : "ddui-textbutton"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
+					"bgcolor2" : [ 0.047059, 0.972549, 0.392157, 0.88 ],
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"gradient" : 1,
+					"id" : "obj-55",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.0, 105.0, 87.0, 18.0 ],
+					"text" : "ddui-message",
+					"varname" : "ddui-message"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.047059, 0.972549, 0.392157, 1.0 ],
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-51",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 75.0, 120.0, 20.0 ],
+					"text" : "ddui-comment",
+					"varname" : "ddui-comment"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "ddui-bpatcher" ],
+					"border" : 1,
+					"id" : "obj-19",
+					"maxclass" : "bpatcher",
+					"name" : "ddui.module-label.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 45.0, 120.0, 20.0 ],
+					"varname" : "ddui-bpatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "ddui-bpatcher-2" ],
+					"border" : 1,
+					"id" : "obj-1",
+					"maxclass" : "bpatcher",
+					"name" : "ddui.module-label.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 15.0, 120.0, 20.0 ],
+					"varname" : "ddui-bpatcher-2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.956005, 0.956005, 0.956005, 1.0 ],
 					"bgcolor2" : [ 0.952213, 0.952213, 0.952213, 1.0 ],
@@ -1597,7 +1680,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 525.0, 251.0, 21.0 ],
-					"text" : "37. 19."
+					"text" : "83. 8."
 				}
 
 			}
@@ -1646,7 +1729,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 450.0, 255.0, 21.0 ],
-					"text" : "15. 30. 120. 20."
+					"text" : "15. 135. 120. 20."
 				}
 
 			}
@@ -1695,7 +1778,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "553. 416."
+					"text" : "629. 649."
 				}
 
 			}
@@ -1744,7 +1827,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "934. 211."
+					"text" : "98. 143."
 				}
 
 			}
@@ -1793,7 +1876,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 225.0, 255.0, 21.0 ],
-					"text" : "0"
+					"text" : "ddui-textbutton"
 				}
 
 			}
@@ -2021,13 +2104,13 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 780.0, 390.0, 46.0, 20.0 ],
-					"restore" : [ 15.0, 45.0, 120.0, 20.0 ],
+					"restore" : [ 15.0, 135.0, 120.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
 ,
 					"text" : "pattr",
-					"varname" : "u206001551"
+					"varname" : "u294000058"
 				}
 
 			}
@@ -2602,19 +2685,6 @@
 			}
 , 			{
 				"box" : 				{
-					"border" : 1,
-					"id" : "obj-19",
-					"maxclass" : "bpatcher",
-					"name" : "thing2",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 45.0, 120.0, 20.0 ],
-					"varname" : "ddui-patcherB"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-18",
@@ -2683,19 +2753,6 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 825.0, 75.0, 59.5, 20.0 ],
 					"text" : "hover"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"border" : 1,
-					"id" : "obj-1",
-					"maxclass" : "bpatcher",
-					"name" : "thing-to-drag",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 15.0, 120.0, 20.0 ],
-					"varname" : "ddui-patcher1"
 				}
 
 			}
@@ -3225,7 +3282,14 @@
 			"obj-67" : [ "#0-ddui-grid-factor", "#0-ddui-grid-factor", 0 ]
 		}
 ,
-		"dependency_cache" : [  ]
+		"dependency_cache" : [ 			{
+				"name" : "ddui.module-label.maxpat",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/drag-drop-sketching/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ]
 	}
 
 }
