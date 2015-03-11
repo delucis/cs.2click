@@ -78,7 +78,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 30.0, 120.0, 120.0, 20.0 ],
 					"rounded" : 10.0,
-					"text" : "audio.output-a",
+					"text" : "⁝audio.output-a",
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
 					"varname" : "ddui-textbutton[4]"
 				}
@@ -102,9 +102,8 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 30.0, 60.0, 120.0, 20.0 ],
-					"presentation_rect" : [ 29.0, 72.0, 0.0, 0.0 ],
 					"rounded" : 10.0,
-					"text" : "modular.filter",
+					"text" : "⁝modular.filter",
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
 					"varname" : "ddui-textbutton[2]"
 				}
@@ -129,7 +128,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 30.0, 30.0, 120.0, 20.0 ],
 					"rounded" : 10.0,
-					"text" : "audio.input",
+					"text" : "⁝audio.input",
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
 					"varname" : "ddui-textbutton[1]"
 				}
@@ -154,7 +153,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 30.0, 90.0, 120.0, 20.0 ],
 					"rounded" : 10.0,
-					"text" : "cs.audio-harmonizer",
+					"text" : "⁝cs.audio-harmonizer",
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
 					"varname" : "ddui-textbutton"
 				}
@@ -1623,7 +1622,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 525.0, 251.0, 21.0 ],
-					"text" : "85. 17."
+					"text" : "43. 16."
 				}
 
 			}
@@ -1672,7 +1671,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 450.0, 255.0, 21.0 ],
-					"text" : "30. 120. 120. 20."
+					"text" : "30. 150. 120. 20."
 				}
 
 			}
@@ -1721,7 +1720,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "674. 660."
+					"text" : "341. 271."
 				}
 
 			}
@@ -1770,7 +1769,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "290. 214."
+					"text" : "73. 166."
 				}
 
 			}
@@ -2053,7 +2052,7 @@
 					}
 ,
 					"text" : "pattr",
-					"varname" : "u253000824"
+					"varname" : "u654000054"
 				}
 
 			}
