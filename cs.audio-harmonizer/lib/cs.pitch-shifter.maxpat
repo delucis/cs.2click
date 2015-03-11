@@ -55,7 +55,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 341.0, 60.0, 39.0, 19.0 ],
-					"presentation_rect" : [ 348.0, 60.0, 0.0, 0.0 ],
 					"text" : "signal"
 				}
 
@@ -204,7 +203,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
 					"patching_rect" : [ 465.0, 150.0, 176.5, 20.0 ],
-					"text" : "adsr~ 20. 0. 1. 20. @legato 1"
+					"text" : "adsr~ 50. 0. 1. 50. @legato 1"
 				}
 
 			}
