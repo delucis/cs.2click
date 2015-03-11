@@ -144,7 +144,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 45.0, 99.5, 120.0, 32.0 ],
-									"presentation_rect" : [ 72.0, 199.5, 0.0, 0.0 ],
 									"text" : "sets flag if a list item does not match",
 									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 									"textjustification" : 2
@@ -1596,7 +1595,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u160000749"
+					"varname" : "u176000225"
 				}
 
 			}
@@ -1898,7 +1897,7 @@
 					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 248.0, 457.0, 210.0, 457.0, 210.0, 351.0, 129.5, 351.0 ],
+					"midpoints" : [ 248.0, 457.0, 197.0, 457.0, 197.0, 351.0, 129.5, 351.0 ],
 					"source" : [ "obj-20", 1 ]
 				}
 
@@ -2095,10 +2094,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 100.833, 254.0, 15.0, 254.0, 15.0, 489.0, 24.5, 489.0 ],
+					"midpoints" : [ 100.833, 257.0, 207.0, 257.0, 207.0, 492.0, 215.5, 492.0 ],
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -2190,15 +2189,15 @@
 			}
 , 			{
 				"name" : "cs.pitch-shifter.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.audio-harmonizer/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/music-264-modular/lib/abstractions/cs.audio-harmonizer/lib",
+				"patcherrelativepath" : "../../../music-264-modular/lib/abstractions/cs.audio-harmonizer/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.gizmoid.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.audio-harmonizer/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/music-264-modular/lib/abstractions/cs.audio-harmonizer/lib",
+				"patcherrelativepath" : "../../../music-264-modular/lib/abstractions/cs.audio-harmonizer/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
