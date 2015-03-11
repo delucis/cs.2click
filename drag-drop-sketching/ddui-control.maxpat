@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 0.0, 44.0, 873.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -63,11 +63,11 @@
 				"box" : 				{
 					"align" : 0,
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
+					"bgoncolor" : [ 0.984314, 0.819608, 0.05098, 0.8 ],
 					"bgovercolor" : [ 0.819608, 0.929412, 0.937255, 1.0 ],
 					"border" : 0,
 					"bordercolor" : [ 0.435294, 0.772549, 0.8, 0.26 ],
-					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
+					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 0.8 ],
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-51",
@@ -76,9 +76,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 120.0, 120.0, 20.0 ],
-					"rounded" : 10.0,
+					"patching_rect" : [ 30.0, 120.0, 120.0, 26.0 ],
+					"rounded" : 0.0,
 					"text" : "⁝audio.output-a",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
 					"varname" : "ddui-textbutton[4]"
 				}
@@ -88,11 +89,11 @@
 				"box" : 				{
 					"align" : 0,
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
+					"bgoncolor" : [ 0.984314, 0.819608, 0.05098, 0.8 ],
 					"bgovercolor" : [ 0.819608, 0.929412, 0.937255, 1.0 ],
 					"border" : 0,
 					"bordercolor" : [ 0.435294, 0.772549, 0.8, 0.26 ],
-					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
+					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 0.8 ],
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-44",
@@ -101,9 +102,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 60.0, 120.0, 20.0 ],
-					"rounded" : 10.0,
+					"patching_rect" : [ 30.0, 60.0, 120.0, 26.0 ],
+					"rounded" : 0.0,
 					"text" : "⁝modular.filter",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
 					"varname" : "ddui-textbutton[2]"
 				}
@@ -113,11 +115,11 @@
 				"box" : 				{
 					"align" : 0,
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
+					"bgoncolor" : [ 0.984314, 0.819608, 0.05098, 0.8 ],
 					"bgovercolor" : [ 0.819608, 0.929412, 0.937255, 1.0 ],
 					"border" : 0,
 					"bordercolor" : [ 0.435294, 0.772549, 0.8, 0.26 ],
-					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
+					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 0.8 ],
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-1",
@@ -126,9 +128,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 30.0, 120.0, 20.0 ],
-					"rounded" : 10.0,
+					"patching_rect" : [ 30.0, 30.0, 120.0, 26.0 ],
+					"rounded" : 0.0,
 					"text" : "⁝audio.input",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
 					"varname" : "ddui-textbutton[1]"
 				}
@@ -138,11 +141,11 @@
 				"box" : 				{
 					"align" : 0,
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
+					"bgoncolor" : [ 0.984314, 0.819608, 0.05098, 0.8 ],
 					"bgovercolor" : [ 0.819608, 0.929412, 0.937255, 1.0 ],
 					"border" : 0,
 					"bordercolor" : [ 0.435294, 0.772549, 0.8, 0.26 ],
-					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 1.0 ],
+					"borderoncolor" : [ 0.984314, 0.819608, 0.05098, 0.8 ],
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-56",
@@ -151,9 +154,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 90.0, 120.0, 20.0 ],
-					"rounded" : 10.0,
+					"patching_rect" : [ 30.0, 90.0, 120.0, 26.0 ],
+					"rounded" : 0.0,
 					"text" : "⁝cs.audio-harmonizer",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
 					"varname" : "ddui-textbutton"
 				}
@@ -1622,7 +1626,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 525.0, 251.0, 21.0 ],
-					"text" : "43. 16."
+					"text" : "84. 11."
 				}
 
 			}
@@ -1671,7 +1675,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 450.0, 255.0, 21.0 ],
-					"text" : "30. 150. 120. 20."
+					"text" : "30. 150. 120. 26."
 				}
 
 			}
@@ -1720,7 +1724,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "341. 271."
+					"text" : "442. 551."
 				}
 
 			}
@@ -1769,7 +1773,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "73. 166."
+					"text" : "114. 161."
 				}
 
 			}
@@ -2046,7 +2050,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 780.0, 390.0, 46.0, 20.0 ],
-					"restore" : [ 30.0, 120.0, 120.0, 20.0 ],
+					"restore" : [ 30.0, 120.0, 120.0, 26.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -2710,7 +2714,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 27.0, 130.0, 26.0 ],
+					"patching_rect" : [ 30.0, 30.0, 120.0, 26.0 ],
 					"rounded" : 0
 				}
 
@@ -2727,7 +2731,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 177.0, 130.0, 26.0 ],
+					"patching_rect" : [ 30.0, 180.0, 120.0, 26.0 ],
 					"rounded" : 0
 				}
 
@@ -2744,7 +2748,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 147.0, 130.0, 26.0 ],
+					"patching_rect" : [ 30.0, 150.0, 120.0, 26.0 ],
 					"rounded" : 0
 				}
 
@@ -2761,7 +2765,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 117.0, 130.0, 26.0 ],
+					"patching_rect" : [ 30.0, 120.0, 120.0, 26.0 ],
 					"rounded" : 0
 				}
 
@@ -2778,7 +2782,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 87.0, 130.0, 26.0 ],
+					"patching_rect" : [ 30.0, 90.0, 120.0, 26.0 ],
 					"rounded" : 0
 				}
 
@@ -2795,7 +2799,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 57.0, 130.0, 26.0 ],
+					"patching_rect" : [ 30.0, 60.0, 120.0, 26.0 ],
 					"rounded" : 0
 				}
 
@@ -2812,7 +2816,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 207.0, 130.0, 26.0 ],
+					"patching_rect" : [ 30.0, 210.0, 120.0, 26.0 ],
 					"rounded" : 0
 				}
 
@@ -2829,7 +2833,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.0, 237.0, 130.0, 26.0 ],
+					"patching_rect" : [ 30.0, 240.0, 120.0, 26.0 ],
 					"rounded" : 0
 				}
 
