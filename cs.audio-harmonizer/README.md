@@ -1,7 +1,7 @@
 # `[cs.audio-harmonizer]`
 Module for the [Music 264 “Modular”](https://github.com/mus264/music-264-modular).
 
-Will receive audio signal, combine it with pitch-shifted versions of itself and output a harmonized version of the audio.
+Receives stereo audio signal, pitch-shifts up to 32 versions of the signal and outputs a harmonized stereo signal.
 
 ## Goals
 
@@ -18,7 +18,7 @@ Will receive audio signal, combine it with pitch-shifted versions of itself and 
 
 * ~~No click when pitches change~~
 * ~~Flexible number of voices~~
-* Separate UI from DSP?
+* ~~Separate UI from DSP?~~
 * ~~Permit individual control of each pitch-shift volume?~~
 
 ### Other
