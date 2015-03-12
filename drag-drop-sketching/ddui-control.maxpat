@@ -29,6 +29,56 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-116",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 639.0, 135.0, 115.0, 19.0 ],
+					"presentation_rect" : [ 638.0, 129.0, 0.0, 0.0 ],
+					"text" : "(X, Y) mouse position",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-115",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 402.0, 129.0, 93.0, 32.0 ],
+					"presentation_rect" : [ 388.0, 136.0, 0.0, 0.0 ],
+					"text" : "1 = mousedown\n0 = mouseup",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-114",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 570.0, 45.0, 190.0, 19.0 ],
+					"presentation_rect" : [ 596.0, 46.5, 0.0, 0.0 ],
+					"text" : "initialise [mousestate] on patch open",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 0.760784, 0.709804, 0.811765, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
@@ -3227,7 +3277,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "381. 538."
+					"text" : "418. 548."
 				}
 
 			}
@@ -3276,7 +3326,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "288. 555."
+					"text" : "671. 179."
 				}
 
 			}
@@ -3461,7 +3511,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 135.0, 57.0, 20.0 ],
+					"patching_rect" : [ 555.0, 135.0, 79.0, 20.0 ],
 					"text" : "pak 0. 0."
 				}
 
