@@ -29,7 +29,7 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 0.5, 0.5, 0.5, 0.1 ],
+					"bgcolor" : [ 0.501961, 0.501961, 0.501961, 0.15 ],
 					"bordercolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"id" : "obj-75",
 					"maxclass" : "panel",
@@ -109,7 +109,7 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 0.0, 120.0, 150.0, 30.0 ],
-					"rounded" : 2.0,
+					"rounded" : 0.0,
 					"text" : "⁝audio.output-a",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
@@ -135,7 +135,7 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 0.0, 90.0, 150.0, 30.0 ],
-					"rounded" : 2.0,
+					"rounded" : 0.0,
 					"text" : "⁝modular.filter",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
@@ -161,7 +161,7 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 0.0, 30.0, 150.0, 30.0 ],
-					"rounded" : 2.0,
+					"rounded" : 0.0,
 					"text" : "⁝audio.input",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
@@ -187,7 +187,7 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 0.0, 60.0, 150.0, 30.0 ],
-					"rounded" : 2.0,
+					"rounded" : 0.0,
 					"text" : "⁝cs.audio-harmonizer",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textovercolor" : [ 0.150148, 0.150148, 0.150148, 1.0 ],
@@ -1658,7 +1658,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 525.0, 251.0, 21.0 ],
-					"text" : "76. 14."
+					"text" : "59. 14."
 				}
 
 			}
@@ -1707,7 +1707,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 450.0, 255.0, 21.0 ],
-					"text" : "0. 150. 150. 30."
+					"text" : "165. 120. 150. 30."
 				}
 
 			}
@@ -1756,7 +1756,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "535. 558."
+					"text" : "580. 576."
 				}
 
 			}
@@ -1805,7 +1805,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "596. 605."
+					"text" : "589. 552."
 				}
 
 			}
@@ -2907,7 +2907,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.98, 0.98, 0.98, 1.0 ],
+					"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
 					"bordercolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"id" : "obj-52",
 					"maxclass" : "panel",
@@ -3295,7 +3295,7 @@
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 504.5, 521.0, 847.5, 521.0, 847.5, 385.0, 789.5, 385.0 ],
+					"midpoints" : [ 504.5, 522.0, 847.5, 522.0, 847.5, 385.0, 789.5, 385.0 ],
 					"source" : [ "obj-48", 0 ]
 				}
 
