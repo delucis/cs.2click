@@ -29,6 +29,52 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-90",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 765.0, 600.0, 165.0, 62.0 ],
+					"presentation_rect" : [ 739.0, 602.0, 0.0, 0.0 ],
+					"text" : "two-item list of numbers representing maximum X & Y co-ordinates permitted; 0 = no-limit"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-88",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 600.0, 600.0, 150.0, 48.0 ],
+					"presentation_rect" : [ 588.0, 571.0, 0.0, 0.0 ],
+					"text" : "two-item list of numbers representing X and Y grid divisions"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-87",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 465.0, 600.0, 86.0, 20.0 ],
+					"text" : "1 = on; 0 = off"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
 					"fontface" : 1,
 					"fontname" : "Helvetica Neue",
@@ -56,7 +102,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 735.0, 570.0, 150.0, 20.0 ],
+					"patching_rect" : [ 765.0, 570.0, 150.0, 20.0 ],
 					"text" : "v #0-grid-bounds 330 300"
 				}
 
@@ -360,7 +406,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 711.0, 171.0, 569.0, 414.0 ],
+						"rect" : [ 545.0, 163.0, 569.0, 414.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -379,7 +425,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
@@ -2060,7 +2105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 585.0, 570.0, 134.0, 20.0 ],
+					"patching_rect" : [ 600.0, 570.0, 134.0, 20.0 ],
 					"text" : "v #0-grid-factor 165 30"
 				}
 
@@ -2912,7 +2957,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "533. 545."
+					"text" : "946. 623."
 				}
 
 			}
@@ -2961,7 +3006,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "106. 171."
+					"text" : "946. 623."
 				}
 
 			}
