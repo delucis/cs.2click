@@ -58,15 +58,6 @@ function modules(val)
 		// safety check for number of tracks
 		if(a<0) a = 0; // too few tracks, set to 0
 		if(a>32) a = 32; // too many tracks, set to 32
-
-		numtracks = a; // update our global number of track-info modules to the new value
-		for(k=0;k<a;k++) // create the track-info modules
-		{
-			if(k%2) { x = 555 } else { x = 255 } // set object’s x co-ordinate
-			y = ~~(k/2) * 45 + 15; // set object’s y co-ordinate
-			n = k+1; // set instance numbering (starts at 1)
-			trackInfo[k] = this.patcher.newdefault(x, y, "bpatcher", "track-info", "@varname", n + "-track-info", "@patching_rect", x, y, 300, 45, "@presentation_rect", x, y, 300, 45, "@presentation", 1, "@args", n);
-		}
 		*/
 	}
 
