@@ -9,6 +9,8 @@
 // inlets and outlets
 inlets = 1;
 outlets = 1;
+setinletassist(0, 'modules followed by list of names will create a draggable module with each name as its label; a clear message will delete all modules');
+setoutletassist(0, '(list) pairs of index number and module name');
 
 // global variables and arrays
 var modulelist = '';
