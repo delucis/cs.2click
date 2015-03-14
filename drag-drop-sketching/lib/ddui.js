@@ -34,9 +34,6 @@ function modules(val)
 	{
 
 		// parse arguments
-		a = arguments;
-		modulenum = a.length;
-		modulelist = a;
 
 		// print number of modules
 		post(modulenum);
@@ -45,6 +42,8 @@ function modules(val)
 		// print list of module names
 		post(modulelist.join(', '));
 		post();
+		modulelist = arguments;
+		modulenum = modulelist.length;
 
 		// iterate args
 		for(k=0;k<modulenum;k++)
