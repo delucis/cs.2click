@@ -51,7 +51,7 @@ function modules(val)
 			dduiModules[k] = this.patcher.newdefault(x, y, "textbutton", "@varname", "ddui-" + k, "@patching_rect", x, y, 150, 30, "@text", "⁝" + modulelist[k], "@fontname", "Arial", "@fontsize", 13., "@align", 0, "@bgcolor", 1., 1., 1., 1., "@border", 2, "@rounded", 0, "@bordercolor", 0.94, 0.85, 0.79, 1., "@bgovercolor", 0.82, 0.93, 0.94, 1., "@bgoncolor", 0.98, 0.82, 0.05, 0.8, "@borderoncolor", 0.98, 0.82, 0.05, 0.8);
 
 			// add module name to the modulenames variable (building a string list)
-			modulenames = modulenames + modulelist[k] + ' ';
+			modulenames = modulenames + k + ' ' + modulelist[k] + ' ';
 		}
 
 		// send list of module names out left outlet
