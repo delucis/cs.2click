@@ -41,14 +41,14 @@ function modules(val)
 		// print number of modules
 		post(modulenum);
 		post();
-		
+
+		// print list of module names
+		post(modulelist.join(', '));
+		post();
+
 		// iterate args
 		for(k=0;k<modulenum;k++)
 		{
-			// print module names one by one
-			post(modulelist[k]);
-			post();
-			
 			x = 165; // set object’s x co-ordinate
 			y = 30 * (k+1); // set object’s y co-ordinate
 			dduiModules[k] = this.patcher.newdefault(x, y, "textbutton", "@varname", "ddui-" + k, "@patching_rect", x, y, 150, 30, "@text", "⁝" + modulelist[k], "@fontname", "Arial", "@fontsize", 13., "@align", 0, "@bgcolor", 1., 1., 1., 1., "@border", 2, "@rounded", 0, "@bordercolor", 0.94, 0.85, 0.79, 1., "@bgovercolor", 0.82, 0.93, 0.94, 1., "@bgoncolor", 0.98, 0.82, 0.05, 0.8, "@borderoncolor", 0.98, 0.82, 0.05, 0.8);
