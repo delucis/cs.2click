@@ -54,13 +54,8 @@ function modules(val)
 			modulenames = modulenames + modulelist[k] + ' ';
 		}
 
-		// print number of modules
-		post(modulenum);
-		post();
-
-		// print list of module names
-		post(modulenames);
-		post();
+		// send list of module names out left outlet
+		outlet(0, modulenames);
 
 	}
 
