@@ -44,6 +44,7 @@ function modules(val)
 		post();
 		modulelist = arguments;
 		modulenum = modulelist.length;
+		var modulenames = '';
 
 		// iterate args
 		for(k=0;k<modulenum;k++)
