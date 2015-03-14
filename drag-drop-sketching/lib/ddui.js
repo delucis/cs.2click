@@ -32,12 +32,12 @@ function modules(val)
 
 	if(arguments.length) // bail if no arguments
 	{
-		
+
 		// parse arguments
 		a = arguments;
 		modulenum = a.length;
 		modulelist = a;
-		
+
 		// print number of modules
 		post(modulenum);
 		post();
@@ -53,7 +53,7 @@ function modules(val)
 			y = 30 * (k+1); // set object’s y co-ordinate
 			dduiModules[k] = this.patcher.newdefault(x, y, "textbutton", "@varname", "ddui-" + k, "@patching_rect", x, y, 150, 30, "@text", "⁝" + modulelist[k], "@fontname", "Arial", "@fontsize", 13., "@align", 0, "@bgcolor", 1., 1., 1., 1., "@border", 2, "@rounded", 0, "@bordercolor", 0.94, 0.85, 0.79, 1., "@bgovercolor", 0.82, 0.93, 0.94, 1., "@bgoncolor", 0.98, 0.82, 0.05, 0.8, "@borderoncolor", 0.98, 0.82, 0.05, 0.8);
 		}
-		
+
 		/*
 		// safety check for number of tracks
 		if(a<0) a = 0; // too few tracks, set to 0
