@@ -20,14 +20,20 @@ var dduiModules = new Array(32);
 /*
 // methods start here
 */
-// modules -- generates and binds the track-info modules in the max patch
-function modules(val)
+// clear -- removes all modules
+function clear()
 {
 	this.patcher.apply(function(object) {
 		if (/^ddui-/.test(object.varname)) {
 			this.patcher.remove(object);
 		}
 	});
+}
+
+// modules -- generates and binds the track-info modules in the max patch
+function modules(val)
+{
+	clear(); // remove existing modules
 
 	if(arguments.length) // bail if no arguments
 	{
