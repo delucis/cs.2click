@@ -34,14 +34,6 @@ function modules(val)
 	{
 
 		// parse arguments
-
-		// print number of modules
-		post(modulenum);
-		post();
-
-		// print list of module names
-		post(modulelist.join(', '));
-		post();
 		modulelist = arguments;
 		modulenum = modulelist.length;
 		var modulenames = '';
@@ -56,6 +48,14 @@ function modules(val)
 			// add module name to the modulenames variable (building a string list)
 			modulenames = modulenames + modulelist[k] + ' ';
 		}
+
+		// print number of modules
+		post(modulenum);
+		post();
+
+		// print list of module names
+		post(modulenames);
+		post();
 
 		/*
 		// safety check for number of tracks
