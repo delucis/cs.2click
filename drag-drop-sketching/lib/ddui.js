@@ -20,12 +20,11 @@ var dduiModules = new Array(32);
 /*
 // methods start here
 */
-// tracks -- generates and binds the track-info modules in the max patch
+// modules -- generates and binds the track-info modules in the max patch
 function modules(val)
 {
 	this.patcher.apply(function(object) {
 		if (/^ddui-/.test(object.varname)) {
-			// With thanks to Josiah Wolf Oberholtzer for clarifying this
 			this.patcher.remove(object);
 		}
 	});
@@ -57,16 +56,11 @@ function modules(val)
 		post(modulenames);
 		post();
 
-		/*
-		// safety check for number of tracks
-		if(a<0) a = 0; // too few tracks, set to 0
-		if(a>32) a = 32; // too many tracks, set to 32
-		*/
 	}
 
 	else // complain about arguments
 	{
-		post("tracks message needs arguments");
+		post("modules message needs arguments");
 		post();
 	}
 }
