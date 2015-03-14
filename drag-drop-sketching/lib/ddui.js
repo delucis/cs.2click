@@ -8,7 +8,7 @@
 
 // inlets and outlets
 inlets = 1;
-outlets = 0;
+outlets = 1;
 
 // global variables and arrays
 var modulelist = '';
