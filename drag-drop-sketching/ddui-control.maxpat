@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 725.0, 706.0 ],
+		"rect" : [ 0.0, 44.0, 962.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -259,7 +259,7 @@
 					}
 ,
 					"text" : "pattr",
-					"varname" : "u640004586"
+					"varname" : "u658000035"
 				}
 
 			}
@@ -2705,7 +2705,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.657768, 0.877219, 0.714441, 1.0 ],
 					"fontface" : 1,
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 10.0,
@@ -2714,7 +2713,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 150.0, 30.0 ],
+					"patching_rect" : [ 0.0, 6.0, 150.0, 18.0 ],
 					"text" : "S I G N A L   F L O W\n",
 					"textcolor" : [ 0.170707, 0.241771, 0.194458, 1.0 ],
 					"textjustification" : 1
@@ -3525,7 +3524,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 375.0, 255.0, 21.0 ],
-					"text" : "454. 120."
+					"text" : "414. 256."
 				}
 
 			}
@@ -3574,7 +3573,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1005.0, 300.0, 255.0, 21.0 ],
-					"text" : "169. 398."
+					"text" : "414. 256."
 				}
 
 			}
@@ -3812,7 +3811,7 @@
 					}
 ,
 					"text" : "pattr",
-					"varname" : "u492004252"
+					"varname" : "u335000069"
 				}
 
 			}
@@ -4460,7 +4459,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.35, 0.35, 0.35, 1.0 ],
 					"fontface" : 1,
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 10.0,
@@ -4469,10 +4467,23 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 0.0, 180.0, 30.0 ],
+					"patching_rect" : [ 150.0, 6.0, 180.0, 18.0 ],
 					"text" : "N O T   I N   U S E\n",
 					"textcolor" : [ 0.849367, 0.849367, 0.849367, 1.0 ],
 					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 0.658824, 0.878431, 0.713726, 1.0 ],
+					"id" : "obj-39",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 0.0, 150.0, 30.0 ],
+					"rounded" : 0
 				}
 
 			}
@@ -4485,7 +4496,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 0.0, 180.0, 300.0 ],
+					"patching_rect" : [ 150.0, 30.0, 180.0, 270.0 ],
 					"rounded" : 0,
 					"varname" : "dduilimit-panel[1]"
 				}
@@ -4649,6 +4660,19 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 30.0, 150.0, 30.0 ],
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 0.279001, 0.278992, 0.278997, 1.0 ],
+					"id" : "obj-1",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 150.0, 0.0, 180.0, 30.0 ],
 					"rounded" : 0
 				}
 
