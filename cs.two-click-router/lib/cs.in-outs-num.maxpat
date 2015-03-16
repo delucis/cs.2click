@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 213.0, 44.0, 333.0, 558.0 ],
+		"rect" : [ 213.0, 44.0, 333.0, 532.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,20 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 30.0, 75.0, 79.0, 20.0 ],
+					"text" : "loadmess #4"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "int sets output number",
 					"id" : "obj-60",
@@ -682,7 +696,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.5, 68.0, 74.0, 43.0 ],
+					"patching_rect" : [ 60.5, 98.0, 74.0, 43.0 ],
 					"text" : "toggles linking",
 					"textjustification" : 1
 				}
@@ -896,7 +910,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 30.0, 120.0, 121.0, 20.0 ],
+					"patching_rect" : [ 30.0, 150.0, 121.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -933,7 +947,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 225.0, 25.0, 25.0 ]
+					"patching_rect" : [ 15.0, 255.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -946,7 +960,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 195.0, 124.0, 20.0 ],
+					"patching_rect" : [ 30.0, 225.0, 124.0, 20.0 ],
 					"text" : "pak 2 2"
 				}
 
@@ -957,12 +971,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-13",
-					"linecount" : 13,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 360.0, 300.0, 181.0 ],
-					"text" : "Understands four arguments:\n\n1. (required) sets variable prefix for reference in module\n\n2. (optional) sets default number of input channels (if not provided, defaults to 2)\n\n3. (optional) sets default number of output channels (if not provided, defaults to 2)\n\n4. (optional) sets default status of linking mechanism; 1 = on (default), 0 = off"
+					"patching_rect" : [ 15.0, 375.0, 300.0, 141.0 ],
+					"text" : "Understands four arguments:\n\n1. (required) sets variable prefix for reference in module\n2. (optional) sets default number of input channels (if not provided, defaults to 2)\n3. (optional) sets default number of output channels (if not provided, defaults to 2)\n4. (optional) sets default status of linking mechanism; 1 = on, 0 = off (default)"
 				}
 
 			}
@@ -976,7 +990,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 285.0, 300.0, 20.0 ],
+					"patching_rect" : [ 15.0, 300.0, 300.0, 20.0 ],
 					"text" : "cs.in-outs-num"
 				}
 
@@ -991,7 +1005,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 315.0, 300.0, 33.0 ],
+					"patching_rect" : [ 15.0, 330.0, 300.0, 33.0 ],
 					"text" : "Combines input & output channel setters and adds option to link them"
 				}
 
@@ -1006,7 +1020,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 30.0, 75.0, 30.0, 30.0 ],
+					"patching_rect" : [ 30.0, 105.0, 30.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 75.0, 0.0, 15.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
@@ -1038,7 +1052,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 165.0, 75.0, 15.0 ],
+					"patching_rect" : [ 135.0, 195.0, 75.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 15.0, 75.0, 15.0 ]
 				}
@@ -1053,7 +1067,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 165.0, 75.0, 15.0 ],
+					"patching_rect" : [ 30.0, 195.0, 75.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 75.0, 15.0 ]
 				}
@@ -1089,6 +1103,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1119,7 +1142,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 142.5, 105.0, 162.0, 105.0, 162.0, 145.0, 39.5, 145.0 ],
+					"midpoints" : [ 142.5, 105.0, 162.0, 105.0, 162.0, 175.0, 39.5, 175.0 ],
 					"source" : [ "obj-59", 1 ]
 				}
 
@@ -1129,7 +1152,7 @@
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 260.5, 150.0, 144.5, 150.0 ],
+					"midpoints" : [ 260.5, 180.0, 144.5, 180.0 ],
 					"source" : [ "obj-59", 2 ]
 				}
 
@@ -1148,7 +1171,7 @@
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 299.5, 150.0, 144.5, 150.0 ],
+					"midpoints" : [ 299.5, 180.0, 144.5, 180.0 ],
 					"source" : [ "obj-60", 0 ]
 				}
 
