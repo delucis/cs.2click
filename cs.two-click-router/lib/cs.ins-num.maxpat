@@ -61,7 +61,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 255.0, 168.0, 87.0 ],
+					"patching_rect" : [ 15.0, 255.0, 190.0, 87.0 ],
 					"text" : "Understands two arguments:\n1. (required) sets variable prefix for reference in module\n2. (optional) sets default number of channel (if not provided, defaults to 2)"
 				}
 
@@ -76,7 +76,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 180.0, 165.0, 20.0 ],
+					"patching_rect" : [ 15.0, 180.0, 190.0, 20.0 ],
 					"text" : "cs.ins-num"
 				}
 
@@ -91,7 +91,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 210.0, 165.0, 33.0 ],
+					"patching_rect" : [ 15.0, 210.0, 190.0, 33.0 ],
 					"text" : "Sets number of input channels your module has"
 				}
 
