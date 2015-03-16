@@ -8,10 +8,14 @@ Audio routing in a context that involves even a moderate number of potential nod
 
 ### GUI components
 
-* **channel number setter** — sets `module.in-chan-num` and/or `module.out-chan-num`
-* **input selector** — reacts to `module.in-chan-num`
-* **output selector** — reacts to `module.out-chan-num`
-* **network visualiser** — [speculative] draws visualisation of routing network using central dictionary
+* **channel number setter**
+  * sets `module.in-chan-num` and/or `module.out-chan-num`
+* **input selector**
+  * reacts to `module.in-chan-num`
+* **output selector**
+  * reacts to `module.out-chan-num`
+* **network visualiser**
+  * [speculative] draws visualisation of routing network using central dictionary
 
 ### Management components
 
