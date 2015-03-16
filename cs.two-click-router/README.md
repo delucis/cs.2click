@@ -12,8 +12,10 @@ Audio routing in a context that involves even a moderate number of potential nod
   * sets `module.in-chan-num` and/or `module.out-chan-num`
 * **input selector**
   * reacts to `module.in-chan-num`
+  * reacts to first mousedownup on other modules’ outputs
 * **output selector**
   * reacts to `module.out-chan-num`
+  * reacts to first mousedownup on other modules’ inputs
 * **network visualiser**
   * [speculative] draws visualisation of routing network using central dictionary
 
@@ -37,7 +39,9 @@ Audio routing in a context that involves even a moderate number of potential nod
 * `module.in~[n]` — input slots where n ≤ `module.in-chan-num`
 * `module.out~[n]` — output slots where n ≤ `module.out-chan-num`
 #### global
-* `global.mouse` —
+* `global.mouse` — collection of mouse data including position and click detection
+* `global.origin` — stored first mousedownup selection
+* 'global.destination' — stored second mousedownup selection
 
 ### Methods
 * first mousedownup selects module out-/input and holds it
