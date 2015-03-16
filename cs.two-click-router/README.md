@@ -33,17 +33,20 @@ Audio routing in a context that involves even a moderate number of potential nod
   * keeps track of click activity
 
 ### Data
+
 #### module-specific
 * `module.in-chan-num` — can be set graphically or predetermined on a module by module basis
 * `module.out-chan-num` — can be set graphically or predetermined on a module by module basis
 * `module.in~[n]` — input slots where n ≤ `module.in-chan-num`
 * `module.out~[n]` — output slots where n ≤ `module.out-chan-num`
+
 #### global
 * `global.mouse` — collection of mouse data including position and click detection
 * `global.origin` — stored first mousedownup selection
 * 'global.destination' — stored second mousedownup selection
 
 ### Methods
+
 * first mousedownup selects module out-/input and holds it
 * second mousedownup binds two modules together
 * holding shift during second mousedownup permits continued routing of initially selected module (like Max patch cords)
