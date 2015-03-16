@@ -43,7 +43,7 @@ Audio routing in a context that involves even a moderate number of potential nod
 #### global
 * `global.mouse` — collection of mouse data including position and click detection
 * `global.origin` — stored first mousedownup selection
-* 'global.destination' — stored second mousedownup selection
+* `global.destination` — stored second mousedownup selection
 
 ### Methods
 
