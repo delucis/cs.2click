@@ -165,7 +165,8 @@
 					"patching_rect" : [ 15.0, 75.0, 47.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -3.0, -2.25, 47.0, 18.0 ],
-					"text" : "outputs"
+					"text" : "outputs",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.5 ]
 				}
 
 			}
@@ -203,7 +204,7 @@
 , 			{
 				"box" : 				{
 					"background" : 1,
-					"bgcolor" : [ 0.966269, 0.966269, 0.966269, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.04 ],
 					"id" : "obj-5",
 					"maxclass" : "panel",
 					"numinlets" : 1,

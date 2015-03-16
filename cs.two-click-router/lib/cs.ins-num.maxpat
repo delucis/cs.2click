@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 965.0, 54.0, 219.0, 364.0 ],
+		"rect" : [ 566.0, 169.0, 219.0, 364.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -165,7 +165,8 @@
 					"patching_rect" : [ 15.0, 75.0, 40.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, -2.25, 40.0, 18.0 ],
-					"text" : "inputs"
+					"text" : "inputs",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.5 ]
 				}
 
 			}
@@ -203,7 +204,7 @@
 , 			{
 				"box" : 				{
 					"background" : 1,
-					"bgcolor" : [ 0.966269, 0.966269, 0.966269, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.04 ],
 					"id" : "obj-5",
 					"maxclass" : "panel",
 					"numinlets" : 1,
