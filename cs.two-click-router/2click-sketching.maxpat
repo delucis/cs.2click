@@ -30,6 +30,38 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-75",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 495.0, 570.0, 300.0, 48.0 ],
+					"presentation_rect" : [ 493.0, 578.0, 0.0, 0.0 ],
+					"text" : "Also to do:\n• use 1st click to set/unset focus\n• .js to build flexible in/out slots"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-74",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 495.0, 525.0, 300.0, 35.0 ],
+					"text" : "Requires tests for ins & outs as appropriate pairs (will require extended naming conventions)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
 					"fontsize" : 11.0,
 					"frgb" : 0.0,
 					"id" : "obj-72",
