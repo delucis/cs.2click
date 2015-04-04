@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 962.0, 706.0 ],
+		"rect" : [ 0.0, 44.0, 940.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,36 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-4",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 480.0, 405.0, 138.0, 45.0 ],
+					"text" : "check focused object has this instance’s prefix and ends in \"-slot\"",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 375.0, 405.0, 103.0, 20.0 ],
+					"text" : "regexp #1-.+-slot"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
@@ -2502,8 +2532,8 @@
 
 					}
 ,
-					"text" : "#1-1",
-					"texton" : "#1-1",
+					"text" : "[empty]",
+					"texton" : "[empty]",
 					"varname" : "#1-2-in-slot-val"
 				}
 
@@ -2615,8 +2645,8 @@
 
 					}
 ,
-					"text" : "#1-1",
-					"texton" : "#1-1",
+					"text" : "[empty]",
+					"texton" : "[empty]",
 					"varname" : "#1-2-out-slot-val"
 				}
 
@@ -2683,8 +2713,8 @@
 
 					}
 ,
-					"text" : "#1-2",
-					"texton" : "#1-2",
+					"text" : "[empty]",
+					"texton" : "[empty]",
 					"varname" : "#1-1-out-slot-val"
 				}
 
@@ -2713,22 +2743,6 @@
 					"text" : "1",
 					"texton" : "1",
 					"varname" : "#1-1-out-slot-label"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 11.0,
-					"frgb" : 0.0,
-					"id" : "obj-54",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 405.0, 429.0, 120.0, 32.0 ],
-					"text" : "check focused object ends in \"-slot\"",
-					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
 
 			}
@@ -3338,21 +3352,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-30",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 375.0, 405.0, 90.0, 21.0 ],
-					"text" : "regexp .+-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 11.0,
 					"frgb" : 0.0,
@@ -3587,8 +3586,8 @@
 
 					}
 ,
-					"text" : "#1-2",
-					"texton" : "#1-2",
+					"text" : "[empty]",
+					"texton" : "[empty]",
 					"varname" : "#1-1-in-slot-val"
 				}
 
@@ -3970,6 +3969,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-210", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4114,15 +4122,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-30", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4204,7 +4203,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-56", 1 ]
