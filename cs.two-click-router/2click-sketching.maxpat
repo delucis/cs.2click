@@ -239,7 +239,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 255.0, 315.0, 390.0, 18.0 ],
+					"patching_rect" : [ 255.0, 285.0, 390.0, 18.0 ],
 					"text" : "T W O   C L I C K   M E C H A N I S M",
 					"textcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"textjustification" : 1
@@ -390,7 +390,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 375.0, 585.0, 98.0, 20.0 ],
+					"patching_rect" : [ 375.0, 525.0, 98.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -405,33 +405,6 @@
 					}
 ,
 					"text" : "p store-1st-click"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 12.0,
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 345.0, 119.0, 20.0 ],
-					"text" : "r cs.2click-mouseup"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 12.0,
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 255.0, 285.0, 121.0, 20.0 ],
-					"text" : "s cs.2click-mouseup"
 				}
 
 			}
@@ -1506,7 +1479,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 480.0, 615.0, 145.0, 20.0 ],
+					"patching_rect" : [ 480.0, 555.0, 145.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -2352,7 +2325,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 480.0, 585.0, 145.0, 20.0 ],
+					"patching_rect" : [ 480.0, 525.0, 145.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -2414,7 +2387,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 615.0, 100.0, 20.0 ],
+					"patching_rect" : [ 375.0, 555.0, 100.0, 20.0 ],
 					"text" : "s cs.set-ui-focus"
 				}
 
@@ -2455,7 +2428,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 255.0, 555.0, 109.0, 20.0 ],
+					"patching_rect" : [ 255.0, 495.0, 109.0, 20.0 ],
 					"text" : "s cs.clear-ui-focus"
 				}
 
@@ -2488,7 +2461,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 645.0, 100.0, 71.0 ],
+					"patching_rect" : [ 375.0, 585.0, 100.0, 71.0 ],
 					"text" : "if no 1st-click is stored, store click-focus as 1st-click & set it as UI focus",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -2570,7 +2543,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.0, 645.0, 92.0, 20.0 ],
+					"patching_rect" : [ 480.0, 585.0, 92.0, 20.0 ],
 					"text" : "s cs.in-out-pair"
 				}
 
@@ -2753,7 +2726,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 405.0, 489.0, 120.0, 32.0 ],
+					"patching_rect" : [ 405.0, 429.0, 120.0, 32.0 ],
 					"text" : "check focused object ends in \"-slot\"",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -2768,7 +2741,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 405.0, 106.0, 19.0 ],
+					"patching_rect" : [ 510.0, 345.0, 106.0, 19.0 ],
 					"text" : "store focus on click",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -2783,7 +2756,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 255.0, 405.0, 244.0, 20.0 ],
+					"patching_rect" : [ 255.0, 345.0, 244.0, 20.0 ],
 					"text" : "t l l"
 				}
 
@@ -2798,7 +2771,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 480.0, 435.0, 94.0, 20.0 ],
+					"patching_rect" : [ 480.0, 375.0, 94.0, 20.0 ],
 					"text" : "v cs.click-focus"
 				}
 
@@ -2895,7 +2868,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 255.0, 585.0, 105.0, 71.0 ],
+					"patching_rect" : [ 255.0, 525.0, 105.0, 71.0 ],
 					"text" : "if hover-focus is 0 (= no in/out clicked), clear 1st-click variable and clear UI focus",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -2911,7 +2884,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 495.0, 81.0, 20.0 ],
+					"patching_rect" : [ 255.0, 435.0, 81.0, 20.0 ],
 					"text" : "v cs.1st-click"
 				}
 
@@ -2925,7 +2898,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 255.0, 465.0, 35.0, 20.0 ],
+					"patching_rect" : [ 255.0, 405.0, 35.0, 20.0 ],
 					"text" : "t 0 b"
 				}
 
@@ -2939,7 +2912,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 255.0, 435.0, 139.0, 20.0 ],
+					"patching_rect" : [ 255.0, 375.0, 139.0, 20.0 ],
 					"text" : "sel 0"
 				}
 
@@ -2953,7 +2926,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 375.0, 555.0, 124.0, 20.0 ],
+					"patching_rect" : [ 375.0, 495.0, 124.0, 20.0 ],
 					"text" : "sel 0"
 				}
 
@@ -3001,7 +2974,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 525.0, 81.0, 20.0 ],
+					"patching_rect" : [ 375.0, 465.0, 81.0, 20.0 ],
 					"text" : "v cs.1st-click"
 				}
 
@@ -3015,7 +2988,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 375.0, 495.0, 25.0, 20.0 ],
+					"patching_rect" : [ 375.0, 435.0, 25.0, 20.0 ],
 					"text" : "t b"
 				}
 
@@ -3358,7 +3331,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 375.0, 99.0, 20.0 ],
+					"patching_rect" : [ 255.0, 315.0, 99.0, 20.0 ],
 					"text" : "v cs.hover-focus"
 				}
 
@@ -3373,7 +3346,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 375.0, 465.0, 90.0, 21.0 ],
+					"patching_rect" : [ 375.0, 405.0, 90.0, 21.0 ],
 					"text" : "regexp .+-slot"
 				}
 
@@ -3768,7 +3741,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 255.0, 525.0, 36.0, 20.0 ],
+					"patching_rect" : [ 255.0, 465.0, 36.0, 20.0 ],
 					"text" : "sel 0"
 				}
 
@@ -3817,15 +3790,6 @@
 					"disabled" : 0,
 					"hidden" : 1,
 					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -4087,7 +4051,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-31", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-260", 0 ]
