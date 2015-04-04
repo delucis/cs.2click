@@ -63,7 +63,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 71.0, 109.0, 365.0, 239.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -86,12 +86,26 @@
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 165.0, 135.0, 107.0, 20.0 ],
+									"text" : "regexp (.+)-.+-slot"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
 									"id" : "obj-226",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 50.0, 130.0, 34.0, 20.0 ],
+									"patching_rect" : [ 15.0, 75.0, 34.0, 20.0 ],
 									"text" : "t b s"
 								}
 
@@ -105,7 +119,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 200.0, 160.0, 39.0, 20.0 ],
+									"patching_rect" : [ 165.0, 105.0, 39.0, 20.0 ],
 									"text" : "zl.reg"
 								}
 
@@ -119,7 +133,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 289.0, 190.0, 92.0, 20.0 ],
+									"patching_rect" : [ 254.0, 165.0, 92.0, 20.0 ],
 									"text" : "prepend texton"
 								}
 
@@ -133,7 +147,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 200.0, 190.0, 79.0, 20.0 ],
+									"patching_rect" : [ 165.0, 165.0, 79.0, 20.0 ],
 									"text" : "prepend text"
 								}
 
@@ -147,7 +161,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 160.0, 135.0, 20.0 ],
+									"patching_rect" : [ 15.0, 105.0, 135.0, 20.0 ],
 									"text" : "sprintf setname %s-val"
 								}
 
@@ -161,7 +175,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 189.0, 20.0 ],
+									"patching_rect" : [ 15.0, 45.0, 189.0, 20.0 ],
 									"text" : "unpack s s"
 								}
 
@@ -174,7 +188,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 15.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -185,12 +199,30 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 174.666687, 270.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 195.0, 25.0, 25.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-222", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-223", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-225", 1 ],
 									"disabled" : 0,
@@ -237,16 +269,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-222", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-225", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-223", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-225", 0 ]
@@ -319,7 +342,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 25.0, 69.0, 367.0, 180.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -342,12 +365,26 @@
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 15.0, 75.0, 107.0, 20.0 ],
+									"text" : "regexp (.+)-.+-slot"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
 									"id" : "obj-229",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 139.0, 130.0, 92.0, 20.0 ],
+									"patching_rect" : [ 104.0, 105.0, 92.0, 20.0 ],
 									"text" : "prepend texton"
 								}
 
@@ -361,7 +398,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 130.0, 79.0, 20.0 ],
+									"patching_rect" : [ 15.0, 105.0, 79.0, 20.0 ],
 									"text" : "prepend text"
 								}
 
@@ -375,7 +412,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 245.0, 130.0, 135.0, 20.0 ],
+									"patching_rect" : [ 210.0, 105.0, 135.0, 20.0 ],
 									"text" : "sprintf setname %s-val"
 								}
 
@@ -389,7 +426,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 214.0, 20.0 ],
+									"patching_rect" : [ 15.0, 45.0, 214.0, 20.0 ],
 									"text" : "unpack s s"
 								}
 
@@ -402,7 +439,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 15.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -413,12 +450,30 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 139.666687, 210.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 135.0, 25.0, 25.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-229", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-230", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-235", 0 ],
 									"disabled" : 0,
@@ -447,16 +502,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-229", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-233", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-230", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-233", 0 ]
@@ -1903,8 +1949,8 @@
 
 					}
 ,
-					"text" : "#0-2-out-slot",
-					"texton" : "#0-2-out-slot",
+					"text" : "#0-2",
+					"texton" : "#0-2",
 					"varname" : "#0-2-in-slot-val"
 				}
 
@@ -2017,8 +2063,8 @@
 
 					}
 ,
-					"text" : "#0-1-in-slot",
-					"texton" : "#0-1-in-slot",
+					"text" : "#0-2",
+					"texton" : "#0-2",
 					"varname" : "#0-2-out-slot-val"
 				}
 
@@ -2085,8 +2131,8 @@
 
 					}
 ,
-					"text" : "#0-1-in-slot",
-					"texton" : "#0-1-in-slot",
+					"text" : "#0-1",
+					"texton" : "#0-1",
 					"varname" : "#0-1-out-slot-val"
 				}
 
@@ -2440,7 +2486,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 660.0, 270.0, 255.0, 21.0 ],
-					"text" : "0"
+					"text" : "#0-2-out-slot"
 				}
 
 			}
@@ -3021,8 +3067,8 @@
 
 					}
 ,
-					"text" : "#0-2-out-slot",
-					"texton" : "#0-2-out-slot",
+					"text" : "#0-1",
+					"texton" : "#0-1",
 					"varname" : "#0-1-in-slot-val"
 				}
 
