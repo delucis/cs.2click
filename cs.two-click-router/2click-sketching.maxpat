@@ -116,7 +116,7 @@
 					"rounded" : 0.0,
 					"text" : "✖",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-1-in-slot-clear"
 				}
 
@@ -210,7 +210,7 @@
 					"rounded" : 0.0,
 					"text" : "✖",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-2-in-slot-clear"
 				}
 
@@ -304,7 +304,7 @@
 					"rounded" : 0.0,
 					"text" : "✖",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-1-out-slot-clear"
 				}
 
@@ -398,7 +398,7 @@
 					"rounded" : 0.0,
 					"text" : "✖",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-2-out-slot-clear"
 				}
 
