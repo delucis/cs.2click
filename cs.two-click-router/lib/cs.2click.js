@@ -54,6 +54,9 @@ function buildslots(val)
 		}
 
 		// done building confirmation out left outlet
+		if(modulename.length) {
+			post(modulename + ':')
+		}
 		post('Done building ' + channum + ' ' + chantype + 'put(s).\n');
 
 	}
