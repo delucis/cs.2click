@@ -174,13 +174,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 810.0, 210.0, 69.0, 20.0 ],
+					"patching_rect" : [ 810.0, 210.0, 86.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "cs.2click",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js cs.2click"
+					"text" : "js cs.2click #1"
 				}
 
 			}
@@ -3778,7 +3778,7 @@
 				"box" : 				{
 					"handoff" : "",
 					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-65",
+					"id" : "obj-3",
 					"maxclass" : "ubutton",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -3800,8 +3800,9 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-67",
+					"id" : "obj-22",
 					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
@@ -3812,6 +3813,7 @@
 					"rounded" : 0.0,
 					"text" : "1",
 					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"texton" : "1",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-1-out-slot-label"
 				}
@@ -3828,8 +3830,9 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-72",
+					"id" : "obj-26",
 					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
@@ -3840,6 +3843,7 @@
 					"rounded" : 0.0,
 					"text" : "[empty]",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"texton" : "[empty]",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-1-out-slot-val"
 				}
@@ -3855,7 +3859,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-74",
+					"id" : "obj-29",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3876,7 +3880,7 @@
 				"box" : 				{
 					"handoff" : "",
 					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-76",
+					"id" : "obj-33",
 					"maxclass" : "ubutton",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -3898,8 +3902,9 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-80",
+					"id" : "obj-35",
 					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
@@ -3910,6 +3915,7 @@
 					"rounded" : 0.0,
 					"text" : "2",
 					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"texton" : "2",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-2-out-slot-label"
 				}
@@ -3926,8 +3932,9 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-83",
+					"id" : "obj-37",
 					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
@@ -3938,6 +3945,7 @@
 					"rounded" : 0.0,
 					"text" : "[empty]",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"texton" : "[empty]",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-2-out-slot-val"
 				}
@@ -3953,7 +3961,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-86",
+					"id" : "obj-39",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
 					"numoutlets" : 3,

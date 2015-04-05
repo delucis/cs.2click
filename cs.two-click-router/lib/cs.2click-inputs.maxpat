@@ -174,13 +174,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 810.0, 210.0, 69.0, 20.0 ],
+					"patching_rect" : [ 810.0, 210.0, 86.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "cs.2click",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js cs.2click"
+					"text" : "js cs.2click #1"
 				}
 
 			}
@@ -3675,6 +3675,27 @@
 			}
 , 			{
 				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"frgb" : 0.0,
+					"id" : "obj-49",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 0.0, 120.0, 17.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 120.0, 17.0 ],
+					"text" : "I N P U T S",
+					"textcolor" : [ 0.8, 0.8, 0.8, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"handoff" : "",
 					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
 					"id" : "obj-3",
@@ -3701,6 +3722,7 @@
 					"fontsize" : 10.0,
 					"id" : "obj-25",
 					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
@@ -3711,6 +3733,7 @@
 					"rounded" : 0.0,
 					"text" : "1",
 					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"texton" : "1",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-1-in-slot-label"
 				}
@@ -3729,6 +3752,7 @@
 					"fontsize" : 10.0,
 					"id" : "obj-27",
 					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
@@ -3739,6 +3763,7 @@
 					"rounded" : 0.0,
 					"text" : "[empty]",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"texton" : "[empty]",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-1-in-slot-val"
 				}
@@ -3799,6 +3824,7 @@
 					"fontsize" : 10.0,
 					"id" : "obj-36",
 					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
@@ -3809,6 +3835,7 @@
 					"rounded" : 0.0,
 					"text" : "2",
 					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"texton" : "2",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-2-in-slot-label"
 				}
@@ -3827,6 +3854,7 @@
 					"fontsize" : 10.0,
 					"id" : "obj-38",
 					"maxclass" : "textbutton",
+					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
@@ -3837,6 +3865,7 @@
 					"rounded" : 0.0,
 					"text" : "[empty]",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"texton" : "[empty]",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"varname" : "#1-2-in-slot-val"
 				}
@@ -3866,27 +3895,6 @@
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textovercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "#1-2-in-slot-clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 9.0,
-					"frgb" : 0.0,
-					"id" : "obj-49",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 120.0, 17.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 120.0, 17.0 ],
-					"text" : "I N P U T S",
-					"textcolor" : [ 0.8, 0.8, 0.8, 1.0 ],
-					"textjustification" : 1
 				}
 
 			}
