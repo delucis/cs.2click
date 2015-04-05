@@ -3767,9 +3767,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 120.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 120.0, 17.0 ],
+					"presentation_rect" : [ 0.0, -1.0, 120.0, 17.0 ],
 					"text" : "O U T P U T S",
-					"textcolor" : [ 0.8, 0.8, 0.8, 1.0 ],
+					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
 					"textjustification" : 1
 				}
 
