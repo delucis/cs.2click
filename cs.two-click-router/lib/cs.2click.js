@@ -7,6 +7,11 @@
 // dev settings
 autowatch = 1;
 
+/*
+//////    G L O B A L    //////
+//////  S E T T I N G S  //////
+*/
+
 // inlets and outlets
 inlets = 1;
 outlets = 1;
@@ -19,16 +24,14 @@ var modulename = '';
 if (jsarguments.length > 1) {
 	modulename = jsarguments[1];
 }
-
-// dictionary management
-var twoclickDictionary = new Dict("cs.2click-routing-pairs");
-
-// Maxobj variables for scripting
-var twoclickObjects = new Array(32);
+var twoclickDictionary = new Dict("cs.2click-routing-pairs"); // for dictionary management
+var twoclickObjects = new Array(32); // Maxobj variables for scripting
 
 /*
-// methods start here
+//////        U I        //////
+//////   M E T H O D S   //////
 */
+
 // clear -- removes all modules
 function clear()
 {
@@ -107,6 +110,11 @@ function outchannum(val)
 		error("outchannum message needs argument specifying number of channels\n");
 	}
 }
+
+/*
+//////   D I C T I O N A R Y   //////
+//////      M E T H O D S      //////
+*/
 
 // setdict -- adds all slots found in this patcher to the global dictionary
 function setdict(val) {
