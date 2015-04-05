@@ -40,6 +40,8 @@ function buildslots(val)
 	{
 		// parse arguments
 		channum = arguments[0]; // number of slots to build
+		if(channum > 8) {channum = 8;}
+		if(channum < 1) {channum = 1;}
 		chantype = arguments[1]; // whether slot is in or out
 
 		// iterate args
