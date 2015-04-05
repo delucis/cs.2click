@@ -20,6 +20,9 @@ if (jsarguments.length > 1) {
 	modulename = jsarguments[1];
 }
 
+// dictionary management
+var twoclickDictionary = new Dict("cs.2click-routing-pairs");
+
 // Maxobj variables for scripting
 var twoclickObjects = new Array(32);
 
@@ -63,6 +66,7 @@ function buildslots(val)
 			post(modulename + ':')
 		}
 		post('Done building ' + channum + ' ' + chantype + 'put(s).\n');
+		setdict(); // add all the created slots to the global dictionary
 
 	}
 
@@ -102,4 +106,20 @@ function outchannum(val)
 	{
 		error("outchannum message needs argument specifying number of channels\n");
 	}
+}
+
+// setdict -- adds all slots found in this patcher to the global dictionary
+function setdict(val) {
+	this.patcher.apply(
+		function(object) {
+			if (/-in-slot$/.test(object.varname) || /-out-slot$/.test(object.varname)) {
+				twoclickDictionary.set(object.varname, 0);
+			}
+		}
+	);
+}
+
+// cleardict -- empty the global dictionary
+function cleardict() {
+	twoclickDictionary.clear();
 }
