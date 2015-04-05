@@ -12,6 +12,10 @@ setoutletassist(0, 'various');
 
 // global variables and arrays
 var channum = 0;
+var modulename = '';
+if (jsarguments.length > 1) {
+	modulename = jsarguments[1];
+}
 
 // Maxobj variables for scripting
 var twoclickObjects = new Array(32);
