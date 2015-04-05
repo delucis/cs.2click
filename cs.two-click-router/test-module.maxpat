@@ -29,25 +29,25 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"args" : [ "burp-mod" ],
+					"args" : [ "burp-mod", 4 ],
 					"id" : "obj-6",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-inputs.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 15.0, 120.0, 45.0 ]
+					"patching_rect" : [ 15.0, 15.0, 120.0, 75.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "barf-mod" ],
+					"args" : [ "barf-mod", 6 ],
 					"id" : "obj-5",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-outputs.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 120.0, 120.0, 45.0 ]
+					"patching_rect" : [ 15.0, 120.0, 120.0, 165.0 ]
 				}
 
 			}
@@ -58,6 +58,13 @@
 				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.two-click-router/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cs.2click.js",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.two-click-router/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
