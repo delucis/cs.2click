@@ -56,8 +56,7 @@ function buildslots(val)
 
 	else // complain about arguments
 	{
-		post("buildslots message needs arguments");
-		post();
+		error("buildslots message needs arguments:\n1 — number of channels (int); 2 — in or out (symbol)\n");
 	}
 }
 
@@ -73,8 +72,7 @@ function inchannum(val)
 	}
 	else // complain about arguments
 	{
-		post("inchannum message needs argument specifying number of channels");
-		post();
+		error("inchannum message needs argument specifying number of channels\n");
 	}
 }
 
@@ -90,7 +88,6 @@ function outchannum(val)
 	}
 	else // complain about arguments
 	{
-		post("outchannum message needs argument specifying number of channels");
-		post();
+		error("outchannum message needs argument specifying number of channels\n");
 	}
 }
