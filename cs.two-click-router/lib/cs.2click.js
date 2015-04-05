@@ -4,6 +4,9 @@
 //
 //
 
+// dev settings
+autowatch = 1;
+
 // inlets and outlets
 inlets = 1;
 outlets = 1;
