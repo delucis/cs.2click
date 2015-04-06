@@ -85,7 +85,7 @@ function addclearbutton(val)
 	{
 		k = arguments[0] - 1; // set k from slot number
 		chantype = arguments[1]; // set channel type (in/out)
-		scriptingname = "#1-" + (k+1) + "-" + chantype + "-slot-clear";
+		scriptingname = modulename + '-' + (k+1) + "-" + chantype + "-slot-clear";
 		x = 0; // set object’s x co-ordinate
 		y = 15 * (k+1); // set object’s y co-ordinate
 		// execute -- remove if already there, then add
@@ -105,7 +105,7 @@ function removeclearbutton(val)
 	{
 		k = arguments[0] - 1; // set k from slot number
 		chantype = arguments[1]; // set channel type (in/out)
-		scriptingname = "#1-" + (k+1) + "-" + chantype + "-slot-clear";
+		scriptingname = modulename + '-' + (k+1) + "-" + chantype + "-slot-clear";
 		this.patcher.apply(function(object) {
 			if (object.varname == scriptingname) {
 				this.patcher.remove(object);
