@@ -63,7 +63,7 @@ function buildslots(val)
 			twoclickObjects[4*k+1] = this.patcher.newdefault( x+15, y, "textbutton", "@varname", "#1-" + (k+1) + "-" + chantype + "-slot-val", "@patching_rect", x+15, y, 90, 15, "@presentation_rect", x+15, y, 90, 15, "@presentation", 1, "@mode", 1, "@text", "[empty]", "@texton", "[empty]", "@fontname", "Arial", "@fontsize", 10., "@fontface", 1, "@align", 0, "@bgcolor", 0.96, 0.96, 0.96, 1., "@textcolor", 0.2, 0.2, 0.2, "@border", 1, "@rounded", 0, "@bordercolor", 1., 1., 1., 1., "@bgoncolor", 0.05, 0.97, 0.39, 1., "@textoncolor", 0., 0., 0., 1., "@borderoncolor", 0.05, 0.97, 0.39, 1.);
 		}
 
-		// done building confirmation out left outlet
+		// print done building confirmation in Max window
 		if(modulename.length) {
 			post(modulename + ':')
 		}
@@ -78,7 +78,7 @@ function buildslots(val)
 	}
 }
 
-// addclearbutton -- add a clear slot button to a provided slot number
+// addclearbutton -- add a clear slot button to a given slot number & type
 function addclearbutton(val)
 {
 	if(arguments.length)  // bail if no arguments
@@ -98,7 +98,7 @@ function addclearbutton(val)
 	}
 }
 
-// removeclearbutton
+// removeclearbutton -- remove a clear button for a given slot number & type
 function removeclearbutton(val)
 {
 	if(arguments.length)  // bail if no arguments
