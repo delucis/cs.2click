@@ -74,6 +74,7 @@ function buildslots(val)
 		}
 		post('Done building ' + channum + ' ' + chantype + 'put(s).\n');
 		setdict(); // add all the created slots to the global dictionary
+		resizebpatcher();
 
 	}
 
