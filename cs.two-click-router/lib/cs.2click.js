@@ -181,42 +181,16 @@ function cleardict() {
 //////      M E T H O D S      //////
 */
 
-// (Abandoned for now)
-
-/* FIRST ATTEMPT (HT LUKE HALL)
-function resizebpatcher(val) {
-    height = arguments[0]*15 + 30; // set height of [bpatcher] dependent on slots
-		post(height, "\n");
+function resizebpatcher() {
+		post("resizebpatcher() called\n")
     if (this.patcher.box) {
 				// get current patcher box
-        a = this.patcher.box.rect;
-				post(String(rect), "\n");
+        coordinates = this.patcher.box.rect;
+				height = slotnum*15 + 15;
+				width = 120;
+				post("number of slots:", slotnum, "\n", "height:", height, "\n");
 				// use current position and apply new size
-        this.patcher.box.rect = [a[0],a[1],135,height];
-				post(String(this.patcher.box.rect), "\n");
+        this.patcher.box.rect = [coordinates[0],coordinates[1],coordinates[0]+width,coordinates[1]+height];
     }
 		else { post("no patcher box\n"); }
 }
-
-   SECOND ATTEMPT (SKETCHING)
-function resizebpatcher(val) {
-	post("run resize\n");
-	if(this.patcher.parentpatcher) {
-		post("parent patcher exists\n");
-		this.patcher.parentpatcher.apply(function(object) {
-			post(object.rect, "\n");
-			if (/patcher/.test(object.maxclass)) {
-				bpargs = object.getattr("args");
-				post("second arg: ", bpargs[1]);
-				post("inside loop\n");
-			}
-		});
-	}
-	else if(this.patcher) {
-		post("patcher exists\n");
-	}
-	else {
-		post("nowt exists?!\n");
-	}
-}
-*/
