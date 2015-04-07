@@ -24,6 +24,11 @@ var modulename = '';
 if (jsarguments.length > 1) {
 	modulename = jsarguments[1];
 }
+var slotnum = 2;
+if (jsarguments.length > 2) {
+	slotnum = jsarguments[2];
+}
+
 var twoclickDictionary = new Dict("cs.2click-routing-pairs"); // for dictionary management
 var twoclickObjects = new Array(32); // Maxobj variables for scripting
 
