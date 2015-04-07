@@ -249,7 +249,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 69.0, 191.0, 306.0 ],
+						"rect" : [ 25.0, 69.0, 191.0, 298.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1363,13 +1363,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.0, 90.0, 86.0, 20.0 ],
+					"patching_rect" : [ 780.0, 90.0, 103.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "cs.2click",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js cs.2click #1"
+					"text" : "js cs.2click #1 #2"
 				}
 
 			}
@@ -5034,7 +5034,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-13",
+					"id" : "obj-14",
 					"maxclass" : "textbutton",
 					"mode" : 1,
 					"numinlets" : 1,
@@ -5057,7 +5057,7 @@
 				"box" : 				{
 					"handoff" : "",
 					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-15",
+					"id" : "obj-22",
 					"maxclass" : "ubutton",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -5079,7 +5079,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-25",
+					"id" : "obj-26",
 					"maxclass" : "textbutton",
 					"mode" : 1,
 					"numinlets" : 1,
@@ -5109,7 +5109,7 @@
 					"fontface" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-27",
+					"id" : "obj-29",
 					"maxclass" : "textbutton",
 					"mode" : 1,
 					"numinlets" : 1,

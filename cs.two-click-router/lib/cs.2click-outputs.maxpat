@@ -1363,13 +1363,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.0, 90.0, 122.0, 20.0 ],
+					"patching_rect" : [ 780.0, 90.0, 103.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "cs.2click",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js cs.2click #1"
+					"text" : "js cs.2click #1 #2"
 				}
 
 			}
@@ -2514,7 +2514,6 @@
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-25",
-									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -4991,7 +4990,7 @@
 					"patching_rect" : [ 0.0, 15.0, 105.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 15.0, 105.0, 15.0 ],
-					"varname" : "barf-mod-1-out-slot"
+					"varname" : "#1-1-out-slot"
 				}
 
 			}
@@ -5020,7 +5019,7 @@
 					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
 					"texton" : "1",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-1-out-slot-label"
+					"varname" : "#1-1-out-slot-label"
 				}
 
 			}
@@ -5050,7 +5049,7 @@
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "[empty]",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-1-out-slot-val"
+					"varname" : "#1-1-out-slot-val"
 				}
 
 			}
@@ -5066,7 +5065,7 @@
 					"patching_rect" : [ 0.0, 30.0, 105.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 30.0, 105.0, 15.0 ],
-					"varname" : "barf-mod-2-out-slot"
+					"varname" : "#1-2-out-slot"
 				}
 
 			}
@@ -5095,7 +5094,7 @@
 					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
 					"texton" : "2",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-2-out-slot-label"
+					"varname" : "#1-2-out-slot-label"
 				}
 
 			}
@@ -5125,361 +5124,7 @@
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"texton" : "[empty]",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-2-out-slot-val"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-33",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 45.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 45.0, 105.0, 15.0 ],
-					"varname" : "barf-mod-3-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"borderoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-36",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 0.0, 45.0, 15.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 45.0, 15.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "3",
-					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"texton" : "3",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-3-out-slot-label"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"align" : 0,
-					"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"borderoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-38",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 45.0, 90.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 45.0, 90.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "[empty]",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"texton" : "[empty]",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-3-out-slot-val"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-41",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 60.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 60.0, 105.0, 15.0 ],
-					"varname" : "barf-mod-4-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"borderoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-52",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 0.0, 60.0, 15.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 60.0, 15.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "4",
-					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"texton" : "4",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-4-out-slot-label"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"align" : 0,
-					"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"borderoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-57",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 60.0, 90.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 60.0, 90.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "[empty]",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"texton" : "[empty]",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-4-out-slot-val"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-64",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 75.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 75.0, 105.0, 15.0 ],
-					"varname" : "barf-mod-5-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"borderoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-66",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 0.0, 75.0, 15.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 75.0, 15.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "5",
-					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"texton" : "5",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-5-out-slot-label"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"align" : 0,
-					"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"borderoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-70",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 75.0, 90.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 75.0, 90.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "[empty]",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"texton" : "[empty]",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-5-out-slot-val"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-73",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 90.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 90.0, 105.0, 15.0 ],
-					"varname" : "barf-mod-6-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"borderoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-78",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 0.0, 90.0, 15.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 90.0, 15.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "6",
-					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"texton" : "6",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-6-out-slot-label"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"align" : 0,
-					"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"borderoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-82",
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 90.0, 90.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 90.0, 90.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "[empty]",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"texton" : "[empty]",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-6-out-slot-val"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.99, 0.41, 0.43, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"bgovercolor" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-87",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 105.0, 90.0, 15.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 105.0, 90.0, 15.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "✖",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-6-out-slot-clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.99, 0.41, 0.43, 1.0 ],
-					"bgoncolor" : [ 0.05, 0.97, 0.39, 1.0 ],
-					"bgovercolor" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-89",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 105.0, 90.0, 15.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 105.0, 90.0, 15.0, 15.0 ],
-					"rounded" : 0.0,
-					"text" : "✖",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "barf-mod-6-out-slot-clear[1]"
+					"varname" : "#1-2-out-slot-val"
 				}
 
 			}
@@ -6126,6 +5771,14 @@
 					"source" : [ "obj-93", 0 ]
 				}
 
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "cs.2click.js",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.two-click-router/lib",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ]
 	}
