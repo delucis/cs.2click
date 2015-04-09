@@ -202,7 +202,6 @@ function cleardict() {
 */
 
 function resizebpatcher() {
-		post("resizebpatcher() called\n")
     if (this.patcher.box) {
 				// get current patcher box
         coordinates = this.patcher.box.rect;
