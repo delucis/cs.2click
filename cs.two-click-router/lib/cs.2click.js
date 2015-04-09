@@ -15,7 +15,7 @@ autowatch = 1;
 // inlets and outlets
 inlets = 1;
 outlets = 1;
-setinletassist(0, 'a buildslots will build a slot interface based on the provided arguments; a clear message will delete all modules');
+setinletassist(0, 'an addclearbutton or removeclearbutton message followed by a slot scripting name will add or remove a clear button to that slot');
 setoutletassist(0, 'various');
 
 // maximum number of slots
