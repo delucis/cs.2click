@@ -33,7 +33,7 @@ if (jsarguments.length > 2) {
 	// make sure argument isn’t a #arg (when opening patcher directly)
 	if (/#/.test(jsarguments[2])) {	} else {
 		slotnum = jsarguments[2];
-		if(slotnum > 8) {slotnum = 8;} // limit number of slots to no more than 8
+		if(slotnum > maxslots) {slotnum = maxslots;} // limit maximum number of slots
 		if(slotnum < 1) {slotnum = 1;} // stop 0 or negative slot numbers being passed
 	}
 }
