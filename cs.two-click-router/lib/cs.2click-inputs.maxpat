@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 0.0, 44.0, 833.0, 706.0 ],
 		"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -948,7 +948,8 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p audio-receives"
+					"text" : "p audio-receives",
+					"varname" : "#1-audio-receives"
 				}
 
 			}
