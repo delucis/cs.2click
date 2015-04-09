@@ -171,13 +171,11 @@ function outchannum(val)
 
 // setdict -- adds all slots found in this patcher to the global dictionary
 function setdict(val) {
-	this.patcher.apply(
-		function(object) {
-			if (/-in-slot$/.test(object.varname) || /-out-slot$/.test(object.varname)) {
-				twoclickDictionary.set(object.varname, 0);
-			}
-		}
-	);
+	// iterate through slots and add/set them in the dictionary
+	for(s=0;s<slotnum;s++) {
+		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
+		twoclickDictionary.set(dictaddress, 0);
+	}
 }
 
 // cleardict -- empty the global dictionary
