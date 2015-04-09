@@ -378,8 +378,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-inputs.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 8,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 15.0, 300.0, 120.0, 45.0 ]
 				}
 
@@ -390,7 +390,7 @@
 					"id" : "obj-5",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-outputs.maxpat",
-					"numinlets" : 8,
+					"numinlets" : 6,
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 165.0, 120.0, 105.0 ]
 				}
