@@ -195,9 +195,11 @@ function resizebpatcher() {
         coordinates = this.patcher.box.rect;
 				height = slotnum*15 + 15;
 				width = 120;
-				post("number of slots:", slotnum, "\n", "height:", height, "\n");
 				// use current position and apply new size
         this.patcher.box.rect = [coordinates[0],coordinates[1],coordinates[0]+width,coordinates[1]+height];
     }
-		else { post("no patcher box\n"); }
+		else {
+			// error message
+			error(modulename + " bpatcher: no patcher.box to resize\n");
+		}
 }
