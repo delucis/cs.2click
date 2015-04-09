@@ -121,38 +121,6 @@ function removeclearbutton(val)
 	}
 }
 
-// inchannum -- clear and rebuild input slots
-function inchannum(val)
-{
-	if(arguments.length)  // bail if no arguments
-	{
-		// remove existing slots
-		clear();
-		// build new slots
-		buildslots(arguments[0], "in");
-	}
-	else // complain about arguments
-	{
-		error("inchannum message needs argument specifying number of channels\n");
-	}
-}
-
-// outchannum -- clear and rebuild output slots
-function outchannum(val)
-{
-	if(arguments.length) // bail if no arguments
-	{
-		// remove existing slots
-		clear();
-		// build new slots
-		buildslots(arguments[0], "out");
-	}
-	else // complain about arguments
-	{
-		error("outchannum message needs argument specifying number of channels\n");
-	}
-}
-
 /*
 //////   D I C T I O N A R Y   //////
 //////      M E T H O D S      //////
