@@ -136,6 +136,20 @@ function setdict(val) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
 		twoclickDictionary.set(dictaddress, 0);
 	}
+
+// tidydict -- remove all this module’s slots from the global dictionary
+function tidydict() {
+	dict = twoclickDictionary.getkeys(); // get all the dictionary’s keys
+	for(s=0;s<maxslots;s++) {
+		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
+		teststring = new RegExp(escapeRegExp(dictaddress));
+		// if this dictionary key is found in the list of keys, remove it
+		if(teststring.test(dict)) {
+			twoclickDictionary.remove(dictaddress);
+		}
+	}
+}
+
 // escapeRegExp -- utility to escape strings in tidydict()
 function escapeRegExp(val) {
     return val.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
