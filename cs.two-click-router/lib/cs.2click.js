@@ -15,7 +15,7 @@ autowatch = 1;
 // inlets and outlets
 inlets = 1;
 outlets = 1;
-setinletassist(0, 'inchannum followed by an int between 1 and 8 will create an interface for routing that many input channels; outchannum followed by an int between 1 and 8 will create an interface for routing that many output channels; a clear message will delete all modules');
+setinletassist(0, 'a buildslots will build a slot interface based on the provided arguments; a clear message will delete all modules');
 setoutletassist(0, 'various');
 
 // global variables from arguments to [js] object
