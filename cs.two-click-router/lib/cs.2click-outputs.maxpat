@@ -1363,13 +1363,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.0, 90.0, 103.0, 20.0 ],
+					"patching_rect" : [ 780.0, 90.0, 123.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "cs.2click",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js cs.2click #1 #2"
+					"text" : "js cs.2click #1 #2 out"
 				}
 
 			}
