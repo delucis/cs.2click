@@ -61,6 +61,12 @@ function notifydeleted() {
 function loadbang() {
 	clear();
 	buildslots();
+	if(slottype === 'out') {
+		buildinlets();
+	}
+	if(slottype === 'in') {
+		buildoutlets();
+	}
 }
 
 /*
