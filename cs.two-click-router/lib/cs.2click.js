@@ -18,18 +18,22 @@ outlets = 1;
 setinletassist(0, 'inchannum followed by an int between 1 and 8 will create an interface for routing that many input channels; outchannum followed by an int between 1 and 8 will create an interface for routing that many output channels; a clear message will delete all modules');
 setoutletassist(0, 'various');
 
-// global variables and arrays
-var channum = 0;
-var modulename = '';
+// global variables from arguments to [js] object
+var modulename = ''; // prefix name for module
 if (jsarguments.length > 1) {
 	modulename = jsarguments[1];
 }
-var slotnum = 2;
+var channum = 2; // number of channels
+if (jsarguments.length > 2) {
+	channum = jsarguments[2];
+}
+var slotnum = 2; // same as number of channels, but stable
 if (jsarguments.length > 2) {
 	slotnum = jsarguments[2];
 }
 
-var twoclickDictionary = new Dict("cs.2click-routing-pairs"); // for dictionary management
+// initialise global dictionary and MaxObject array
+var twoclickDictionary = new Dict("cs.2click-routing-pairs");
 var twoclickObjects = new Array(32); // Maxobj variables for scripting
 
 /*
