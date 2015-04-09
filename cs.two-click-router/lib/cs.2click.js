@@ -31,9 +31,9 @@ var slotnum = 2; // same as number of channels, but stable
 if (jsarguments.length > 2) {
 	slotnum = jsarguments[2];
 }
-var chantype = "in"; // is in or out?
+var slottype = "in"; // is in or out?
 if (jsarguments.length > 3) {
-	chantype = jsarguments[3];
+	slottype = jsarguments[3];
 }
 
 // initialise global dictionary and MaxObject array
