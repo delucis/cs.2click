@@ -216,9 +216,8 @@ function buildinlets() {
 	// create appropriate number of inlets if not already present
 	for(k=0;k<slotnum;k++) {
 		inletvarname = modulename + "-" + (k+1) + "-" + "inlet";
-		if(this.patcher.getnamed(inletvarname)) {
-			post(k+1, " already exists\n");
-		} else {
+		if(!this.patcher.getnamed(inletvarname)) {
+			// create inlet
 			x = 1020 + (k*30); // set object’s x co-ordinate
 			y = 570; // set object’s y co-ordinate
 			twoclickInOutlets[k] = this.patcher.newdefault( x, y, "inlet", "@varname", inletvarname, "@patching_rect", x, y, 25, 25);
