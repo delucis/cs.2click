@@ -54,7 +54,12 @@ var twoclickObjects = new Array(32); // Maxobj variables for scripting
 
 // notifydeleted -- called when module deleted
 function notifydeleted() {
-	tidydict();
+	// tidydict(); // commented out for now given problems
+}
+
+function loadbang() {
+	clear();
+	buildslots();
 }
 
 /*
