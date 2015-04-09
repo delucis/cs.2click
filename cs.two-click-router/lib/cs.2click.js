@@ -151,6 +151,20 @@ function setdict(val) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
 		twoclickDictionary.set(dictaddress, 0);
 	}
+	// remove slots that are no longer needed
+	if(slotnum<maxslots) {
+		leftover = maxslots - slotnum;
+		dict = twoclickDictionary.getkeys(); // get all the dictionary’s keys
+		for(l=0;l<leftover;l++) {
+			dictaddress = modulename + "-" + (l+slotnum+1) + "-" + slottype + "-slot";
+			teststring = new RegExp(escapeRegExp(dictaddress));
+			// if this dictionary key is found in the list of keys, remove it
+			if(teststring.test(dict)) {
+				twoclickDictionary.remove(dictaddress);
+			}
+		}
+	}
+}
 
 // tidydict -- remove all this module’s slots from the global dictionary
 function tidydict() {
