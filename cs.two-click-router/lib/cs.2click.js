@@ -46,6 +46,7 @@ if (jsarguments.length > 3) {
 // initialise global dictionary and MaxObject array
 var twoclickDictionary = new Dict("cs.2click-routing-pairs");
 var twoclickObjects = new Array(32); // Maxobj variables for scripting
+var twoclickInOutlets = new Array(8); // Maxobj array for inlets/outlets
 
 /*
 //////    G L O B A L    //////
