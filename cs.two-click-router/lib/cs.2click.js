@@ -248,3 +248,40 @@ function buildinlets() {
 		}
 	}
 } // end of buildinlets()
+
+function buildoutlets() {
+	// create appropriate number of outlets if not already present
+	for(k=0;k<slotnum;k++) {
+		outletvarname = modulename + "-" + (k+1) + "-" + "outlet";
+		if(!this.patcher.getnamed(outletvarname)) {
+			// create outlet
+			post(modulename, k+1, "outlet built\n");
+			x = 1020 + (k*30); // set object’s x co-ordinate
+			y = 600; // set object’s y co-ordinate
+			twoclickInOutlets[k] = this.patcher.newdefault( x, y, "outlet", "@varname", outletvarname, "@patching_rect", x, y, 25, 25);
+		}
+	}
+	// remove surplus outlets if present
+	if(slotnum<maxslots) {
+		surplus = maxslots - slotnum;
+		for(l=0;l<surplus;l++) {
+			outletvarname = modulename + "-" + (l+slotnum+1) + "-" + "outlet";
+			if(this.patcher.getnamed(outletvarname)) {
+				markedfordeletion = this.patcher.getnamed(outletvarname);
+				this.patcher.remove(markedfordeletion);
+			}
+		}
+	}
+	// connect outlets to [p #1-audio-sends]
+	patchervarname = modulename+"-audio-receives"; // scripting name of subpatch
+	sendpatcher = this.patcher.getnamed(patchervarname); // subpatch object
+	if(sendpatcher) {
+		for(k=0;k<slotnum;k++) {
+			outletvarname = modulename + "-" + (k+1) + "-" + "outlet"; // scripting name of outlet
+			if(this.patcher.getnamed(outletvarname)) {
+				outletobj = this.patcher.getnamed(outletvarname); // outlet object
+				this.patcher.connect(sendpatcher, k, outletobj, 0);
+			}
+		}
+	}
+} // end of buildoutlets()
