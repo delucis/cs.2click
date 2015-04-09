@@ -209,3 +209,41 @@ function resizebpatcher() {
 			error(modulename + " bpatcher: no patcher.box to resize\n");
 		}
 }
+
+// buildinlets -- uses global slotnum variable to generate [bpatcher] inlets
+function buildinlets() {
+	// create appropriate number of inlets if not already present
+	for(k=0;k<slotnum;k++) {
+		inletvarname = modulename + "-" + (k+1) + "-" + "inlet";
+		if(this.patcher.getnamed(inletvarname)) {
+			post(k+1, " already exists\n");
+		} else {
+			x = 1020 + (k*30); // set object’s x co-ordinate
+			y = 570; // set object’s y co-ordinate
+			twoclickInOutlets[k] = this.patcher.newdefault( x, y, "inlet", "@varname", inletvarname, "@patching_rect", x, y, 25, 25);
+		}
+	}
+	// remove surplus inlets if present
+	if(slotnum<maxslots) {
+		surplus = maxslots - slotnum;
+		for(l=0;l<surplus;l++) {
+			inletvarname = modulename + "-" + (l+slotnum+1) + "-" + "inlet";
+			if(this.patcher.getnamed(inletvarname)) {
+				markedfordeletion = this.patcher.getnamed(inletvarname);
+				this.patcher.remove(markedfordeletion);
+			}
+		}
+	}
+	// connect inlets to [p #1-audio-sends]
+	patchervarname = modulename+"-audio-sends"; // scripting name of subpatch
+	sendpatcher = this.patcher.getnamed(patchervarname); // subpatch object
+	if(sendpatcher) {
+		for(k=0;k<slotnum;k++) {
+			inletvarname = modulename + "-" + (k+1) + "-" + "inlet"; // scripting name of inlet
+			if(this.patcher.getnamed(inletvarname)) {
+				inletobj = this.patcher.getnamed(inletvarname); // inlet object
+				this.patcher.connect(inletobj, 0, sendpatcher, k);
+			}
+		}
+	}
+} // end of buildinlets()
