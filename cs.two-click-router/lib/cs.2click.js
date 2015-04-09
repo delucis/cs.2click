@@ -25,11 +25,15 @@ if (jsarguments.length > 1) {
 }
 var channum = 2; // number of channels
 if (jsarguments.length > 2) {
-	channum = jsarguments[2];
+	if (/#/.test(jsarguments[2])) {	} else {
+		channum = jsarguments[2];
+	}
 }
 var slotnum = 2; // same as number of channels, but stable
 if (jsarguments.length > 2) {
-	slotnum = jsarguments[2];
+	if (/#/.test(jsarguments[2])) {	} else {
+		slotnum = jsarguments[2];
+	}
 }
 if(slotnum > 8) {slotnum = 8;} // limit number of slots to no more than 8
 if(slotnum < 1) {slotnum = 1;} // stop 0 or negative slot numbers being passed
