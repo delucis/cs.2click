@@ -91,17 +91,16 @@ function addclearbutton(val)
 	if(arguments.length)  // bail if no arguments
 	{
 		k = arguments[0] - 1; // set k from slot number
-		chantype = arguments[1]; // set channel type (in/out)
-		scriptingname = modulename + '-' + (k+1) + "-" + chantype + "-slot-clear";
+		scriptingname = modulename + '-' + (k+1) + "-" + slottype + "-slot-clear";
 		x = 0; // set object’s x co-ordinate
 		y = 15 * (k+1); // set object’s y co-ordinate
 		// execute -- remove if already there, then add
-		removeclearbutton(arguments[0], arguments[1]);
+		removeclearbutton(arguments[0]);
 		twoclickObjects[4*k+2] = this.patcher.newdefault( x+105, y, "textbutton", "@varname", scriptingname, "@patching_rect", x+105, y, 15, 15, "@presentation_rect", x+105, y, 15, 15, "@presentation", 1, "@text", "✖", "@fontname", "Arial", "@fontsize", 10., "@fontface", 1, "@align", 1, "@bgcolor", 0.99, 0.41, 0.43, 1., "@textcolor", 1., 1., 1., 1., "@border", 1, "@rounded", 0, "@bordercolor", 1., 1., 1., 1., "@bgoncolor", 0.05, 0.97, 0.39, 1., "@bgovercolor", 1., 0., 0., 1., "@textovercolor", 0., 0., 0., 1. );
 	}
 	else // complain about arguments
 	{
-		error("addclearbutton message needs arguments:\n1 — number of slot to add clear button to (int); 2 — in or out (symbol)\n");
+		error("addclearbutton message needs an argument: number of slot to add clear button to (int);\n");
 	}
 }
 
@@ -111,8 +110,7 @@ function removeclearbutton(val)
 	if(arguments.length)  // bail if no arguments
 	{
 		k = arguments[0] - 1; // set k from slot number
-		chantype = arguments[1]; // set channel type (in/out)
-		scriptingname = modulename + '-' + (k+1) + "-" + chantype + "-slot-clear";
+		scriptingname = modulename + '-' + (k+1) + "-" + slottype + "-slot-clear";
 		this.patcher.apply(function(object) {
 			if (object.varname == scriptingname) {
 				this.patcher.remove(object);
@@ -121,7 +119,7 @@ function removeclearbutton(val)
 	}
 	else // complain about arguments
 	{
-		error("removeclearbutton message needs arguments:\n1 — number of slot to remove clear button from (int); 2 — in or out (symbol)\n");
+		error("removeclearbutton message needs an argument: number of slot to remove clear button from (int)\n");
 	}
 }
 
