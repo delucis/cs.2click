@@ -58,40 +58,27 @@ function clear()
 }
 
 // buildslots -- generates the in/out slot interface
-function buildslots(val)
+function buildslots()
 {
-	if(arguments.length) // bail if no arguments
-	{
-		// parse arguments
-		channum = arguments[0]; // number of slots to build
-		if(channum > 8) {channum = 8;}
-		if(channum < 1) {channum = 1;}
-		chantype = arguments[1]; // whether slot is in or out
-
 		// iterate args
-		for(k=0;k<channum;k++)
+		for(k=0;k<slotnum;k++)
 		{
 			x = 0; // set object’s x co-ordinate
 			y = 15 * (k+1); // set object’s y co-ordinate
-			twoclickObjects[4*k+3] = this.patcher.newdefault( x, y, "ubutton", "@varname", "#1-" + (k+1) + "-" + chantype + "-slot", "@patching_rect", x, y, 105, 15, "@presentation_rect", x, y, 105, 15, "@presentation", 1, "@hltcolor", 0.05, 0.97, 0.39, 0.5, "@rounded", 0);
-			twoclickObjects[4*k] = this.patcher.newdefault( x, y, "textbutton", "@varname", "#1-" + (k+1) + "-" + chantype + "-slot-label", "@patching_rect", x, y, 15, 15, "@presentation_rect", x, y, 15, 15, "@presentation", 1, "@mode", 1, "@text", k+1, "@texton", k+1, "@fontname", "Arial", "@fontsize", 10., "@fontface", 1, "@align", 1, "@bgcolor", 0.25, 0.25, 0.25, 1., "@textcolor", 0.96, 0.96, 0.96, 1., "@border", 1, "@rounded", 0, "@bordercolor", 1., 1., 1., 1., "@bgoncolor", 0.05, 0.97, 0.39, 1., "@textoncolor", 0., 0., 0., 1., "@borderoncolor", 0.05, 0.97, 0.39, 1.);
-			twoclickObjects[4*k+1] = this.patcher.newdefault( x+15, y, "textbutton", "@varname", "#1-" + (k+1) + "-" + chantype + "-slot-val", "@patching_rect", x+15, y, 90, 15, "@presentation_rect", x+15, y, 90, 15, "@presentation", 1, "@mode", 1, "@text", "[empty]", "@texton", "[empty]", "@fontname", "Arial", "@fontsize", 10., "@fontface", 1, "@align", 0, "@bgcolor", 0.96, 0.96, 0.96, 1., "@textcolor", 0.2, 0.2, 0.2, "@border", 1, "@rounded", 0, "@bordercolor", 1., 1., 1., 1., "@bgoncolor", 0.05, 0.97, 0.39, 1., "@textoncolor", 0., 0., 0., 1., "@borderoncolor", 0.05, 0.97, 0.39, 1.);
+			twoclickObjects[4*k+3] = this.patcher.newdefault( x, y, "ubutton", "@varname", modulename + (k+1) + "-" + slottype + "-slot", "@patching_rect", x, y, 105, 15, "@presentation_rect", x, y, 105, 15, "@presentation", 1, "@hltcolor", 0.05, 0.97, 0.39, 0.5, "@rounded", 0);
+
+			twoclickObjects[4*k] = this.patcher.newdefault( x, y, "textbutton", "@varname", modulename + (k+1) + "-" + slottype + "-slot-label", "@patching_rect", x, y, 15, 15, "@presentation_rect", x, y, 15, 15, "@presentation", 1, "@mode", 1, "@text", k+1, "@texton", k+1, "@fontname", "Arial", "@fontsize", 10., "@fontface", 1, "@align", 1, "@bgcolor", 0.25, 0.25, 0.25, 1., "@textcolor", 0.96, 0.96, 0.96, 1., "@border", 1, "@rounded", 0, "@bordercolor", 1., 1., 1., 1., "@bgoncolor", 0.05, 0.97, 0.39, 1., "@textoncolor", 0., 0., 0., 1., "@borderoncolor", 0.05, 0.97, 0.39, 1.);
+
+			twoclickObjects[4*k+1] = this.patcher.newdefault( x+15, y, "textbutton", "@varname", modulename + (k+1) + "-" + slottype + "-slot-val", "@patching_rect", x+15, y, 90, 15, "@presentation_rect", x+15, y, 90, 15, "@presentation", 1, "@mode", 1, "@text", "[empty]", "@texton", "[empty]", "@fontname", "Arial", "@fontsize", 10., "@fontface", 1, "@align", 0, "@bgcolor", 0.96, 0.96, 0.96, 1., "@textcolor", 0.2, 0.2, 0.2, "@border", 1, "@rounded", 0, "@bordercolor", 1., 1., 1., 1., "@bgoncolor", 0.05, 0.97, 0.39, 1., "@textoncolor", 0., 0., 0., 1., "@borderoncolor", 0.05, 0.97, 0.39, 1.);
 		}
 
 		// print done building confirmation in Max window
 		if(modulename.length) {
 			post(modulename + ':')
 		}
-		post('Done building ' + channum + ' ' + chantype + 'put(s).\n');
+		post('Done building ' + slotnum + ' ' + slottype + 'put(s).\n');
 		setdict(); // add all the created slots to the global dictionary
 		resizebpatcher();
-
-	}
-
-	else // complain about arguments
-	{
-		error("buildslots message needs arguments:\n1 — number of channels (int); 2 — in or out (symbol)\n");
-	}
 }
 
 // addclearbutton -- add a clear slot button to a given slot number & type
