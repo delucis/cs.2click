@@ -28,7 +28,7 @@ if (jsarguments.length > 1) {
 	modulename = jsarguments[1];
 }
 // number of slots (#2)
-var slotnum = 2;
+var slotnum = maxslots;
 if (jsarguments.length > 2) {
 	// make sure argument isn’t a #arg (when opening patcher directly)
 	if (/#/.test(jsarguments[2])) {	} else {
