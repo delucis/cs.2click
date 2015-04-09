@@ -48,6 +48,16 @@ var twoclickDictionary = new Dict("cs.2click-routing-pairs");
 var twoclickObjects = new Array(32); // Maxobj variables for scripting
 
 /*
+//////    G L O B A L    //////
+//////   M E T H O D S   //////
+*/
+
+// notifydeleted -- called when module deleted
+function notifydeleted() {
+	tidydict();
+}
+
+/*
 //////        U I        //////
 //////   M E T H O D S   //////
 */
