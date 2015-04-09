@@ -18,6 +18,9 @@ outlets = 1;
 setinletassist(0, 'a buildslots will build a slot interface based on the provided arguments; a clear message will delete all modules');
 setoutletassist(0, 'various');
 
+// maximum number of slots
+var maxslots = 8;
+
 // global variables from arguments to [js] object
 // prefix name for module (#1)
 var modulename = '';
