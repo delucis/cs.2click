@@ -136,6 +136,9 @@ function setdict(val) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
 		twoclickDictionary.set(dictaddress, 0);
 	}
+// escapeRegExp -- utility to escape strings in tidydict()
+function escapeRegExp(val) {
+    return val.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 }
 
 // cleardict -- empty the global dictionary
