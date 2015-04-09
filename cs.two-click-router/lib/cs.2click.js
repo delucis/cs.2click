@@ -31,6 +31,8 @@ var slotnum = 2; // same as number of channels, but stable
 if (jsarguments.length > 2) {
 	slotnum = jsarguments[2];
 }
+if(slotnum > 8) {slotnum = 8;} // limit number of slots to no more than 8
+if(slotnum < 1) {slotnum = 1;} // stop 0 or negative slot numbers being passed
 var slottype = "in"; // is in or out?
 if (jsarguments.length > 3) {
 	slottype = jsarguments[3];
