@@ -19,25 +19,23 @@ setinletassist(0, 'a buildslots will build a slot interface based on the provide
 setoutletassist(0, 'various');
 
 // global variables from arguments to [js] object
-var modulename = ''; // prefix name for module
+// prefix name for module (#1)
+var modulename = '';
 if (jsarguments.length > 1) {
 	modulename = jsarguments[1];
 }
-var channum = 2; // number of channels
+// number of slots (#2)
+var slotnum = 2;
 if (jsarguments.length > 2) {
-	if (/#/.test(jsarguments[2])) {	} else {
-		channum = jsarguments[2];
-	}
-}
-var slotnum = 2; // same as number of channels, but stable
-if (jsarguments.length > 2) {
+	// make sure argument isn’t a #arg (when opening patcher directly)
 	if (/#/.test(jsarguments[2])) {	} else {
 		slotnum = jsarguments[2];
+		if(slotnum > 8) {slotnum = 8;} // limit number of slots to no more than 8
+		if(slotnum < 1) {slotnum = 1;} // stop 0 or negative slot numbers being passed
 	}
 }
-if(slotnum > 8) {slotnum = 8;} // limit number of slots to no more than 8
-if(slotnum < 1) {slotnum = 1;} // stop 0 or negative slot numbers being passed
-var slottype = "in"; // is in or out?
+// whether module slots are in– or output (set within inputs/outputs patchers)
+var slottype = "in";
 if (jsarguments.length > 3) {
 	slottype = jsarguments[3];
 }
