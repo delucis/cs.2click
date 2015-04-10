@@ -225,7 +225,7 @@ function buildinlets() {
 			// create inlet
 			x = 1020 + (k*30); // set object’s x co-ordinate
 			y = 570; // set object’s y co-ordinate
-			twoclickInOutlets[k] = this.patcher.newdefault( x, y, "inlet", "@varname", inletvarname, "@patching_rect", x, y, 25, 25);
+			twoclickInOutlets[k] = this.patcher.newdefault( x, y, "inlet", "@varname", inletvarname, "@patching_rect", x, y, 25, 25, "@comment", "(signal) Audio signal to be output (ch "+(k+1)+")");
 		}
 	}
 	// remove surplus inlets if present
@@ -262,7 +262,7 @@ function buildoutlets() {
 			post(modulename, k+1, "outlet built\n");
 			x = 1020 + (k*30); // set object’s x co-ordinate
 			y = 600; // set object’s y co-ordinate
-			twoclickInOutlets[k] = this.patcher.newdefault( x, y, "outlet", "@varname", outletvarname, "@patching_rect", x, y, 25, 25);
+			twoclickInOutlets[k] = this.patcher.newdefault( x, y, "outlet", "@varname", outletvarname, "@patching_rect", x, y, 25, 25, "@comment", "(signal) Audio signal received (ch "+(k+1)+")");
 		}
 	}
 	// remove surplus outlets if present
