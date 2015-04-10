@@ -251,7 +251,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 210.0, 45.0, 210.0, 48.0 ],
-					"text" : "The cycle bank patch is sending a sine wave of a different frequency from each outlet.",
+					"text" : "The cycle-bank patcher is sending a sine wave of a different frequency out each outlet.",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
