@@ -86,7 +86,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.5, 465.0, 404.5, 104.0 ],
+					"patching_rect" : [ 15.5, 465.0, 407.0, 104.0 ],
 					"text" : "Using these modules in your patches is as simple as creating a [bpatcher] with the patch cs.2click-outputs or cs.2click-inputs as its first argument.\n\nYou also need to provide a unique name for your [bpatcher] and a number to set how many channels it is. You can do this in the inspector or when creating the [bpatcher]. The unique name will be displayed in a slot to show where it’s being routed to or from.",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -669,7 +669,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "my-in-module", 2 ],
+					"args" : [ "to-ezdac", 2 ],
 					"id" : "obj-6",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-inputs.maxpat",
@@ -682,7 +682,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "my-out-module", 6 ],
+					"args" : [ "cyclebank", 6 ],
 					"id" : "obj-5",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-outputs.maxpat",
@@ -868,42 +868,42 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-9" : [ "live.text", "live.text", 0 ],
 			"obj-19" : [ "live.text[1]", "live.text", 0 ],
+			"obj-9" : [ "live.text", "live.text", 0 ],
 			"obj-4" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "cs.2click-outputs.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.two-click-router/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click.js",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.two-click-router/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-send~.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.two-click-router/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-inputs.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.two-click-router/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-receive~.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.two-click-router/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
