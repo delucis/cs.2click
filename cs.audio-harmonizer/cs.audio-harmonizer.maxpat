@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 352.0, 204.0, 270.0, 280.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -109,7 +109,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1-right", 2 ],
+					"args" : [ "#1-R-out", 2 ],
 					"id" : "obj-47",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-outputs.maxpat",
@@ -123,7 +123,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1-left", 2 ],
+					"args" : [ "#1-L-out", 2 ],
 					"id" : "obj-49",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-outputs.maxpat",
@@ -137,7 +137,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1-right", 2 ],
+					"args" : [ "#1-R-in", 2 ],
 					"id" : "obj-46",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-inputs.maxpat",
@@ -152,7 +152,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1-left", 2 ],
+					"args" : [ "#1-L-in", 2 ],
 					"id" : "obj-45",
 					"maxclass" : "bpatcher",
 					"name" : "cs.2click-inputs.maxpat",
@@ -176,7 +176,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 182.333008, 21.0, 29.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.333008, 3.0, 29.0, 18.0 ],
+					"presentation_rect" : [ 160.333008, 3.0, 33.0, 18.0 ],
 					"text" : "v0.1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.35 ]
 				}
@@ -1711,7 +1711,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u069002351"
+					"varname" : "u711005299"
 				}
 
 			}
