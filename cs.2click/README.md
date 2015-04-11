@@ -15,3 +15,20 @@ The inputs module contains a `[receive~]` mechanism that will permit you to get 
 The [README.maxpat](README.maxpat) explains the basic functionality and also includes some information on getting up and running.
 
 **NB: The current system does not have a storage mechanism that allows for storing/recalling routings and is not compatible with `[pattrstorage]`. That is in the pipeline.**
+
+## To do
+
+- [ ] Preset storage & recall mechanism
+- [ ] LEDs to indicate slot signal presence
+- [ ] Better error messages to help diagnose module naming conflicts via Max window
+- [ ] Improve dictionary management on module deletion
+- [ ] Full slot name as clue on mouse hover to help with long names
+- [ ] Consider truncating slot names from centre rather than right
+
+## Speculative feature ideas
+
+These are all speculative development possibilities. They may never be implemented or useful.
+
+- A **direct out mechanism** that routes with one click from any slot to a master [dac~] module. Functions only when master [dac~] module is present somewhere in the environment.
+
+- **Global routing map** that graphs the entire routing network on a single page. The map could show the entire signal flow in the environment. *Or* could show you the upstream and downstream signal flow of a given slot.
