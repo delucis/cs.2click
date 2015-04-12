@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 766.0, 455.0 ],
+		"rect" : [ 0.0, 44.0, 736.0, 455.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,38 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 3,
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-40",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 450.0, 15.0, 270.0, 21.0 ],
+					"text" : "cs.2click-led",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-166",
+					"linecount" : 10,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 450.0, 45.0, 270.0, 135.0 ],
+					"text" : "Uses peak amplitude of last 250ms to calculate “signal presence”. Signal with peaks above -60dB will start to light the LED green, with it being fully green from around -55dB onwards.\n\nIn presentation mode as a [bpatcher] the [panel] object will light green and is usable as a simple UI object. Included as an abstraction, the patcher outputs background and text colour messages to pass on to other interface objects.",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
@@ -456,10 +488,6 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [  ]
 	}
 
