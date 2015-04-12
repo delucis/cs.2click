@@ -559,7 +559,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(symbols) bgcolor & textcolor messages to send to UI element",
 					"id" : "obj-2",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -626,7 +626,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "(signal) signal to measure",
 					"id" : "obj-29",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
