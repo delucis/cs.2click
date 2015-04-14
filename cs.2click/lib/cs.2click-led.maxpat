@@ -252,7 +252,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 69.0, 112.0, 329.0 ],
+						"rect" : [ 25.0, 69.0, 338.0, 329.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -274,13 +274,108 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-6",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 105.0, 225.0, 132.0, 19.0 ],
+									"presentation_rect" : [ 105.0, 221.0, 0.0, 0.0 ],
+									"text" : "filter out repeated values",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-5",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 105.0, 195.0, 228.0, 19.0 ],
+									"presentation_rect" : [ 105.0, 193.0, 0.0, 0.0 ],
+									"text" : "round the output (to filter out small changes)",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 105.0, 165.0, 128.0, 19.0 ],
+									"presentation_rect" : [ 105.0, 166.0, 0.0, 0.0 ],
+									"text" : "clip range to < 1, > 0.25",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-3",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 105.0, 135.0, 146.0, 19.0 ],
+									"presentation_rect" : [ 105.0, 132.0, 0.0, 0.0 ],
+									"text" : "make most of the range > 1",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-1",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 105.0, 105.0, 196.0, 19.0 ],
+									"presentation_rect" : [ 108.0, 108.0, 0.0, 0.0 ],
+									"text" : "turn linear 0.–1. into logarithmic curve",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-41",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 105.0, 75.0, 219.0, 19.0 ],
+									"text" : "make sure no zeros are passed to the log()",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-78",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 225.0, 68.0, 20.0 ],
+									"patching_rect" : [ 15.0, 195.0, 68.0, 20.0 ],
 									"text" : "round 0.05"
 								}
 
@@ -294,22 +389,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "int", "int" ],
-									"patching_rect" : [ 15.0, 255.0, 63.0, 20.0 ],
+									"patching_rect" : [ 15.0, 225.0, 63.0, 20.0 ],
 									"text" : "change 0."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
-									"id" : "obj-68",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "float" ],
-									"patching_rect" : [ 15.0, 165.0, 32.5, 20.0 ],
-									"text" : "/ 1."
 								}
 
 							}
@@ -378,7 +459,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 195.0, 69.0, 20.0 ],
+									"patching_rect" : [ 15.0, 165.0, 69.0, 20.0 ],
 									"text" : "clip 0.25 1."
 								}
 
@@ -402,7 +483,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 290.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 260.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -437,15 +518,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-61", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-68", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-68", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-69", 0 ]
@@ -519,7 +591,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 105.0, 165.0, 178.0, 19.0 ],
-					"presentation_rect" : [ 127.0, 83.0, 0.0, 0.0 ],
 					"text" : "get peak amplitude for last 250ms",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
