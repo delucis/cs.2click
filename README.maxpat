@@ -64,7 +64,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
@@ -805,7 +804,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "dac-right", 4 ],
+									"args" : [ "ezdac-right", 4 ],
 									"id" : "obj-6",
 									"maxclass" : "bpatcher",
 									"name" : "cs.2click-inputs.maxpat",
@@ -818,7 +817,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "dac-left", 4 ],
+									"args" : [ "ezdac-left", 4 ],
 									"id" : "obj-5",
 									"maxclass" : "bpatcher",
 									"name" : "cs.2click-inputs.maxpat",
@@ -2133,12 +2132,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-9" : [ "live.text", "live.text", 0 ],
+			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-19" : [ "live.text[1]", "live.text", 0 ],
 			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
 			"obj-2" : [ "live.text[2]", "live.text", 0 ],
-			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-9" : [ "live.text", "live.text", 0 ]
+			"obj-4" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2157,6 +2156,13 @@
 			}
 , 			{
 				"name" : "cs.2click-send~.maxpat",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cs.2click-led.maxpat",
 				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",

@@ -1,13 +1,34 @@
-# Working Repository
-Working repository for Chris Swithinbank’s modules for Music 264.
+# The Perfect Audio Router for a Modular System?
 
-## Contents
-* **[cs.2click](cs.2click)**
+## What/why?
 
-	A pair of user interface modules (inputs & outputs) that provide a two-click routing mechanism for audio.
-* **[cs.audio-harmonizer](cs.audio-harmonizer)**
+Audio routing in a context that involves even a moderate number of potential nodes can get messy very quickly. Matrices that map inputs and outputs become unreadable with just a handful of rows and columns, while input/output selection embedded within modules degenerates into a stream of potentially tens of clicks to get your basic routing set up. The aim here is to build a better way of routing, designed for speed, ease, and clarity, hopefully making on-the-fly routing a less tedious experience. The inspiration is the two-click pattern used in [Ableton Live](https://www.ableton.com/), where the first click indicates one end of a signal flow and the second the other (HT [Sam Wolk](https://github.com/delta-6400)).
 
-	A harmoniser module. Receives stereo audio signal, pitch-shifts up to 32 versions of the signal and outputs a harmonized stereo signal.
-* **[drag-drop-sketching](drag-drop-sketching)**
+## Functionality
 
-	Sandbox for development of drag-and-drop mechanisms/UI elements.
+A simple interface of in- and output slots are provided by `[bpatcher]` modules `cs.2click-inputs` and `cs.2click-outputs`. These modules require a unique string as their first argument, naming the module. An optional second argument sets the number of channels that are available (between 1 and 8). If no second argument is provided, the modules default to 8 channels.
+
+Routing pairs are stored in a global dictionary named `cs.2click-routing-pairs`.
+
+The inputs module contains a `[receive~]` mechanism that will permit you to get audio from an outputs module, which contains an equivalent `[send~]` mechanism.
+
+The [README.maxpat](README.maxpat) explains the basic functionality and also includes some information on getting up and running.
+
+**NB: The current system does not have a storage mechanism that allows for storing/recalling routings and is not compatible with `[pattrstorage]`. That is in the pipeline.**
+
+## To do
+
+- [ ] Preset storage & recall mechanism
+- [ ] LEDs to indicate slot signal presence
+- [ ] Better error messages to help diagnose module naming conflicts via Max window
+- [ ] Improve dictionary management on module deletion
+- [ ] Full slot name as clue on mouse hover to help with long names
+- [ ] Consider truncating slot names from centre rather than right
+
+## Speculative feature ideas
+
+These are all speculative development possibilities. They may never be implemented or useful.
+
+- A **direct out mechanism** that routes with one click from any slot to a master [dac~] module. Functions only when master [dac~] module is present somewhere in the environment.
+
+- **Global routing map** that graphs the entire routing network on a single page. The map could show the entire signal flow in the environment. *Or* could show you the upstream and downstream signal flow of a given slot.
