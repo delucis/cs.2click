@@ -1,4 +1,4 @@
-# The Perfect Audio Router for a Modular System?
+# A Better Audio Router for a Modular System
 
 ## What/why?
 
