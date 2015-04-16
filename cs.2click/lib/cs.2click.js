@@ -58,6 +58,7 @@ function notifydeleted() {
 	// tidydict(); // commented out for now given problems
 }
 
+// loadbang -- called when [bpatcher] is created or reinstantiated
 function loadbang() {
 	clear();
 	buildslots();
@@ -201,6 +202,7 @@ function cleardict() {
 //////      M E T H O D S      //////
 */
 
+// resizebpatcher -- tries to get [bpatcher]’s box and fit it snugly to the UI elements
 function resizebpatcher() {
     if (this.patcher.box) {
 				// get current patcher box
@@ -253,6 +255,7 @@ function buildinlets() {
 	}
 } // end of buildinlets()
 
+// buildoutlets -- uses global slotnum variable to generate [bpatcher] outlets
 function buildoutlets() {
 	// create appropriate number of outlets if not already present
 	for(k=0;k<slotnum;k++) {
