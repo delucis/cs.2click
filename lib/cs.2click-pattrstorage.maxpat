@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 138.0, 112.0, 640.0, 480.0 ],
+		"rect" : [ 360.0, 130.0, 498.0, 441.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,42 +31,130 @@
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 105.0, 195.0, 36.0, 20.0 ],
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 105.0, 165.0, 38.0, 20.0 ],
+					"text" : "== 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 105.0, 135.0, 36.0, 20.0 ],
+					"text" : "% 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-23",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 150.0, 135.0, 120.0, 71.0 ],
+					"presentation_rect" : [ 104.0, 132.0, 0.0, 0.0 ],
+					"text" : "bang [pattr] to dump [dict] changes when changing presets (including floats that are basically integers)",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 150.0, 285.0, 182.0, 19.0 ],
+					"presentation_rect" : [ 155.0, 223.0, 0.0, 0.0 ],
+					"text" : "global dictionary is bound to [pattr]",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-20",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 75.0, 360.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-115",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 105.0, 45.0, 388.0, 19.0 ],
+					"text" : "bang means nothing to [pattrstorage], route it just to re-output [dict] contents",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 15.0, 45.0, 79.0, 20.0 ],
+					"text" : "route bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 3,
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-16",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 285.0, 154.0, 34.0 ],
+					"patching_rect" : [ 75.0, 315.0, 166.0, 35.0 ],
 					"text" : "new in/out pairs will come out here on preset recall"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 12.0,
-					"id" : "obj-14",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "Storage Error: Float received. cs.2click routing presets cannot be interpolated, please only send integer values." ],
-					"patching_rect" : [ 75.0, 105.0, 240.0, 48.0 ],
-					"text" : "t \"Storage Error: Float received. cs.2click routing presets cannot be interpolated, please only send integer values.\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 12.0,
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 165.0, 85.0, 20.0 ],
-					"text" : "print cs.2click"
 				}
 
 			}
@@ -79,7 +167,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 15.0, 105.0, 25.0, 20.0 ],
+					"patching_rect" : [ 75.0, 135.0, 25.0, 20.0 ],
 					"text" : "t b"
 				}
 
@@ -93,7 +181,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 15.0, 75.0, 109.0, 20.0 ],
+					"patching_rect" : [ 75.0, 105.0, 109.0, 20.0 ],
 					"text" : "route int float list"
 				}
 
@@ -107,7 +195,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 15.0, 45.0, 334.0, 20.0 ],
+					"patching_rect" : [ 75.0, 75.0, 334.0, 20.0 ],
 					"text" : "t l l"
 				}
 
@@ -120,7 +208,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 255.0, 35.0, 20.0 ],
+					"patching_rect" : [ 75.0, 285.0, 35.0, 20.0 ],
 					"text" : "print"
 				}
 
@@ -134,7 +222,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 225.0, 51.0, 20.0 ],
+					"patching_rect" : [ 75.0, 255.0, 51.0, 20.0 ],
 					"text" : "dict.iter"
 				}
 
@@ -160,11 +248,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 75.0, 76.0, 20.0 ],
+					"patching_rect" : [ 390.0, 105.0, 76.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 100, 100, 737, 600 ],
+						"client_rect" : [ 0, 44, 1280, 796 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 766, 44, 1220, 302 ]
+						"storage_rect" : [ 583, 69, 1204, 530 ]
 					}
 ,
 					"text" : "pattrstorage",
@@ -181,32 +269,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 15.0, 195.0, 169.0, 20.0 ],
+					"patching_rect" : [ 75.0, 225.0, 169.0, 20.0 ],
 					"restore" : [ 						{
-							"cyclebank-1-out-slot" : 0,
-							"cyclebank-2-out-slot" : 0,
-							"cyclebank-3-out-slot" : 0,
-							"cyclebank-4-out-slot" : 0,
-							"cyclebank-5-out-slot" : 0,
-							"cyclebank-6-out-slot" : 0,
-							"to-ezdac-1-in-slot" : 0,
-							"to-ezdac-2-in-slot" : 0,
-							"fm-synth-1-out-slot" : 0,
-							"fm-synth-2-out-slot" : 0,
-							"fm-synth-3-out-slot" : 0,
-							"fm-synth-4-out-slot" : 0,
-							"fm-synth-5-out-slot" : 0,
-							"fm-synth-6-out-slot" : 0,
-							"fm-synth-7-out-slot" : 0,
-							"fm-synth-8-out-slot" : 0,
-							"ezdac-left-1-in-slot" : 0,
-							"ezdac-left-2-in-slot" : 0,
-							"ezdac-left-3-in-slot" : 0,
-							"ezdac-left-4-in-slot" : 0,
-							"ezdac-right-1-in-slot" : 0,
-							"ezdac-right-2-in-slot" : 0,
-							"ezdac-right-3-in-slot" : 0,
-							"ezdac-right-4-in-slot" : 0
+
 						}
  ],
 					"saved_object_attributes" : 					{
@@ -227,7 +292,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 90.0, 225.0, 165.0, 20.0 ],
+					"patching_rect" : [ 150.0, 255.0, 165.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -244,25 +309,16 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-10", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-10", 2 ]
+					"source" : [ "obj-10", 1 ]
 				}
 
 			}
@@ -277,10 +333,20 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-14", 0 ]
+					"midpoints" : [ 24.5, 247.0, 84.5, 247.0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 1 ]
 				}
 
 			}
@@ -304,10 +370,37 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-37", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
