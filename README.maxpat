@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 430.0, 646.0 ],
+		"rect" : [ 0.0, 44.0, 430.0, 705.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,375 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"border" : 0,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"hint" : "",
+					"id" : "obj-10",
+					"ignoreclick" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 180.0, 450.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "6",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+					"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 210.0, 450.0, 180.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.text[3]",
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2,
+							"parameter_mmax" : 1.0,
+							"parameter_enum" : [ "val1", "val2" ]
+						}
+
+					}
+,
+					"text" : "Preset storage & recall",
+					"transition" : 1,
+					"varname" : "live.text[3]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"hidden" : 1,
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 9,
+							"architecture" : "x86"
+						}
+,
+						"rect" : [ 809.0, 44.0, 331.0, 284.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"gridonopen" : 0,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-16",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 120.0, 15.0, 39.0, 20.0 ],
+									"text" : "recall"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-14",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 15.0, 37.0, 20.0 ],
+									"text" : "store"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-10",
+									"linecount" : 7,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 165.0, 308.0, 104.0 ],
+									"text" : "You can use [pattrstorage] to store and recall routing states. However, because of the cs.2click’s custom UI and send~/receive~ construction, you need to use [cs.2click-pattrstorage] to ensure your presets get recalled correctly. You can treat this as you would a standard [pattrstorage] object sending store messages and recalling with the relevant index number."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"hidden" : 1,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "front" ],
+									"patching_rect" : [ 15.0, 315.0, 42.0, 20.0 ],
+									"text" : "t front"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"hidden" : 1,
+									"id" : "obj-5",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 285.0, 25.0, 25.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"hidden" : 1,
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 15.0, 345.0, 71.0, 20.0 ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+									"text" : "thispatcher"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-13",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 195.0, 45.0, 92.0, 18.0 ],
+									"text" : "storagewindow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 15.0, 45.0, 20.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 15.0, 75.0, 49.0, 20.0 ],
+									"text" : "int"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-8",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 120.0, 45.0, 50.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 45.0, 45.0, 50.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 105.0, 54.0, 18.0 ],
+									"text" : "store $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 135.0, 128.0, 20.0 ],
+									"text" : "cs.2click-pattrstorage",
+									"varname" : "cs.2click-pattrstorage"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 204.5, 129.5, 24.5, 129.5 ],
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 129.5, 129.5, 24.5, 129.5 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 210.0, 473.0, 87.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Helvetica Neue",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p pattrstorage",
+					"varname" : "pattrstorage"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
@@ -1212,7 +1581,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 210.0, 420.0, 105.0, 20.0 ],
+					"patching_rect" : [ 210.0, 428.0, 105.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -1246,7 +1615,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 180.0, 390.0, 20.0, 20.0 ],
+					"patching_rect" : [ 180.0, 405.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "5",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
@@ -1264,7 +1633,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 210.0, 390.0, 180.0, 20.0 ],
+					"patching_rect" : [ 210.0, 405.0, 180.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[2]",
@@ -1293,7 +1662,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 435.0, 405.0, 21.0 ],
+					"patching_rect" : [ 15.0, 495.0, 405.0, 21.0 ],
 					"text" : "How to use in your own projects",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -1309,7 +1678,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 585.0, 405.0, 34.0 ],
+					"patching_rect" : [ 15.0, 645.0, 405.0, 34.0 ],
 					"text" : "For example, if you type the following into a new object box, you will create an input module called my-input-module with 4 channels:",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -1325,7 +1694,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 615.0, 364.0, 20.0 ],
+					"patching_rect" : [ 15.0, 675.0, 364.0, 20.0 ],
 					"text" : "bpatcher cs.2click-inputs @args my-input-module 4",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -1341,7 +1710,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.5, 465.0, 407.0, 104.0 ],
+					"patching_rect" : [ 15.5, 525.0, 407.0, 104.0 ],
 					"text" : "Using these modules in your patches is as simple as creating a [bpatcher] with the patch cs.2click-outputs or cs.2click-inputs as its first argument.\n\nYou also need to provide a unique name for your [bpatcher] and a number to set how many channels it is. You can do this in the inspector or when creating the [bpatcher]. The unique name will be displayed in a slot to show where it’s being routed to or from.",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -1959,6 +2328,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -2125,59 +2503,67 @@
 					"destination" : [ "obj-12", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [ 219.5, 291.0, 195.0, 291.0, 195.0, 315.0, 174.5, 315.0 ],
+					"midpoints" : [ 219.5, 294.0, 195.0, 294.0, 195.0, 315.0, 174.5, 315.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-9" : [ "live.text", "live.text", 0 ],
+			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-19" : [ "live.text[1]", "live.text", 0 ],
 			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
-			"obj-2" : [ "live.text[2]", "live.text", 0 ],
-			"obj-4" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-19" : [ "live.text[1]", "live.text", 0 ],
+			"obj-13" : [ "live.text[3]", "live.text", 0 ],
+			"obj-9" : [ "live.text", "live.text", 0 ],
+			"obj-2" : [ "live.text[2]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "cs.2click-outputs.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click.js",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-send~.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-led.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-inputs.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-receive~.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/chris-swithinbank/cs.2click/lib",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cs.2click-pattrstorage.maxpat",
+				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
