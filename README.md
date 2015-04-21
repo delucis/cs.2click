@@ -14,14 +14,14 @@ The inputs module contains a `[receive~]` mechanism that will permit you to get 
 
 The [README.maxpat](README.maxpat) explains the basic functionality and also includes some information on getting up and running.
 
-**NB: The current system does not have a storage mechanism that allows for storing/recalling routings and is not compatible with `[pattrstorage]`. That is in the pipeline.**
+**For preset storage possibilities see point 5 in the README.maxpat**
 
 ## To do
 
-- [ ] Preset storage & recall mechanism
-- [ ] LEDs to indicate slot signal presence
+- [X] ~~Preset storage & recall mechanism~~
+- [X] ~~LEDs to indicate slot signal presence~~
 - [ ] Better error messages to help diagnose module naming conflicts via Max window
-- [ ] Improve dictionary management on module deletion
+- [X] ~~Improve dictionary management on module deletion~~
 - [ ] Full slot name as clue on mouse hover to help with long names
 - [ ] Consider truncating slot names from centre rather than right
 
