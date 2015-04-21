@@ -97,7 +97,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 809.0, 44.0, 316.0, 603.0 ],
+						"rect" : [ 809.0, 44.0, 316.0, 627.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -118,17 +118,36 @@
 						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "live.line",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 255.0, 285.0, 15.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "live.line",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 405.0, 285.0, 15.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"frgb" : 0.0,
 									"id" : "obj-35",
-									"linecount" : 3,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 537.5, 285.0, 48.0 ],
-									"presentation_rect" : [ 14.0, 538.0, 0.0, 0.0 ],
-									"text" : "A “save” message will write your presets to disk in a JSON file, allowing them to be loaded next time the patch is opened.",
+									"patching_rect" : [ 15.0, 522.5, 285.0, 76.0 ],
+									"text" : "A “save” message will write your presets to disk in a JSON file, allowing them to be loaded next time the patch is opened. The argument specifies the name of the JSON file and allows the object to automatically recall the file if present.",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
 
@@ -252,7 +271,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 90.0, 104.0, 210.0, 19.0 ],
-									"presentation_rect" : [ 86.0, 104.0, 0.0, 0.0 ],
 									"text" : "a mix of cycle-bank & FM-synthesis",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -270,7 +288,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 90.0, 68.0, 210.0, 32.0 ],
-									"presentation_rect" : [ 90.0, 81.0, 0.0, 0.0 ],
 									"text" : "all of the cycle-bank sent to the [ezdac~] in the more examples patcher",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -287,7 +304,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 90.0, 44.0, 210.0, 19.0 ],
-									"presentation_rect" : [ 86.0, 44.0, 0.0, 0.0 ],
 									"text" : "empty — nothing routed",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -383,7 +399,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 195.0, 300.0, 35.0, 18.0 ],
+									"patching_rect" : [ 195.0, 285.0, 35.0, 18.0 ],
 									"text" : "save"
 								}
 
@@ -397,7 +413,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 120.0, 270.0, 39.0, 20.0 ],
+									"patching_rect" : [ 120.0, 265.0, 39.0, 20.0 ],
 									"text" : "recall"
 								}
 
@@ -411,7 +427,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 270.0, 37.0, 20.0 ],
+									"patching_rect" : [ 15.0, 265.0, 37.0, 20.0 ],
 									"text" : "store"
 								}
 
@@ -426,7 +442,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 435.0, 285.0, 90.0 ],
+									"patching_rect" : [ 15.0, 420.0, 285.0, 90.0 ],
 									"text" : "The [cs.2click-presets] object gives you the possibility to store routing configurations and recall them. A “store” message followed by an index integer will store the current routing. Sending that index integer will then recall your stored configuration.",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -442,7 +458,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "front" ],
-									"patching_rect" : [ 15.0, 630.0, 42.0, 20.0 ],
+									"patching_rect" : [ 15.0, 645.0, 42.0, 20.0 ],
 									"text" : "t front"
 								}
 
@@ -456,7 +472,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 600.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 615.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -470,7 +486,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 15.0, 660.0, 71.0, 20.0 ],
+									"patching_rect" : [ 15.0, 675.0, 71.0, 20.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
@@ -483,7 +499,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 15.0, 300.0, 20.0, 20.0 ]
+									"patching_rect" : [ 15.0, 285.0, 20.0, 20.0 ]
 								}
 
 							}
@@ -496,7 +512,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 15.0, 330.0, 49.0, 20.0 ],
+									"patching_rect" : [ 15.0, 315.0, 49.0, 20.0 ],
 									"text" : "int"
 								}
 
@@ -511,7 +527,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 120.0, 300.0, 50.0, 20.0 ]
+									"patching_rect" : [ 120.0, 285.0, 50.0, 20.0 ]
 								}
 
 							}
@@ -525,7 +541,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 45.0, 300.0, 50.0, 20.0 ]
+									"patching_rect" : [ 45.0, 285.0, 50.0, 20.0 ]
 								}
 
 							}
@@ -538,7 +554,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 360.0, 54.0, 18.0 ],
+									"patching_rect" : [ 15.0, 345.0, 54.0, 18.0 ],
 									"text" : "store $1"
 								}
 
@@ -551,8 +567,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 390.0, 102.0, 20.0 ],
-									"text" : "cs.2click-presets",
+									"patching_rect" : [ 15.0, 375.0, 190.0, 20.0 ],
+									"text" : "cs.2click-presets readme-presets",
 									"varname" : "cs.2click-pattrstorage"
 								}
 
@@ -572,7 +588,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 204.5, 384.5, 24.5, 384.5 ],
+									"midpoints" : [ 204.5, 369.5, 24.5, 369.5 ],
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -668,7 +684,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 129.5, 384.5, 24.5, 384.5 ],
+									"midpoints" : [ 129.5, 369.5, 24.5, 369.5 ],
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -2819,11 +2835,11 @@
  ],
 		"parameters" : 		{
 			"obj-2" : [ "live.text[2]", "live.text", 0 ],
-			"obj-9" : [ "live.text", "live.text", 0 ],
 			"obj-19" : [ "live.text[1]", "live.text", 0 ],
+			"obj-9" : [ "live.text", "live.text", 0 ],
 			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
-			"obj-13" : [ "live.text[3]", "live.text", 0 ],
 			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-13" : [ "live.text[3]", "live.text", 0 ],
 			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
