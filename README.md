@@ -14,7 +14,7 @@ The inputs module contains a `[receive~]` mechanism that will permit you to get 
 
 The [README.maxpat](README.maxpat) explains the basic functionality and also includes some information on getting up and running.
 
-**For preset storage possibilities see point 5 in the README.maxpat**
+**For preset storage possibilities see point 6 in the README.maxpat**
 
 ## To do
 
