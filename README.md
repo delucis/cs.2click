@@ -6,6 +6,8 @@ Audio routing in a context that involves even a moderate number of potential nod
 
 ## Functionality
 
+![cs.2click animated demo](http://www.chrisswithinbank.net/wp-content/uploads/2015/04/cs2click-example-2.gif)
+
 A simple interface of in- and output slots are provided by `[bpatcher]` modules `cs.2click-inputs` and `cs.2click-outputs`. These modules require a unique string as their first argument, naming the module. An optional second argument sets the number of channels that are available (between 1 and 8). If no second argument is provided, the modules default to 8 channels.
 
 Routing pairs are stored in a global dictionary named `cs.2click-routing-pairs`.
@@ -14,7 +16,7 @@ The inputs module contains a `[receive~]` mechanism that will permit you to get 
 
 The [README.maxpat](README.maxpat) explains the basic functionality and also includes some information on getting up and running.
 
-**For preset storage possibilities see point 5 in the README.maxpat**
+**For preset storage possibilities see point 6 in the README.maxpat**
 
 ## To do
 
@@ -22,8 +24,8 @@ The [README.maxpat](README.maxpat) explains the basic functionality and also inc
 - [X] ~~LEDs to indicate slot signal presence~~
 - [ ] Better error messages to help diagnose module naming conflicts via Max window
 - [X] ~~Improve dictionary management on module deletion~~
-- [ ] Full slot name as clue on mouse hover to help with long names
-- [ ] Consider truncating slot names from centre rather than right
+- [X] ~~Full slot name as clue on mouse hover to help with long names~~
+- [X] ~~Consider truncating slot names from centre rather than right~~
 
 ## Speculative feature ideas
 

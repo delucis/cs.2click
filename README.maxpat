@@ -97,7 +97,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 809.0, 44.0, 316.0, 627.0 ],
+						"rect" : [ 809.0, 44.0, 316.0, 615.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -562,12 +562,12 @@
 , 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
-									"fontsize" : 12.0,
+									"fontsize" : 14.0,
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 375.0, 190.0, 20.0 ],
+									"patching_rect" : [ 15.0, 375.0, 221.0, 23.0 ],
 									"text" : "cs.2click-presets readme-presets",
 									"varname" : "cs.2click-pattrstorage"
 								}
@@ -2834,13 +2834,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2" : [ "live.text[2]", "live.text", 0 ],
-			"obj-19" : [ "live.text[1]", "live.text", 0 ],
-			"obj-9" : [ "live.text", "live.text", 0 ],
-			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
 			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-13" : [ "live.text[3]", "live.text", 0 ],
-			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ]
+			"obj-2" : [ "live.text[2]", "live.text", 0 ],
+			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-19" : [ "live.text[1]", "live.text", 0 ],
+			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
+			"obj-9" : [ "live.text", "live.text", 0 ],
+			"obj-13" : [ "live.text[3]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
