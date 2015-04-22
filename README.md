@@ -22,8 +22,8 @@ The [README.maxpat](README.maxpat) explains the basic functionality and also inc
 - [X] ~~LEDs to indicate slot signal presence~~
 - [ ] Better error messages to help diagnose module naming conflicts via Max window
 - [X] ~~Improve dictionary management on module deletion~~
-- [ ] Full slot name as clue on mouse hover to help with long names
-- [ ] Consider truncating slot names from centre rather than right
+- [X] ~~Full slot name as clue on mouse hover to help with long names~~
+- [X] ~~Consider truncating slot names from centre rather than right~~
 
 ## Speculative feature ideas
 
