@@ -6,6 +6,8 @@ Audio routing in a context that involves even a moderate number of potential nod
 
 ## Functionality
 
+![cs.2click animated demo](http://www.chrisswithinbank.net/wp-content/uploads/2015/04/cs2click-example-2.gif)
+
 A simple interface of in- and output slots are provided by `[bpatcher]` modules `cs.2click-inputs` and `cs.2click-outputs`. These modules require a unique string as their first argument, naming the module. An optional second argument sets the number of channels that are available (between 1 and 8). If no second argument is provided, the modules default to 8 channels.
 
 Routing pairs are stored in a global dictionary named `cs.2click-routing-pairs`.
