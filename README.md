@@ -22,7 +22,7 @@ The [README.maxpat](README.maxpat) explains the basic functionality and also inc
 
 - [X] ~~Preset storage & recall mechanism~~
 - [X] ~~LEDs to indicate slot signal presence~~
-- [ ] Better error messages to help diagnose module naming conflicts via Max window
+- [X] ~~Better error messages to help diagnose module naming conflicts via Max window~~
 - [X] ~~Improve dictionary management on module deletion~~
 - [X] ~~Full slot name as clue on mouse hover to help with long names~~
 - [X] ~~Consider truncating slot names from centre rather than right~~
