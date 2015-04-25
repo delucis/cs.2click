@@ -14,7 +14,7 @@ Routing pairs are stored in a global dictionary named `cs.2click-routing-pairs`.
 
 The inputs module contains a `[receive~]` mechanism that will permit you to get audio from an outputs module, which contains an equivalent `[send~]` mechanism.
 
-The [README.maxpat](README.maxpat) explains the basic functionality and also includes some information on getting up and running.
+The [README.maxpat](README.maxpat) demonstrates basic functionality and also includes some information on getting up and running.
 
 **For preset storage possibilities see point 6 in the README.maxpat**
 
