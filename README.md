@@ -18,4 +18,6 @@ The [README.maxpat](README.maxpat) explains the basic functionality and also inc
 
 **For preset storage possibilities see point 6 in the README.maxpat**
 
+## Compatibility
 
+These modules have been tested with Max 6 and 7. They will not work with Max/MSP 5 or lower. Please report bugs under the issues tab above.
