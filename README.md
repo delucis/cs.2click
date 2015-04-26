@@ -16,7 +16,7 @@ The inputs module contains a `[receive~]` mechanism that will permit you to get 
 
 The [README.maxpat](README.maxpat) demonstrates basic functionality and also includes some information on getting up and running.
 
-## Preset storage & recall
+### Preset storage & recall
 
 An additional abstraction `[cs.2click-presets]` permits you to store numbered presets and recall them by sending a preset’s index number. An argument provided to `[cs.2click-presets]` sets a filename to which you can save your preset (as a JSON file) and it will automatically try to load that file when the patch is opened. A “save” message will write your current presets to disk.
 
