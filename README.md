@@ -14,23 +14,14 @@ Routing pairs are stored in a global dictionary named `cs.2click-routing-pairs`.
 
 The inputs module contains a `[receive~]` mechanism that will permit you to get audio from an outputs module, which contains an equivalent `[send~]` mechanism.
 
-The [README.maxpat](README.maxpat) explains the basic functionality and also includes some information on getting up and running.
+The [README.maxpat](README.maxpat) demonstrates basic functionality and also includes some information on getting up and running.
 
-**For preset storage possibilities see point 6 in the README.maxpat**
+### Preset storage & recall
 
-## To do
+An additional abstraction `[cs.2click-presets]` permits you to store numbered presets and recall them by sending a preset’s index number. An argument provided to `[cs.2click-presets]` sets a filename to which you can save your preset (as a JSON file) and it will automatically try to load that file when the patch is opened. A “save” message will write your current presets to disk.
 
-- [X] ~~Preset storage & recall mechanism~~
-- [X] ~~LEDs to indicate slot signal presence~~
-- [X] ~~Better error messages to help diagnose module naming conflicts via Max window~~
-- [X] ~~Improve dictionary management on module deletion~~
-- [X] ~~Full slot name as clue on mouse hover to help with long names~~
-- [X] ~~Consider truncating slot names from centre rather than right~~
+Point 6 in the README.maxpat demonstrates these capabilities. The [readme-presets.json](readme-presets.json) file contains some example presets.
 
-## Speculative feature ideas
+## Compatibility
 
-These are all speculative development possibilities. They may never be implemented or useful.
-
-- A **direct out mechanism** that routes with one click from any slot to a master [dac~] module. Functions only when master [dac~] module is present somewhere in the environment.
-
-- **Global routing map** that graphs the entire routing network on a single page. The map could show the entire signal flow in the environment. *Or* could show you the upstream and downstream signal flow of a given slot.
+These modules have been tested with Max 6 and 7. They will not work with Max/MSP 5 or lower. Please report bugs under the issues tab above.

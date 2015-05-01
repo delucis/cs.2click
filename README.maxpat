@@ -118,6 +118,21 @@
 						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-19",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 200.0, 315.0, 92.0, 18.0 ],
+									"presentation_rect" : [ 226.0, 312.0, 0.0, 0.0 ],
+									"text" : "storagewindow"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "live.line",
 									"numinlets" : 1,
@@ -399,7 +414,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 195.0, 285.0, 35.0, 18.0 ],
+									"patching_rect" : [ 180.0, 285.0, 35.0, 18.0 ],
 									"text" : "save"
 								}
 
@@ -588,7 +603,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 204.5, 369.5, 24.5, 369.5 ],
+									"midpoints" : [ 189.5, 369.5, 24.5, 369.5 ],
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -610,6 +625,16 @@
 									"hidden" : 1,
 									"midpoints" : [ 54.5, 93.0, 0.0, 93.0, 0.0, 240.0, 42.0, 240.0, 42.0, 252.0, 63.0, 252.0, 63.0, 270.0, 105.0, 270.0, 105.0, 282.0, 129.5, 282.0 ],
 									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 209.5, 369.5, 24.5, 369.5 ],
+									"source" : [ "obj-19", 0 ]
 								}
 
 							}
@@ -2834,12 +2859,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-2" : [ "live.text[2]", "live.text", 0 ],
-			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-19" : [ "live.text[1]", "live.text", 0 ],
-			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
 			"obj-9" : [ "live.text", "live.text", 0 ],
+			"obj-19" : [ "live.text[1]", "live.text", 0 ],
+			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
+			"obj-2" : [ "live.text[2]", "live.text", 0 ],
 			"obj-13" : [ "live.text[3]", "live.text", 0 ]
 		}
 ,
