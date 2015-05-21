@@ -10,19 +10,19 @@ Audio routing in a context that involves even a moderate number of potential nod
 
 ![cs.2click animated demo](http://www.chrisswithinbank.net/wp-content/uploads/2015/04/cs2click-example-2.gif)
 
-A simple interface of in- and output slots are provided by `[bpatcher]` modules `cs.2click-inputs` and `cs.2click-outputs`. These modules require a unique string as their first argument, naming the module. An optional second argument sets the number of channels that are available (between 1 and 8). If no second argument is provided, the modules default to 8 channels.
+A simple interface of in- and output slots are provided by `[bpatcher]` modules `cs.2click-inputs` and `cs.2click-outputs`. These modules require a unique string as their first argument, naming the module. An optional second argument sets the number of slots that are available (between 1 and 8). If no second argument is provided, the modules default to a single slot.
 
-Routing pairs are stored in a global dictionary named `cs.2click-routing-pairs`.
-
-The inputs module contains a `[receive~]` mechanism that will permit you to get audio from an outputs module, which contains an equivalent `[send~]` mechanism.
+Routing pairs are stored in a global dictionary named `cs.2click-routing-pairs`. This permits easy routing not only within a single Max patch, but also between patches.
 
 The [README.maxpat](README.maxpat) demonstrates basic functionality and also includes some information on getting up and running.
 
 ### Preset storage & recall
 
-An additional abstraction `[cs.2click-presets]` permits you to store numbered presets and recall them by sending a preset’s index number. An argument provided to `[cs.2click-presets]` sets a filename to which you can save your preset (as a JSON file) and it will automatically try to load that file when the patch is opened. A “save” message will write your current presets to disk.
+An additional abstraction `[cs.2click-presets]` permits you to store numbered presets and recall them by sending a preset’s index number. An argument provided to `[cs.2click-presets]` sets a filename to which you can save your preset (as a JSON file) and it will automatically try to load that file when the patch is opened. A “save” message will write your current presets to disk (in the same directory as the patch containing the abstraction).
 
-Point 6 in the README.maxpat demonstrates these capabilities. The [readme-presets.json](readme-presets.json) file contains some example presets.
+This mechanism is built on a central `[dict]` object, which contains the stored presets. Messages whose meaning is not defined by the abstraction (`store`, `save`, `storagewindow`, `storage_close`, integers/floats) are passed on to this `[dict]`, permitting direct communication if desired. For example, using Max’s standard import/export messages one can load and save preset files that are not in the same directory as your patch.
+
+Point 6 in the README.maxpat demonstrates the basic preset capabilities, and the [readme-presets.json](readme-presets.json) file contains some example presets.
 
 ## Compatibility
 
