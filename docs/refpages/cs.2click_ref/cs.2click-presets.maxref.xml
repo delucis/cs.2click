@@ -102,7 +102,7 @@
 				Write presets to disk
 			</digest>
 			<description>
-				Writes the stored presets to disk as a JSON file (using an <m>export</m> message to the cs.2click-presets <o>dict</o>’s). If the object is not given a filename argument, a default filename of ‘routing-presets.json’ will be used.
+				Writes the stored presets to disk as a JSON file (using an <m>export</m> message to the cs.2click-presets <o>dict</o>). If the object is not given a filename argument, a default filename of ‘routing-presets.json’ will be used.
 			</description>
 		</method>
 		<method name="anything">
@@ -113,7 +113,7 @@
 				Direct access to the dict
 			</digest>
 			<description>
-				Incoming messages not conforming to the message types defined above are sent directly to the internal cs.2click-presets <o>dict</o>. This allows direct communication, for example to send standard import or export messages as defined in the <o>dict</o> documentation.
+				Incoming messages not conforming to the message types defined above are sent directly to the internal cs.2click-presets <o>dict</o>. This allows direct communication, for example to use standard import or export messages as defined in the <o>dict</o> documentation.
 			</description>
 		</method>
 	</methodlist>
