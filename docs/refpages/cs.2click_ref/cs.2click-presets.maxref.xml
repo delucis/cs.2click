@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="cs.2click-presets" module="cs.2click" kind="patcher">
+
+	<digest>
+		Store and recall routing presets
+	</digest>
+
+	<description>
+		Manages numbered presets containing
+		routing pairs for cs.2click modules.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Chris Swithinbank</metadata>
+		<metadata name="tag">cs.2click</metadata>
+		<metadata name="tag">cs.2click abstractions</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="INLET_TYPE">
+			<digest>
+				Preset control messages
+			</digest>
+			<description>
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="filename" optional="1" type="symbol">
+			<digest>
+				Filename
+			</digest>
+			<description>
+				Name of a JSON or YAML file to be imported as presets dictionary on load.
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int/float">
+			<arglist />
+			<digest>
+				Recall preset
+			</digest>
+			<description>
+				Recalls the preset stored at the index number specified by <m>int</m>. Floats are truncated: 0.999&nbsp;=&nbsp;0; 1.001&nbsp;=&nbsp;1.
+				If no preset is stored at that index, an error message is printed to the Max window.
+			</description>
+		</method>
+		<method name="bang">
+			<arglist />
+			<digest>
+				Recall last recalled preset
+			</digest>
+			<description>
+				Recalls the preset defined by the last number received.
+			</description>
+		</method>
+		<method name="store">
+			<arglist>
+				<arg name="index" optional="0" type="int/float" />
+			</arglist>
+			<digest>
+				Store preset
+			</digest>
+			<description>
+				Stores a preset containing the current routing state (as contained in the cs.2click-routing-pairs <o>dict</o>) to the index number specified by <m>int</m>. Floats are truncated: 0.999&nbsp;=&nbsp;0; 1.001&nbsp;=&nbsp;1.
+			</description>
+		</method>
+		<method name="storagewindow">
+			<arglist />
+			<digest>
+				Display preset data
+			</digest>
+			<description>
+				Opens a window containing a <o>dict.view</o> of the presets dictionary contents.
+			</description>
+		</method>
+		<method name="storage_close">
+			<arglist />
+			<digest>
+				Close the preset data window
+			</digest>
+			<description>
+				Closes the preset data window.
+			</description>
+		</method>
+		<method name="save">
+			<arglist />
+			<digest>
+				Write presets to disk
+			</digest>
+			<description>
+				Writes the stored presets to disk as a JSON file (using an <m>export</m> message to the cs.2click-presets <o>dict</o>’s). If the object is not given a filename argument, a default filename of ‘routing-presets.json’ will be used.
+			</description>
+		</method>
+		<method name="anything">
+			<arglist>
+				<arg name="arguments" optional="0" type="list" />
+			</arglist>
+			<digest>
+				Direct access to the dict
+			</digest>
+			<description>
+				Incoming messages not conforming to the message types defined above are sent directly to the internal cs.2click-presets <o>dict</o>. This allows direct communication, for example to send standard import or export messages as defined in the <o>dict</o> documentation.
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+
+	<!--EXAMPLE-->
+	<examplelist>
+		<example img="cs.2click-presets.png" caption="A “store n” message sets a preset that can be recalled by “n”" />
+	</examplelist>
+
+	<!--DISCUSSION-->
+	<discussion>
+		This abstraction manages presets for the cs.2click audio routing system in a <o>dict</o> named cs.2click-presets. Each preset consists of a dictionary of routing pairs indicating the connection for each slot in a routing system. Presets are given integer keys.
+	</discussion>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="cs.2click-inputs" />
+		<seealso name="cs.2click-outputs" />
+		<seealso name="cs.2click-led" />
+	</seealsolist>
+
+</c74object>

@@ -1,0 +1,23 @@
+{
+	"0" : 	{
+		"help-outs-1-out-slot" : 0,
+		"help-outs-2-out-slot" : 0,
+		"help-ins-1-in-slot" : 0,
+		"help-ins-2-in-slot" : 0
+	}
+,
+	"1" : 	{
+		"help-outs-1-out-slot" : "help-ins-1-in-slot",
+		"help-outs-2-out-slot" : "help-ins-2-in-slot",
+		"help-ins-1-in-slot" : "help-outs-1-out-slot",
+		"help-ins-2-in-slot" : "help-outs-2-out-slot"
+	}
+,
+	"2" : 	{
+		"help-outs-1-out-slot" : 0,
+		"help-outs-2-out-slot" : "help-ins-1-in-slot",
+		"help-ins-1-in-slot" : "help-outs-2-out-slot",
+		"help-ins-2-in-slot" : 0
+	}
+
+}
