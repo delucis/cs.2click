@@ -1,0 +1,16 @@
+{
+	"boxes" : [ 		{
+			"box" : 			{
+				"maxclass" : "bpatcher",
+				"outlettype" : [ "" ],
+				"patching_rect" : [ 150.0, 15.0, 15.0, 15.0 ],
+				"numinlets" : 1,
+				"id" : "obj-3",
+				"name" : "cs.2click-led.maxpat",
+				"numoutlets" : 1
+			}
+
+		}
+ ],
+	"preview_image" : [ 431, "png", "IBkSG0fBZn....PCIgDQRA...vC....OHX....fN7msb....DLmPIQEBHf.B7g.YHB..AXVRDEDUnEX6aGpSDCDDFG+a6NWxHZVjDbXPigfhmDdBvvSCFdBvcuEn.CxKAyotPPUppI2taQUGIz1a6lMSme9cx9O4ZZEyY1t6POxfvwi3y2dE6+3c7y2egXvOoyWYIb14WfKu9Fb0s2A6lMy5dX1t6P+SOb+rN7XUUUAmyAhnjLOu2i11VDiwIctGe9ETkjav+HkwB.PDAmyMqyt3AyLmzXGPDAl4IetrDbIM6EOXq0VTyNKOCWRV7fCgPQM6EO3ttthZ1YIXueZejwX389xLX.f111jF8vGdLGo+Ej+gXLhllFvLClYXsVXLlIMi99dDBAz00cROljkfGbpW1TPesjzoAKcZvRmFrzoAKcZvRmFrzoAKcZvRmFrzoAKcZvRmFrzoAKcZvRmFrzoAKcqtfy5NdrZVpkTruzFiADQnttFLyyZeoAxzOo08kNAz8kdjz8kV5z8kN0z8kNQz8kdjLqs+Jd+BMMiostCGB2E.....IUjSD4pPfIH" ]
+}
