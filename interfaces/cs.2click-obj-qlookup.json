@@ -1,0 +1,30 @@
+{
+  "cs.2click-inputs": {
+    "digest": "Use in a bpatcher for an input slot interface.",
+    "module": "cs.2click",
+    "category": [
+      "cs.2click"
+    ]
+  },
+  "cs.2click-outputs": {
+    "digest": "Use in a bpatcher for an output slot interface.",
+    "module": "cs.2click",
+    "category": [
+      "cs.2click"
+    ]
+  },
+  "cs.2click-presets": {
+    "digest": "Store and recall audio routing presets.",
+    "module": "cs.2click",
+    "category": [
+      "cs.2click"
+    ]
+  },
+  "cs.2click-led": {
+    "digest": "Display signal presence.",
+    "module": "cs.2click",
+    "category": [
+      "cs.2click"
+    ]
+  }
+}
