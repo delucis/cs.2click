@@ -21,7 +21,7 @@
 
 	<!--INLETS-->
 	<inletlist>
-		<inlet id="0" type="INLET_TYPE">
+		<inlet id="0" type="list">
 			<digest>
 				Preset control messages
 			</digest>
