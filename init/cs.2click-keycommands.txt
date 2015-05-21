@@ -1,0 +1,2 @@
+max definecommand C patcher inserttextobj cs.2click-;
+max definecommandinstructions patcher C "cs.2click object or abstraction";
