@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="cs.2click-inputs" module="cs.2click" kind="patcher">
+
+	<digest>
+		Receive audio using flexible routing
+	</digest>
+
+	<description>
+		Load in a <o>bpatcher</o> to use a simple GUI
+		to route audio between other cs.2click modules.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Chris Swithinbank</metadata>
+		<metadata name="tag">cs.2click</metadata>
+		<metadata name="tag">cs.2click abstractions</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>
+				Audio signal
+			</digest>
+			<description>
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="module-name" optional="0" type="symbol">
+			<digest>
+				Unique name
+			</digest>
+			<description>
+				Unique identifying name for this instance of the module.
+			</description>
+		</objarg>
+		<objarg name="slot-number" optional="1" type="int">
+			<digest>
+				Number of slots
+			</digest>
+			<description>
+				Number of slots and outlets. Defaults to minimum 1. Maximum is 8.
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+
+	<!--EXAMPLE-->
+	<examplelist>
+		<example img="cs.2click-inputs.png" caption="An inputs module receives audio, which comes out its outlets." />
+	</examplelist>
+
+	<!--DISCUSSION-->
+	<discussion>
+		This abstraction must be loaded within a <o>bpatcher</o> and given a unique symbol as its first argument. This symbol will be used to identify the module in the routing system.
+	</discussion>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="cs.2click-presets" />
+		<seealso name="cs.2click-outputs" />
+		<seealso name="cs.2click-led" />
+	</seealsolist>
+
+</c74object>
