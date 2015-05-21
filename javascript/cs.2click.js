@@ -72,7 +72,7 @@ function loadbang() {
 		buildoutlets();
 	}
 	setdict(); // add all the created slots to the global dictionary
-	resizebpatcher();
+	// resizebpatcher(); // deprecated until bug fix possible
 	flagsOn();
 }
 
