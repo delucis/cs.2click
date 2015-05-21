@@ -14,7 +14,7 @@ A simple interface of in- and output slots are provided by `[bpatcher]` modules 
 
 Routing pairs are stored in a global dictionary named `cs.2click-routing-pairs`. This permits easy routing not only within a single Max patch, but also between patches.
 
-The [README.maxpat](README.maxpat) demonstrates basic functionality and also includes some information on getting up and running.
+The [README.maxpat](examples/README.maxpat) demonstrates basic functionality and also includes some information on getting up and running.
 
 ### Preset storage & recall
 
@@ -22,7 +22,7 @@ An additional abstraction `[cs.2click-presets]` permits you to store numbered pr
 
 This mechanism is built on a central `[dict]` object, which contains the stored presets. Messages whose meaning is not defined by the abstraction (`store`, `save`, `storagewindow`, `storage_close`, integers/floats) are passed on to this `[dict]`, permitting direct communication if desired. For example, using Max’s standard import/export messages one can load and save preset files that are not in the same directory as your patch.
 
-Point 6 in the README.maxpat demonstrates the basic preset capabilities, and the [readme-presets.json](readme-presets.json) file contains some example presets.
+Point 6 in the README.maxpat demonstrates the basic preset capabilities, and the [readme-presets.json](examples/readme-presets.json) file contains some example presets.
 
 ## Compatibility
 
