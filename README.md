@@ -25,3 +25,7 @@ Point 6 in the README.maxpat demonstrates these capabilities. The [readme-preset
 ## Compatibility
 
 These modules have been tested with Max 6 and 7. They will not work with Max/MSP 5 or lower. Please report bugs under the issues tab above.
+
+## License
+
+This software is free to use, modify, and redistribute under a [GNU General Public License](http://www.gnu.org/licenses/gpl-3.0.txt).
