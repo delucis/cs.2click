@@ -75,7 +75,7 @@
 				Store preset
 			</digest>
 			<description>
-				Stores a preset containing the current routing state (as contained in the cs.2click-routing-pairs <o>dict</o>) to the index number specified by <m>int</m>. Floats are truncated: 0.999&nbsp;=&nbsp;0; 1.001&nbsp;=&nbsp;1.
+				Stores a preset containing the current routing state (as contained in the cs.2click-routing-pairs <o>dict</o>) to the index number specified by <m>int</m>. Floats are truncated: 0.999 = 0; 1.001 = 1.
 			</description>
 		</method>
 		<method name="storagewindow">
