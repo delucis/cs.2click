@@ -54,7 +54,7 @@
 				Recall preset
 			</digest>
 			<description>
-				Recalls the preset stored at the index number specified by <m>int</m>. Floats are truncated: 0.999&nbsp;=&nbsp;0; 1.001&nbsp;=&nbsp;1.
+				Recalls the preset stored at the index number specified by <m>int</m>. Floats are truncated: 0.999 = 0; 1.001 = 1.
 				If no preset is stored at that index, an error message is printed to the Max window.
 			</description>
 		</method>
