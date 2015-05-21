@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="cs.2click-led" module="cs.2click" kind="patcher">
+
+	<digest>
+		Check for/display signal presence
+	</digest>
+
+	<description>
+		Loaded in a <o>bpatcher</o>, this abstraction
+		lights green if it is receiving signal.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Chris Swithinbank</metadata>
+		<metadata name="tag">cs.2click</metadata>
+		<metadata name="tag">cs.2click abstractions</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>
+				Audio signal
+			</digest>
+			<description>
+				Audio signal to be measured for signal presence.
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="list">
+			<digest>
+				Color messages
+			</digest>
+			<description>
+				bgcolor and textcolor messages to send to a UI element.
+			</description>
+		</outlet>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+
+	<!--EXAMPLE-->
+	<examplelist>
+		<example img="cs.2click-led.png" caption="When signal is present, cs.2click-led lights green." />
+	</examplelist>
+
+	<!--DISCUSSION-->
+	<discussion>
+		If loaded in a <o>bpatcher</o>, this provides a visual indication of signal presence by lighting green like an LED. It can also be used as a normal abstraction in which case the outlet can be connected to a UI object you want to manipulate in line with signal presence.<br /><br />
+		When signal is not present, background is set to dark grey, text to white. When signal is present, background is bright green, and text black.
+	</discussion>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="cs.2click-presets" />
+		<seealso name="cs.2click-inputs" />
+		<seealso name="cs.2click-outputs" />
+	</seealsolist>
+
+</c74object>
