@@ -1,4 +1,6 @@
-# A Better Audio Router for a Modular System
+# cs.2click
+
+A Better Audio Router for a Modular System.
 
 ## What/why?
 
