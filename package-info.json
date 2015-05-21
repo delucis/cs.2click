@@ -1,0 +1,18 @@
+{
+    "name": "cs.2click",
+    "type": "package",
+    "author": "Chris Swithinbank",
+    "description": "cs.2click: a better audio router for a modular system",
+    "version": "0.2.0",
+    "major_version": "0",
+    "minor_version": "20",
+    "min_max_version": "619",
+    "min_osx_version": "None",
+    "min_win_version": "None",
+    "website": "https://github.com/delucis/cs.2click",
+    "link_mac32": "https://github.com/delucis/cs.2click/archive/master.zip",
+    "link_mac64": "https://github.com/delucis/cs.2click/archive/master.zip",
+    "link_win32": "https://github.com/delucis/cs.2click/archive/master.zip",
+    "link_win64": "https://github.com/delucis/cs.2click/archive/master.zip",
+    "relative_path": "None"
+}
