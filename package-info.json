@@ -2,7 +2,7 @@
     "name": "cs.2click",
     "type": "package",
     "author": "Chris Swithinbank",
-    "description": "cs.2click: a better audio router for a modular system",
+    "description": "cs.2click provides a better audio router for a modular system.",
     "version": "0.2.1",
     "major_version": "0",
     "minor_version": "21",
