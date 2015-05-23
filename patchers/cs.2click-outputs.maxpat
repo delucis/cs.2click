@@ -4817,7 +4817,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.0, 60.0, 123.0, 20.0 ],
+					"patching_rect" : [ 780.0, 60.0, 139.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "cs.2click",
 						"parameter_enable" : 0
@@ -8540,7 +8540,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 420.0, 90.0, 105.0, 19.0 ],
+					"patching_rect" : [ 405.0, 90.0, 105.0, 19.0 ],
 					"text" : "what is hovered?",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"textjustification" : 1
@@ -8831,7 +8831,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 180.0, 161.0, 19.0 ],
+					"patching_rect" : [ 180.0, 180.0, 161.0, 19.0 ],
 					"text" : "1 = mousedown; 0 = mouseup",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -8906,7 +8906,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "int", "int", "int", "int", "int" ],
-					"patching_rect" : [ 135.0, 150.0, 259.0, 20.0 ],
+					"patching_rect" : [ 135.0, 150.0, 73.0, 20.0 ],
 					"text" : "mousestate"
 				}
 
@@ -8921,7 +8921,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 433.5, 150.0, 24.0, 20.0 ],
+					"patching_rect" : [ 418.5, 150.0, 24.0, 20.0 ],
 					"text" : "t 0"
 				}
 
@@ -8936,7 +8936,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 420.0, 180.0, 99.0, 20.0 ],
+					"patching_rect" : [ 405.0, 180.0, 99.0, 20.0 ],
 					"text" : "v cs.hover-focus"
 				}
 
@@ -8951,7 +8951,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 420.0, 120.0, 59.5, 20.0 ],
+					"patching_rect" : [ 405.0, 120.0, 59.5, 20.0 ],
 					"text" : "hover"
 				}
 

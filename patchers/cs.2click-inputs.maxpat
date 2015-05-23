@@ -3614,7 +3614,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1020.0, 120.0, 74.0, 20.0 ],
+					"patching_rect" : [ 1020.0, 120.0, 62.0, 20.0 ],
 					"text" : "s #0-to-js"
 				}
 
@@ -3644,7 +3644,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 1020.0, 60.0, 167.0, 20.0 ],
+					"patching_rect" : [ 1020.0, 60.0, 135.0, 20.0 ],
 					"text" : "regexp #1-(\\\\d)-in-slot$"
 				}
 
@@ -3703,7 +3703,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.0, 30.0, 72.0, 20.0 ],
+					"patching_rect" : [ 780.0, 30.0, 60.0, 20.0 ],
 					"text" : "r #0-to-js"
 				}
 
@@ -3717,7 +3717,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1020.0, 240.0, 74.0, 20.0 ],
+					"patching_rect" : [ 1020.0, 240.0, 62.0, 20.0 ],
 					"text" : "s #0-to-js"
 				}
 
@@ -3747,7 +3747,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 1020.0, 180.0, 167.0, 20.0 ],
+					"patching_rect" : [ 1020.0, 180.0, 135.0, 20.0 ],
 					"text" : "regexp #1-(\\\\d)-in-slot$"
 				}
 
@@ -4280,7 +4280,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.0, 315.0, 104.0, 20.0 ],
+					"patching_rect" : [ 780.0, 315.0, 92.0, 20.0 ],
 					"text" : "r #0-in-out-pair"
 				}
 
@@ -4314,7 +4314,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.0, 165.0, 97.0, 20.0 ],
+					"patching_rect" : [ 780.0, 165.0, 85.0, 20.0 ],
 					"text" : "r #0-clear-slot"
 				}
 
@@ -4702,7 +4702,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 780.0, 60.0, 141.0, 20.0 ],
+					"patching_rect" : [ 780.0, 60.0, 132.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "cs.2click",
 						"parameter_enable" : 0
@@ -6174,7 +6174,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 255.0, 390.0, 142.0, 20.0 ],
+					"patching_rect" : [ 255.0, 390.0, 110.0, 20.0 ],
 					"text" : "regexp #1-.+-slot$"
 				}
 
@@ -8426,7 +8426,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 420.0, 90.0, 105.0, 19.0 ],
+					"patching_rect" : [ 405.0, 90.0, 105.0, 19.0 ],
 					"text" : "what is hovered?",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"textjustification" : 1
@@ -8487,7 +8487,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 570.0, 106.0, 20.0 ],
+					"patching_rect" : [ 360.0, 570.0, 94.0, 20.0 ],
 					"text" : "s #0-in-out-pair"
 				}
 
@@ -8718,7 +8718,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 180.0, 161.0, 19.0 ],
+					"patching_rect" : [ 180.0, 180.0, 161.0, 19.0 ],
 					"text" : "1 = mousedown; 0 = mouseup",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -8793,7 +8793,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "int", "int", "int", "int", "int" ],
-					"patching_rect" : [ 135.0, 150.0, 259.0, 20.0 ],
+					"patching_rect" : [ 135.0, 150.0, 73.0, 20.0 ],
 					"text" : "mousestate"
 				}
 
@@ -8808,7 +8808,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 433.5, 150.0, 24.0, 20.0 ],
+					"patching_rect" : [ 418.5, 150.0, 24.0, 20.0 ],
 					"text" : "t 0"
 				}
 
@@ -8823,7 +8823,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 420.0, 180.0, 99.0, 20.0 ],
+					"patching_rect" : [ 405.0, 180.0, 99.0, 20.0 ],
 					"text" : "v cs.hover-focus"
 				}
 
@@ -8838,7 +8838,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 420.0, 120.0, 59.5, 20.0 ],
+					"patching_rect" : [ 405.0, 120.0, 59.5, 20.0 ],
 					"text" : "hover"
 				}
 
