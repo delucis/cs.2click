@@ -14,5 +14,6 @@
     "link_mac64": "https://github.com/delucis/cs.2click/archive/v0.2.2.zip",
     "link_win32": "https://github.com/delucis/cs.2click/archive/v0.2.2.zip",
     "link_win64": "https://github.com/delucis/cs.2click/archive/v0.2.2.zip",
-    "relative_path": "None"
+    "relative_path": "None",
+    "alert_text": "Thanks for downloading the cs.2click package! If this is your first time using these modules, see the README.maxpat in the examples folder for a quick introduction."
 }
