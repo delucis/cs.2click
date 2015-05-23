@@ -10,9 +10,9 @@
     "min_osx_version": "None",
     "min_win_version": "None",
     "website": "https://github.com/delucis/cs.2click",
-    "link_mac32": "https://github.com/delucis/cs.2click/archive/v0.2.1.zip",
-    "link_mac64": "https://github.com/delucis/cs.2click/archive/v0.2.1.zip",
-    "link_win32": "https://github.com/delucis/cs.2click/archive/v0.2.1.zip",
-    "link_win64": "https://github.com/delucis/cs.2click/archive/v0.2.1.zip",
+    "link_mac32": "https://github.com/delucis/cs.2click/archive/v0.2.2.zip",
+    "link_mac64": "https://github.com/delucis/cs.2click/archive/v0.2.2.zip",
+    "link_win32": "https://github.com/delucis/cs.2click/archive/v0.2.2.zip",
+    "link_win64": "https://github.com/delucis/cs.2click/archive/v0.2.2.zip",
     "relative_path": "None"
 }
