@@ -24,6 +24,12 @@ This mechanism is built on a central `[dict]` object, which contains the stored 
 
 Point 6 in the README.maxpat demonstrates the basic preset capabilities, and the [readme-presets.json](examples/readme-presets.json) file contains some example presets.
 
+## Installation
+
+Download the [latest release](https://github.com/delucis/cs.2click/releases/latest), to your Max packages folder. You can find this under `~/Documents/Max/Packages` for Max 6 or `~/Documents/Max 7/Packages` for Max 7.
+
+I’d highly recommend using Nathanaël Léclaudé’s [Max Package Downloader](https://github.com/natcl/max_package_downloader) to help stay up-to-date with new version releases.
+
 ## Compatibility
 
 These modules have been tested with Max 6 and 7. They will not work with Max/MSP 5 or lower. Please report bugs under the issues tab above.
