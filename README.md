@@ -2,6 +2,12 @@
 
 A Better Audio Router for a Modular System.
 
+* [What/why?](#whatwhy)
+* [Functionality](#functionality)
+* [Installation](#installation)
+* [Compatibility](#compatibility)
+* [License](#license)
+
 ## What/why?
 
 Audio routing in a context that involves even a moderate number of potential nodes can get messy very quickly. Matrices that map inputs and outputs become unreadable with just a handful of rows and columns, while input/output selection embedded within modules degenerates into a stream of potentially tens of clicks to get your basic routing set up. The aim here is to build a better way of routing, designed for speed, ease, and clarity, hopefully making on-the-fly routing a less tedious experience. The inspiration is the two-click pattern used in [Ableton Live](https://www.ableton.com/), where the first click indicates one end of a signal flow and the second the other (HT [Sam Wolk](https://github.com/delta-6400)).
