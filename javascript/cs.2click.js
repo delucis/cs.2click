@@ -97,7 +97,7 @@ function flagsOn() {
 
 flagsOff.local = 1;
 function flagsOff() {
-	twoclickFlags.remove(modulename); // remove this module from the dictionary
+	twoclickFlags.remove(modulename); // remove this module from the flags dictionary
 }
 
 /*
