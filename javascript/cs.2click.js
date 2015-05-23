@@ -61,8 +61,12 @@ var twoclickInOutlets = new Array(8); // Maxobj array for inlets/outlets
 
 // notifydeleted -- called when module deleted
 function notifydeleted() {
-	if(!twoclickFlags.get(modulename)) {
-		tidydict();
+	if(twoclickFlags.get(modulename)) {
+		testid = twoclickFlags.get(modulename);
+		if(testid == uiid) {
+			tidydict();
+			flagsOff();
+		}
 	}
 }
 
