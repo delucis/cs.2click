@@ -88,7 +88,7 @@ function loadbang() {
 
 flagsOn.local = 1;
 function flagsOn() {
-	twoclickFlags.set(modulename, 1); // add this module as flagged in the dictionary
+	twoclickFlags.replace(modulename, uiid); // add this module with its UIID to the flags dictionary
 }
 
 flagsOff.local = 1;
