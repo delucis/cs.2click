@@ -86,12 +86,9 @@ function loadbang() {
 //////         F L A G S         //////
 */
 
-var runFlagsOff = new Task(flagsOff, this); // globally declare task
-
 flagsOn.local = 1;
 function flagsOn() {
 	twoclickFlags.set(modulename, 1); // add this module as flagged in the dictionary
-	runFlagsOff.schedule(100); // run flagsOff() 100ms later
 }
 
 flagsOff.local = 1;
