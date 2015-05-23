@@ -4708,7 +4708,7 @@
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js cs.2click #1 #2 in"
+					"text" : "js cs.2click #1 #2 in #0"
 				}
 
 			}

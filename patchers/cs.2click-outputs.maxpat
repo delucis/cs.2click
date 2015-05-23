@@ -4823,7 +4823,7 @@
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js cs.2click #1 #2 out"
+					"text" : "js cs.2click #1 #2 out #0"
 				}
 
 			}
