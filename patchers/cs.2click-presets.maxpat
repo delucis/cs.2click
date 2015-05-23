@@ -550,7 +550,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 525.0, 105.0, 129.0, 20.0 ],
+					"patching_rect" : [ 525.0, 105.0, 117.0, 20.0 ],
 					"text" : "s #0-to-presets-dict"
 				}
 
@@ -1994,7 +1994,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 660.0, 107.0, 20.0 ],
+					"patching_rect" : [ 150.0, 660.0, 94.0, 20.0 ],
 					"text" : "s #0-in-out-pair"
 				}
 
@@ -2008,7 +2008,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 277.0, 510.0, 99.0, 20.0 ],
+					"patching_rect" : [ 277.0, 510.0, 87.0, 20.0 ],
 					"text" : "s #0-clear-slot"
 				}
 
@@ -2371,7 +2371,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 600.0, 101.0, 20.0 ],
+					"patching_rect" : [ 30.0, 600.0, 87.0, 20.0 ],
 					"text" : "s #0-clear-slot"
 				}
 
@@ -2486,7 +2486,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 825.0, 330.0, 104.0, 20.0 ],
+					"patching_rect" : [ 825.0, 330.0, 92.0, 20.0 ],
 					"text" : "r #0-in-out-pair"
 				}
 
@@ -2519,7 +2519,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 975.0, 330.0, 97.0, 20.0 ],
+					"patching_rect" : [ 975.0, 330.0, 85.0, 20.0 ],
 					"text" : "r #0-clear-slot"
 				}
 
