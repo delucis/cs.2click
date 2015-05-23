@@ -42,6 +42,11 @@ var slottype = "in";
 if (jsarguments.length > 3) {
 	slottype = jsarguments[3];
 }
+// unique instance ID (#0)
+var uiid = Math.round(Math.random()*100000);
+if (jsarguments.length > 4) {
+	uiid = jsarguments[4];
+}
 
 // initialise global dictionary and MaxObject array
 var twoclickDictionary = new Dict("cs.2click-routing-pairs");
