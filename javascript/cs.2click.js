@@ -49,8 +49,8 @@ if (jsarguments.length > 4) {
 }
 
 // initialise global dictionary and MaxObject array
-var twoclickDictionary = new Dict("cs.2click-routing-pairs");
-var twoclickFlags = new Dict("cs.2click-instantiation-flags");
+var twoclickPairs = new Dict("cs.2click-routing-pairs");
+var twoclickMeta = new Dict("cs.2click-meta");
 var twoclickObjects = new Array(32); // Maxobj variables for scripting
 var twoclickInOutlets = new Array(8); // Maxobj array for inlets/outlets
 
@@ -61,8 +61,8 @@ var twoclickInOutlets = new Array(8); // Maxobj array for inlets/outlets
 
 // notifydeleted -- called when module deleted
 function notifydeleted() {
-	if(twoclickFlags.get(modulename)) {
-		testid = twoclickFlags.get(modulename);
+	if(twoclickMeta.get(modulename)) {
+		testid = twoclickMeta.get(modulename);
 		if(testid == uiid) {
 			tidydict();
 			flagsOff();
@@ -92,12 +92,12 @@ function loadbang() {
 
 flagsOn.local = 1;
 function flagsOn() {
-	twoclickFlags.replace(modulename, uiid); // add this module with its UIID to the flags dictionary
+	twoclickMeta.replace(modulename, uiid); // add this module with its UIID to the flags dictionary
 }
 
 flagsOff.local = 1;
 function flagsOff() {
-	twoclickFlags.remove(modulename); // remove this module from the flags dictionary
+	twoclickMeta.remove(modulename); // remove this module from the flags dictionary
 }
 
 /*
@@ -189,18 +189,18 @@ function setdict(val) {
 	// iterate through slots and add/set them in the dictionary
 	for(s=0;s<slotnum;s++) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
-		twoclickDictionary.set(dictaddress, 0);
+		twoclickPairs.set(dictaddress, 0);
 	}
 	// remove slots that are no longer needed
 	if(slotnum<maxslots) {
 		leftover = maxslots - slotnum;
-		dict = twoclickDictionary.getkeys(); // get all the dictionary’s keys
+		dict = twoclickPairs.getkeys(); // get all the dictionary’s keys
 		for(l=0;l<leftover;l++) {
 			dictaddress = modulename + "-" + (l+slotnum+1) + "-" + slottype + "-slot";
 			teststring = new RegExp(escapeRegExp(dictaddress));
 			// if this dictionary key is found in the list of keys, remove it
 			if(teststring.test(dict)) {
-				twoclickDictionary.remove(dictaddress);
+				twoclickPairs.remove(dictaddress);
 			}
 		}
 	}
@@ -208,13 +208,13 @@ function setdict(val) {
 
 // tidydict -- remove all this module’s slots from the global dictionary
 function tidydict() {
-	dict = twoclickDictionary.getkeys(); // get all the dictionary’s keys
+	dict = twoclickPairs.getkeys(); // get all the dictionary’s keys
 	for(s=0;s<maxslots;s++) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
 		teststring = new RegExp(escapeRegExp(dictaddress));
 		// if this dictionary key is found in the list of keys, remove it
 		if(teststring.test(dict)) {
-			twoclickDictionary.remove(dictaddress);
+			twoclickPairs.remove(dictaddress);
 		}
 	}
 }
@@ -226,7 +226,7 @@ function escapeRegExp(val) {
 
 // cleardict -- empty the global dictionary
 function cleardict() {
-	twoclickDictionary.clear();
+	twoclickPairs.clear();
 }
 
 /*
