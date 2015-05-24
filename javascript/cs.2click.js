@@ -64,7 +64,7 @@ function notifydeleted() {
 	if(twoclickMeta.get(modulename)) {
 		testid = twoclickMeta.get(modulename);
 		if(testid == uiid) {
-			tidydict();
+			tidyDict();
 			clearMeta();
 		}
 	}
@@ -80,7 +80,7 @@ function loadbang() {
 	if(slottype === 'in') {
 		buildoutlets();
 	}
-	setdict(); // add all the created slots to the global dictionary
+	setDict(); // add all the created slots to the global dictionary
 	// resizebpatcher(); // deprecated until bug fix possible
 	setMeta();
 }
@@ -184,8 +184,8 @@ function removeclearbutton(val)
 //////      M E T H O D S      //////
 */
 
-// setdict -- adds all slots found in this patcher to the global dictionary
-function setdict(val) {
+// setDict -- adds all slots found in this patcher to the global dictionary
+function setDict(val) {
 	// iterate through slots and add/set them in the dictionary
 	for(s=0;s<slotnum;s++) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
@@ -206,8 +206,8 @@ function setdict(val) {
 	}
 }
 
-// tidydict -- remove all this module’s slots from the global dictionary
-function tidydict() {
+// tidyDict -- remove all this module’s slots from the global dictionary
+function tidyDict() {
 	dict = twoclickPairs.getkeys(); // get all the dictionary’s keys
 	for(s=0;s<maxslots;s++) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
@@ -219,7 +219,7 @@ function tidydict() {
 	}
 }
 
-// escapeRegExp -- utility to escape strings in tidydict()
+// escapeRegExp -- utility to escape strings in tidyDict()
 function escapeRegExp(val) {
     return val.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 }
