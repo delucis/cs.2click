@@ -134,6 +134,7 @@
 	<seealsolist>
 		<seealso name="cs.2click-inputs" />
 		<seealso name="cs.2click-outputs" />
+		<seealso name="cs.2click-remote" />
 		<seealso name="cs.2click-led" />
 	</seealsolist>
 
