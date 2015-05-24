@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 182.0, 44.0, 683.0, 706.0 ],
+		"rect" : [ 0.0, 44.0, 865.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -30,14 +30,58 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
+					"fontsize" : 11.0,
+					"frgb" : 0.0,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 60.0, 360.0, 180.0, 19.0 ],
+					"presentation_rect" : [ 63.0, 364.0, 0.0, 0.0 ],
+					"text" : "will only be 2 if both modules exist",
+					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
-					"id" : "obj-79",
+					"id" : "obj-6",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 15.0, 360.0, 36.0, 20.0 ],
+					"text" : "sel 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 15.0, 390.0, 315.0, 20.0 ],
+					"text" : "zl.reg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 465.0, 315.0, 47.0, 20.0 ],
-					"text" : "accum"
+					"patching_rect" : [ 15.0, 330.0, 169.0, 20.0 ],
+					"text" : "+ 0"
 				}
 
 			}
@@ -50,8 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 14.75, 270.0, 139.25, 20.0 ],
-					"presentation_rect" : [ 64.0, 273.0, 0.0, 0.0 ],
+					"patching_rect" : [ 14.75, 240.0, 139.25, 20.0 ],
 					"text" : "t l l"
 				}
 
@@ -73,7 +116,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 25.0, 69.0, 211.0, 241.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -95,13 +138,29 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-7",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 180.0, 180.0, 45.0 ],
+									"text" : "if the given module is not registered in the meta dictionary (test gives 0), print an error",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-67",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 50.0, 100.0, 36.0, 20.0 ],
+									"patching_rect" : [ 15.0, 45.0, 36.0, 20.0 ],
 									"text" : "sel 0"
 								}
 
@@ -114,7 +173,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 205.0, 127.0, 20.0 ],
+									"patching_rect" : [ 15.0, 150.0, 127.0, 20.0 ],
 									"text" : "print cs.2click-remote"
 								}
 
@@ -129,7 +188,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 160.0, 180.0, 34.0 ],
+									"patching_rect" : [ 15.0, 105.0, 180.0, 34.0 ],
 									"text" : "sprintf symout Error: can’t find a cs.2click module named “%s”"
 								}
 
@@ -143,7 +202,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 130.0, 135.0, 20.0 ],
+									"patching_rect" : [ 15.0, 75.0, 135.0, 20.0 ],
 									"text" : "zl.reg"
 								}
 
@@ -156,7 +215,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 15.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -168,7 +227,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 166.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 131.0, 15.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -221,8 +280,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 60.0, 330.0, 94.0, 20.0 ],
-					"presentation_rect" : [ 11.0, 337.0, 0.0, 0.0 ],
+					"patching_rect" : [ 60.0, 300.0, 94.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -257,7 +315,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 25.0, 69.0, 211.0, 241.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -279,13 +337,29 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-7",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 180.0, 180.0, 45.0 ],
+									"text" : "if the given module is not registered in the meta dictionary (test gives 0), print an error",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-67",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 50.0, 100.0, 36.0, 20.0 ],
+									"patching_rect" : [ 15.0, 45.0, 36.0, 20.0 ],
 									"text" : "sel 0"
 								}
 
@@ -298,7 +372,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 205.0, 127.0, 20.0 ],
+									"patching_rect" : [ 15.0, 150.0, 127.0, 20.0 ],
 									"text" : "print cs.2click-remote"
 								}
 
@@ -313,7 +387,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 160.0, 180.0, 34.0 ],
+									"patching_rect" : [ 15.0, 105.0, 180.0, 34.0 ],
 									"text" : "sprintf symout Error: can’t find a cs.2click module named “%s”"
 								}
 
@@ -327,7 +401,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 130.0, 135.0, 20.0 ],
+									"patching_rect" : [ 15.0, 75.0, 135.0, 20.0 ],
 									"text" : "zl.reg"
 								}
 
@@ -340,7 +414,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 15.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -352,7 +426,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 166.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 131.0, 15.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -405,7 +479,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 210.0, 330.0, 94.0, 20.0 ],
+					"patching_rect" : [ 210.0, 300.0, 94.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -432,7 +506,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 165.0, 270.0, 139.0, 20.0 ],
+					"patching_rect" : [ 165.0, 240.0, 139.0, 20.0 ],
 					"text" : "t l l"
 				}
 
@@ -446,8 +520,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 180.0, 420.0, 114.0, 20.0 ],
-					"presentation_rect" : [ 380.0, 380.0, 0.0, 0.0 ],
+					"patching_rect" : [ 180.0, 555.0, 114.0, 20.0 ],
 					"text" : "sprintf get %s::size"
 				}
 
@@ -461,8 +534,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 390.0, 116.0, 20.0 ],
-					"presentation_rect" : [ 260.0, 380.0, 0.0, 0.0 ],
+					"patching_rect" : [ 165.0, 525.0, 116.0, 20.0 ],
 					"text" : "sprintf get %s::type"
 				}
 
@@ -476,8 +548,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 165.0, 450.0, 112.0, 20.0 ],
-					"presentation_rect" : [ 260.0, 410.0, 0.0, 0.0 ],
+					"patching_rect" : [ 165.0, 585.0, 112.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -495,9 +566,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 15.0, 180.0, 32.5, 20.0 ],
-					"text" : "t b l"
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 15.0, 180.0, 315.0, 20.0 ],
+					"text" : "t l l"
 				}
 
 			}
@@ -510,7 +581,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 420.0, 114.0, 20.0 ],
+					"patching_rect" : [ 30.0, 555.0, 114.0, 20.0 ],
 					"text" : "sprintf get %s::size"
 				}
 
@@ -524,7 +595,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 390.0, 116.0, 20.0 ],
+					"patching_rect" : [ 15.0, 525.0, 116.0, 20.0 ],
 					"text" : "sprintf get %s::type"
 				}
 
@@ -547,7 +618,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 50.0, 94.0, 146.0, 138.0 ],
+						"rect" : [ 50.0, 94.0, 151.0, 211.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -567,6 +638,22 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-7",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 135.0, 120.0, 58.0 ],
+									"text" : "query meta dictionary to make sure a module with the given name is registered",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
@@ -653,7 +740,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 165.0, 300.0, 122.0, 20.0 ],
+					"patching_rect" : [ 165.0, 270.0, 122.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -689,7 +776,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 50.0, 94.0, 146.0, 138.0 ],
+						"rect" : [ 50.0, 94.0, 151.0, 211.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -709,6 +796,22 @@
 						"digest" : "",
 						"tags" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 11.0,
+									"frgb" : 0.0,
+									"id" : "obj-7",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 135.0, 120.0, 58.0 ],
+									"text" : "query meta dictionary to make sure a module with the given name is registered",
+									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
@@ -795,7 +898,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 15.0, 300.0, 122.0, 20.0 ],
+					"patching_rect" : [ 15.0, 270.0, 122.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -822,7 +925,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 15.0, 450.0, 112.0, 20.0 ],
+					"patching_rect" : [ 15.0, 585.0, 112.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -855,7 +958,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 15.0, 240.0, 169.0, 20.0 ],
+					"patching_rect" : [ 15.0, 210.0, 169.0, 20.0 ],
 					"text" : "zl.slice 1"
 				}
 
@@ -1900,7 +2003,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 210.0, 159.0, 32.0 ],
+					"patching_rect" : [ 345.0, 210.0, 159.0, 32.0 ],
 					"text" : "set: module-name1, slotnum1 to module-name2, slotnum2",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -1916,7 +2019,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 495.0, 154.0, 45.0 ],
+					"patching_rect" : [ 15.0, 630.0, 154.0, 45.0 ],
 					"text" : "set: module-name1 to module-name2 (try to find empty slots)",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -1931,7 +2034,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 477.0, 210.0, 154.0, 19.0 ],
+					"patching_rect" : [ 597.0, 210.0, 154.0, 19.0 ],
 					"text" : "clear: module-name, all slots",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -1946,7 +2049,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 645.0, 210.0, 154.0, 19.0 ],
+					"patching_rect" : [ 765.0, 210.0, 154.0, 19.0 ],
 					"text" : "clear: module-name, slotnum",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -1960,7 +2063,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 477.0, 180.0, 123.0, 20.0 ],
+					"patching_rect" : [ 597.0, 180.0, 123.0, 20.0 ],
 					"text" : "print short @popup 1"
 				}
 
@@ -1974,7 +2077,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 645.0, 150.0, 117.0, 20.0 ],
+					"patching_rect" : [ 765.0, 150.0, 117.0, 20.0 ],
 					"text" : "regexp ^\\\\S+\\\\s\\\\d$"
 				}
 
@@ -1987,7 +2090,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 645.0, 180.0, 119.0, 20.0 ],
+					"patching_rect" : [ 765.0, 180.0, 119.0, 20.0 ],
 					"text" : "print long @popup 1"
 				}
 
@@ -2001,7 +2104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 480.0, 120.0, 88.0, 20.0 ],
+					"patching_rect" : [ 600.0, 120.0, 88.0, 20.0 ],
 					"text" : "regexp ^\\\\S+$"
 				}
 
@@ -2015,7 +2118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 480.0, 90.0, 60.0, 20.0 ],
+					"patching_rect" : [ 600.0, 90.0, 60.0, 20.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -2043,7 +2146,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 240.0, 182.0, 19.0 ],
+					"patching_rect" : [ 510.0, 240.0, 182.0, 19.0 ],
 					"text" : "can be used to give error feedback",
 					"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 				}
@@ -2058,7 +2161,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 435.0, 210.0, 32.5, 20.0 ],
+					"patching_rect" : [ 555.0, 210.0, 32.5, 20.0 ],
 					"text" : "< 4"
 				}
 
@@ -2072,7 +2175,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 390.0, 210.0, 32.5, 20.0 ],
+					"patching_rect" : [ 510.0, 210.0, 32.5, 20.0 ],
 					"text" : "> 4"
 				}
 
@@ -2086,7 +2189,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 390.0, 180.0, 38.0, 20.0 ],
+					"patching_rect" : [ 510.0, 180.0, 38.0, 20.0 ],
 					"text" : "zl.len"
 				}
 
@@ -2127,7 +2230,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 180.0, 119.0, 20.0 ],
+					"patching_rect" : [ 345.0, 180.0, 119.0, 20.0 ],
 					"text" : "print long @popup 1"
 				}
 
@@ -2141,7 +2244,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 225.0, 150.0, 183.0, 20.0 ],
+					"patching_rect" : [ 345.0, 150.0, 183.0, 20.0 ],
 					"text" : "regexp ^\\\\S+\\\\s\\\\d\\\\s\\\\S+\\\\s\\\\d$"
 				}
 
@@ -2206,6 +2309,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2251,10 +2363,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -2404,7 +2534,25 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-60", 1 ]
