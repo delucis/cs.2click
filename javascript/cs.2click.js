@@ -93,6 +93,8 @@ function loadbang() {
 setMeta.local = 1;
 function setMeta() {
 	twoclickMeta.replace(modulename + '::id', uiid); // add this module with its UIID to the flags dictionary
+	twoclickMeta.replace(modulename + '::type', slottype);
+	twoclickMeta.replace(modulename + '::size', slotnum);
 }
 
 clearMeta.local = 1;
