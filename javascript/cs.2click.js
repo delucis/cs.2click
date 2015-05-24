@@ -65,7 +65,7 @@ function notifydeleted() {
 		testid = twoclickMeta.get(modulename);
 		if(testid == uiid) {
 			tidydict();
-			flagsOff();
+			clearMeta();
 		}
 	}
 }
@@ -82,21 +82,21 @@ function loadbang() {
 	}
 	setdict(); // add all the created slots to the global dictionary
 	// resizebpatcher(); // deprecated until bug fix possible
-	flagsOn();
+	setMeta();
 }
 
 /*
-////// I N S T A N T I A T I O N //////
-//////         F L A G S         //////
+//////     M E T A   D I C T     //////
+//////       M E T H O D S       //////
 */
 
-flagsOn.local = 1;
-function flagsOn() {
+setMeta.local = 1;
+function setMeta() {
 	twoclickMeta.replace(modulename, uiid); // add this module with its UIID to the flags dictionary
 }
 
-flagsOff.local = 1;
-function flagsOff() {
+clearMeta.local = 1;
+function clearMeta() {
 	twoclickMeta.remove(modulename); // remove this module from the flags dictionary
 }
 
