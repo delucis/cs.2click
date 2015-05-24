@@ -173,7 +173,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 69.0, 376.0, 227.0 ],
+						"rect" : [ 25.0, 69.0, 376.0, 266.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -195,6 +195,34 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 195.0, 165.0, 56.0, 20.0 ],
+									"text" : "pack 0 s"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 195.0, 135.0, 56.0, 20.0 ],
+									"text" : "t #0 l"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
 									"fontsize" : 11.0,
 									"frgb" : 0.0,
 									"id" : "obj-4",
@@ -202,7 +230,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 60.0, 45.0, 244.0, 19.0 ],
-									"presentation_rect" : [ 63.0, 43.0, 0.0, 0.0 ],
 									"text" : "trigger module name to be sent on module load",
 									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 								}
@@ -218,8 +245,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 195.0, 164.0, 176.0, 32.0 ],
-									"presentation_rect" : [ 192.0, 168.0, 0.0, 0.0 ],
+									"patching_rect" : [ 195.0, 224.0, 176.0, 32.0 ],
 									"text" : "send argument (module name) to be tested against existing names",
 									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 								}
@@ -235,7 +261,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 60.0, 105.0, 287.0, 19.0 ],
-									"presentation_rect" : [ 108.0, 107.0, 0.0, 0.0 ],
 									"text" : "0 = no argument provided, in which case print a warning",
 									"textcolor" : [ 0.5, 0.5, 0.5, 1.0 ]
 								}
@@ -292,7 +317,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 195.0, 135.0, 122.0, 20.0 ],
+									"patching_rect" : [ 195.0, 195.0, 122.0, 20.0 ],
 									"text" : "s cs.conflict-checker"
 								}
 
@@ -307,7 +332,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "Warning: cs.2click-inputs requires a unique name as its first argument." ],
-									"patching_rect" : [ 15.0, 135.0, 169.0, 48.0 ],
+									"patching_rect" : [ 15.0, 135.0, 165.0, 48.0 ],
 									"text" : "t \"Warning: cs.2click-inputs requires a unique name as its first argument.\""
 								}
 
@@ -364,7 +389,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-140", 0 ],
+									"destination" : [ "obj-5", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-1", 1 ]
@@ -404,6 +429,33 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-141", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-140", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
