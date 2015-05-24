@@ -61,8 +61,8 @@ var twoclickInOutlets = new Array(8); // Maxobj array for inlets/outlets
 
 // notifydeleted -- called when module deleted
 function notifydeleted() {
-	if(twoclickMeta.get(modulename)) {
-		testid = twoclickMeta.get(modulename);
+	if(twoclickMeta.get(modulename + '::ID')) {
+		testid = twoclickMeta.get(modulename + '::ID');
 		if(testid == uiid) {
 			tidyDict();
 			clearMeta();
@@ -92,7 +92,7 @@ function loadbang() {
 
 setMeta.local = 1;
 function setMeta() {
-	twoclickMeta.replace(modulename, uiid); // add this module with its UIID to the flags dictionary
+	twoclickMeta.replace(modulename + '::ID', uiid); // add this module with its UIID to the flags dictionary
 }
 
 clearMeta.local = 1;
