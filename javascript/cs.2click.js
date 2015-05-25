@@ -133,14 +133,6 @@ function buildslots()
 
 			this.patcher.bringtofront(twoclickObjects[4*k+3]);
 		}
-
-		// print done building confirmation in Max window
-		/*
-		if(modulename.length) {
-			post(modulename + ':')
-		}
-		post('Done building ' + slotnum + ' ' + slottype + 'put(s).\n');
-		*/
 }
 
 // addclearbutton -- add a clear slot button to a given slot number & type
