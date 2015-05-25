@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="cs.2click-remote" module="cs.2click" kind="patcher">
+
+	<digest>
+		Control a cs.2click system remotely
+	</digest>
+
+	<description>
+		Permits messages to connect and disconnect cs.2click modules.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Chris Swithinbank</metadata>
+		<metadata name="tag">cs.2click</metadata>
+		<metadata name="tag">cs.2click abstractions</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="list">
+			<digest>
+				Control messages
+			</digest>
+			<description>
+			</description>
+		</inlet>
+	</inletlist>
+
+	<!--OUTLETS-->
+	<outletlist>
+	</outletlist>
+
+	<!--ARGUMENTS-->
+	<objarglist>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="set">
+			<arglist>
+				<arg name="module name" optional="0" type="symbol" />
+				<arg name="slot number" optional="1" type="int" />
+				<arg name="module name" optional="0" type="symbol" />
+				<arg name="slot number" optional="1" type="int" />
+			</arglist>
+			<digest>
+				Connect two cs.2click modules
+			</digest>
+			<description>
+				Route audio between the two named modules. If no slot number is provided, the first empty slot will be used. If there are no empty slots, the connection will fail unless the <m>steal</m> attribute is turned on.
+			</description>
+		</method>
+		<method name="clear">
+			<arglist>
+				<arg name="module name" optional="0" type="symbol" />
+				<arg name="slot number" optional="1" type="int" />
+				</arglist>
+			<digest>
+				Clear a cs.2click module or slot
+			</digest>
+			<description>
+				Clear the connection between the named module slot and its paired slot. If no slot number is provided, this message will clear all the named module’s slots and their pairings.
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="steal" get="1" set="1" type="int" size="1">
+			<digest>
+				Steal Mode
+			</digest>
+			<description>
+				Given as input, the word <m>steal</m>, followed by a 0 or a non-zero number, disables or enables steal mode. If steal mode is enabled, when an attempt is made to route audio to or from an already full cs.2click module, rather than aborting, one of the full slots will be cleared and used.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Steal Mode" />
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="onoff" />
+			</attributelist>
+		</attribute>
+		<attribute name="protect" get="1" set="1" type="int" size="1">
+			<digest>
+				Protect Mode
+			</digest>
+			<description>
+				Given as input, the word <m>protect</m>, followed by a 0 or a non-zero number, disables or enables steal mode. If protect mode is enabled, when an attempt is made to route audio to or from an already in-use cs.2click module slot (using the full-syntax <m>set</m> message), the attempt will fail. Off by default. When <m>protect</m> is off, the full-syntax <m>set</m> message will overwrite a full slot with the new routing.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Protect Mode" />
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="onoff" />
+			</attributelist>
+		</attribute>
+	</attributelist>
+
+	<!--EXAMPLE-->
+	<examplelist>
+		<example img="cs.2click-remote.png" caption="A “set my-module my-other-module” message will connect those two modules together. A “clear my-module” message will clear all that module’s slots." />
+	</examplelist>
+
+	<!--DISCUSSION-->
+	<discussion>
+		This abstraction permits scripting access to the cs.2click system for cases where it is necessary to use messages to control routing.
+	</discussion>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="cs.2click-inputs" />
+		<seealso name="cs.2click-outputs" />
+		<seealso name="cs.2click-presets" />
+		<seealso name="cs.2click-led" />
+	</seealsolist>
+
+</c74object>

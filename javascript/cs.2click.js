@@ -49,8 +49,8 @@ if (jsarguments.length > 4) {
 }
 
 // initialise global dictionary and MaxObject array
-var twoclickDictionary = new Dict("cs.2click-routing-pairs");
-var twoclickFlags = new Dict("cs.2click-instantiation-flags");
+var twoclickPairs = new Dict("cs.2click-routing-pairs");
+var twoclickMeta = new Dict("cs.2click-meta");
 var twoclickObjects = new Array(32); // Maxobj variables for scripting
 var twoclickInOutlets = new Array(8); // Maxobj array for inlets/outlets
 
@@ -61,11 +61,11 @@ var twoclickInOutlets = new Array(8); // Maxobj array for inlets/outlets
 
 // notifydeleted -- called when module deleted
 function notifydeleted() {
-	if(twoclickFlags.get(modulename)) {
-		testid = twoclickFlags.get(modulename);
+	if(twoclickMeta.get(modulename + '::id')) {
+		testid = twoclickMeta.get(modulename + '::id');
 		if(testid == uiid) {
-			tidydict();
-			flagsOff();
+			tidyDict();
+			clearMeta();
 		}
 	}
 }
@@ -80,24 +80,37 @@ function loadbang() {
 	if(slottype === 'in') {
 		buildoutlets();
 	}
-	setdict(); // add all the created slots to the global dictionary
+	setDict(); // add all the created slots to the global dictionary
 	// resizebpatcher(); // deprecated until bug fix possible
-	flagsOn();
+	setMeta();
 }
 
 /*
-////// I N S T A N T I A T I O N //////
-//////         F L A G S         //////
+//////     M E T A   D I C T     //////
+//////       M E T H O D S       //////
 */
 
-flagsOn.local = 1;
-function flagsOn() {
-	twoclickFlags.replace(modulename, uiid); // add this module with its UIID to the flags dictionary
+setMeta.local = 1;
+function setMeta() {
+	twoclickMeta.replace(modulename + '::id', uiid); // register this module with its UIID to the meta dictionary
+	twoclickMeta.replace(modulename + '::type', slottype); // register module type of this module in the meta dictionary
+	twoclickMeta.replace(modulename + '::size', slotnum); // register size of this module in the meta dictionary
+	// create a string "1 2 3 … n" representing the slots where n = the highest slot number
+	var slothistory = '';
+	for(s=0;s<slotnum;s++) {
+		index = (s+1) + " ";
+		if(s+1==slotnum) {
+			index = (s+1);
+		}
+		slothistory = slothistory.concat(index);
+	}
+	// register slot history string to this module in the meta dictionary
+	twoclickMeta.replace(modulename + '::history', slothistory);
 }
 
-flagsOff.local = 1;
-function flagsOff() {
-	twoclickFlags.remove(modulename); // remove this module from the flags dictionary
+clearMeta.local = 1;
+function clearMeta() {
+	twoclickMeta.remove(modulename); // remove this module from the flags dictionary
 }
 
 /*
@@ -131,14 +144,6 @@ function buildslots()
 
 			this.patcher.bringtofront(twoclickObjects[4*k+3]);
 		}
-
-		// print done building confirmation in Max window
-		/*
-		if(modulename.length) {
-			post(modulename + ':')
-		}
-		post('Done building ' + slotnum + ' ' + slottype + 'put(s).\n');
-		*/
 }
 
 // addclearbutton -- add a clear slot button to a given slot number & type
@@ -184,49 +189,49 @@ function removeclearbutton(val)
 //////      M E T H O D S      //////
 */
 
-// setdict -- adds all slots found in this patcher to the global dictionary
-function setdict(val) {
+// setDict -- adds all slots found in this patcher to the global dictionary
+function setDict(val) {
 	// iterate through slots and add/set them in the dictionary
 	for(s=0;s<slotnum;s++) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
-		twoclickDictionary.set(dictaddress, 0);
+		twoclickPairs.set(dictaddress, 0);
 	}
 	// remove slots that are no longer needed
 	if(slotnum<maxslots) {
 		leftover = maxslots - slotnum;
-		dict = twoclickDictionary.getkeys(); // get all the dictionary’s keys
+		dict = twoclickPairs.getkeys(); // get all the dictionary’s keys
 		for(l=0;l<leftover;l++) {
 			dictaddress = modulename + "-" + (l+slotnum+1) + "-" + slottype + "-slot";
 			teststring = new RegExp(escapeRegExp(dictaddress));
 			// if this dictionary key is found in the list of keys, remove it
 			if(teststring.test(dict)) {
-				twoclickDictionary.remove(dictaddress);
+				twoclickPairs.remove(dictaddress);
 			}
 		}
 	}
 }
 
-// tidydict -- remove all this module’s slots from the global dictionary
-function tidydict() {
-	dict = twoclickDictionary.getkeys(); // get all the dictionary’s keys
+// tidyDict -- remove all this module’s slots from the global dictionary
+function tidyDict() {
+	dict = twoclickPairs.getkeys(); // get all the dictionary’s keys
 	for(s=0;s<maxslots;s++) {
 		dictaddress = modulename + "-" + (s+1) + "-" + slottype + "-slot";
 		teststring = new RegExp(escapeRegExp(dictaddress));
 		// if this dictionary key is found in the list of keys, remove it
 		if(teststring.test(dict)) {
-			twoclickDictionary.remove(dictaddress);
+			twoclickPairs.remove(dictaddress);
 		}
 	}
 }
 
-// escapeRegExp -- utility to escape strings in tidydict()
+// escapeRegExp -- utility to escape strings in tidyDict()
 function escapeRegExp(val) {
     return val.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 }
 
 // cleardict -- empty the global dictionary
 function cleardict() {
-	twoclickDictionary.clear();
+	twoclickPairs.clear();
 }
 
 /*

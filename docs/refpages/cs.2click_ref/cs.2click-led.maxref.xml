@@ -66,9 +66,10 @@
 
 	<!--SEEALSO-->
 	<seealsolist>
-		<seealso name="cs.2click-presets" />
 		<seealso name="cs.2click-inputs" />
 		<seealso name="cs.2click-outputs" />
+		<seealso name="cs.2click-presets" />
+		<seealso name="cs.2click-remote" />
 	</seealsolist>
 
 </c74object>
