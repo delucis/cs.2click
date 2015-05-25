@@ -30,11 +30,15 @@ This mechanism is built on a central `[dict]` object, which contains the stored 
 
 Point 6 in the README.maxpat demonstrates the basic preset capabilities, and the [readme-presets.json](examples/readme-presets.json) file contains some example presets.
 
+### Routing with messages
+
+For cases where you need to control a system of cs.2click modules with messages, see the `[cs.2click-remote]` abstraction.
+
 ## Installation
 
 Download the [latest release](https://github.com/delucis/cs.2click/releases/latest), to your Max packages folder. You can find this under `~/Documents/Max/Packages` for Max 6 or `~/Documents/Max 7/Packages` for Max 7.
 
-I’d highly recommend using Nathanaël Léclaudé’s [Max Package Downloader](https://github.com/natcl/max_package_downloader) to help stay up-to-date with new version releases.
+I’d highly recommend using Nathanaël Lécaudé’s [Max Package Downloader](https://github.com/natcl/max_package_downloader) to help stay up-to-date with new version releases.
 
 ## Compatibility
 
