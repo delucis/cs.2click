@@ -29,6 +29,340 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.760784, 0.709804, 0.811765, 1.0 ],
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-146",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 9,
+							"architecture" : "x86"
+						}
+,
+						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"gridonopen" : 0,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-139",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 220.0, 127.0, 20.0 ],
+									"text" : "print cs.2click-remote"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-138",
+									"linecount" : 3,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "Error: this cs.2click-inputs module is full" ],
+									"patching_rect" : [ 50.0, 160.0, 105.0, 48.0 ],
+									"text" : "t \"Error: this cs.2click-inputs module is full\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-137",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 50.0, 130.0, 36.0, 20.0 ],
+									"text" : "sel 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.156863, 0.8, 0.54902, 1.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-136",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 100.0, 99.0, 20.0 ],
+									"text" : "v #0-steal-mode"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-145",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-137", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-136", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-138", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-137", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-139", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-138", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-136", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-145", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 15.0, 750.0, 151.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Helvetica Neue",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p steal-mode-functionality"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.760784, 0.709804, 0.811765, 1.0 ],
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"id" : "obj-144",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 9,
+							"architecture" : "x86"
+						}
+,
+						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"gridonopen" : 0,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-140",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 220.0, 127.0, 20.0 ],
+									"text" : "print cs.2click-remote"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-141",
+									"linecount" : 3,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "Error: this cs.2click-outputs module is full" ],
+									"patching_rect" : [ 50.0, 160.0, 105.0, 48.0 ],
+									"text" : "t \"Error: this cs.2click-outputs module is full\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-142",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 50.0, 130.0, 36.0, 20.0 ],
+									"text" : "sel 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.156863, 0.8, 0.54902, 1.0 ],
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-135",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 100.0, 99.0, 20.0 ],
+									"text" : "v #0-steal-mode"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-143",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-142", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-135", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-140", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-141", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-141", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-142", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-135", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-143", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 180.0, 750.0, 151.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Helvetica Neue",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p steal-mode-functionality"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
 					"fontface" : 1,
 					"fontname" : "Helvetica Neue",
@@ -47,6 +381,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.760784, 0.709804, 0.811765, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-133",
@@ -84,6 +419,7 @@
 						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-129",
@@ -98,6 +434,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-128",
@@ -112,6 +449,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-125",
@@ -126,6 +464,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-119",
@@ -140,6 +479,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-117",
@@ -154,6 +494,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-113",
@@ -315,6 +656,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-111",
@@ -329,19 +671,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Helvetica Neue",
-					"fontsize" : 12.0,
-					"id" : "obj-110",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 765.0, 35.0, 20.0 ],
-					"text" : "print"
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-109",
@@ -349,7 +679,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 45.0, 720.0, 36.0, 20.0 ],
+					"patching_rect" : [ 180.0, 720.0, 36.0, 20.0 ],
 					"text" : "sel 0"
 				}
 
@@ -371,6 +701,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-107",
@@ -401,6 +732,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-105",
@@ -408,7 +740,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 45.0, 660.0, 199.0, 20.0 ],
+					"patching_rect" : [ 180.0, 660.0, 39.0, 20.0 ],
 					"text" : "zl.reg"
 				}
 
@@ -423,13 +755,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 535.0, 93.0, 20.0 ],
+					"patching_rect" : [ 225.0, 540.0, 93.0, 20.0 ],
 					"text" : "v #0-mod1-info"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-103",
@@ -437,13 +770,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 180.0, 510.0, 60.0, 20.0 ],
+					"patching_rect" : [ 180.0, 510.0, 64.0, 20.0 ],
 					"text" : "t l b"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-102",
@@ -451,13 +785,14 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 30.0, 630.0, 32.5, 20.0 ],
+					"patching_rect" : [ 120.0, 630.0, 79.0, 20.0 ],
 					"text" : "t l b"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.760784, 0.709804, 0.811765, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-99",
@@ -495,6 +830,7 @@
 						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-93",
@@ -509,6 +845,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-92",
@@ -523,6 +860,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-91",
@@ -537,6 +875,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-78",
@@ -551,6 +890,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-77",
@@ -565,6 +905,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-76",
@@ -579,6 +920,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-74",
@@ -593,6 +935,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-71",
@@ -607,6 +950,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-70",
@@ -621,6 +965,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-67",
@@ -635,6 +980,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-66",
@@ -649,6 +995,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-34",
@@ -663,6 +1010,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-39",
@@ -677,6 +1025,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-40",
@@ -691,6 +1040,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-43",
@@ -705,6 +1055,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-47",
@@ -719,6 +1070,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-60",
@@ -733,6 +1085,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-61",
@@ -1047,7 +1400,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 45.0, 690.0, 112.0, 20.0 ],
+					"patching_rect" : [ 180.0, 690.0, 112.0, 20.0 ],
 					"presentation_rect" : [ 201.0, 578.0, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
@@ -1068,6 +1421,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.760784, 0.709804, 0.811765, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-97",
@@ -1105,6 +1459,7 @@
 						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-93",
@@ -1119,6 +1474,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-92",
@@ -1133,6 +1489,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-91",
@@ -1147,6 +1504,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-78",
@@ -1161,6 +1519,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-77",
@@ -1175,6 +1534,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-76",
@@ -1189,6 +1549,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-74",
@@ -1203,6 +1564,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-71",
@@ -1217,6 +1579,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-70",
@@ -1231,6 +1594,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-67",
@@ -1245,6 +1609,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-66",
@@ -1259,6 +1624,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-34",
@@ -1273,6 +1639,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-39",
@@ -1287,6 +1654,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-40",
@@ -1301,6 +1669,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-43",
@@ -1315,6 +1684,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-47",
@@ -1329,6 +1699,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-60",
@@ -1343,6 +1714,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
 									"id" : "obj-61",
@@ -1677,6 +2049,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-94",
@@ -1684,7 +2057,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 15.0, 600.0, 36.0, 20.0 ],
+					"patching_rect" : [ 15.0, 600.0, 124.0, 20.0 ],
 					"text" : "sel 0"
 				}
 
@@ -2203,6 +2576,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-6",
@@ -2217,6 +2591,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-3",
@@ -2247,6 +2622,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.8, 0.84, 0.7, 1.0 ],
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
 					"id" : "obj-131",
@@ -5823,15 +6199,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-102", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5872,7 +6239,7 @@
 					"destination" : [ "obj-105", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 69.5, 563.5, 234.5, 563.5 ],
+					"midpoints" : [ 69.5, 563.5, 209.5, 563.5 ],
 					"source" : [ "obj-106", 0 ]
 				}
 
@@ -5906,16 +6273,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-109", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
+					"destination" : [ "obj-144", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-109", 0 ]
@@ -6347,7 +6705,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
+					"destination" : [ "obj-146", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-94", 0 ]
