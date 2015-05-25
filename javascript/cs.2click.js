@@ -92,9 +92,9 @@ function loadbang() {
 
 setMeta.local = 1;
 function setMeta() {
-	twoclickMeta.replace(modulename + '::id', uiid); // add this module with its UIID to the flags dictionary
-	twoclickMeta.replace(modulename + '::type', slottype);
-	twoclickMeta.replace(modulename + '::size', slotnum);
+	twoclickMeta.replace(modulename + '::id', uiid); // register this module with its UIID to the meta dictionary
+	twoclickMeta.replace(modulename + '::type', slottype); // register module type of this module in the meta dictionary
+	twoclickMeta.replace(modulename + '::size', slotnum); // register size of this module in the meta dictionary
 	// create a string "1 2 3 … n" representing the slots where n = the highest slot number
 	var slothistory = '';
 	for(s=0;s<slotnum;s++) {
@@ -104,6 +104,7 @@ function setMeta() {
 		}
 		slothistory = slothistory.concat(index);
 	}
+	// register slot history string to this module in the meta dictionary
 	twoclickMeta.replace(modulename + '::history', slothistory);
 }
 
