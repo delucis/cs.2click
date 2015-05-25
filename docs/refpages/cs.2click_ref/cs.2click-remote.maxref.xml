@@ -97,7 +97,7 @@
 
 	<!--EXAMPLE-->
 	<examplelist>
-		<example img="cs.2click-remote.png" caption="A “set my-module my-other-module” message will connect those two modules together" />
+		<example img="cs.2click-remote.png" caption="A “set my-module my-other-module” message will connect those two modules together. A “clear my-module” message will clear all that module’s slots." />
 	</examplelist>
 
 	<!--DISCUSSION-->
