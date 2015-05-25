@@ -95,6 +95,16 @@ function setMeta() {
 	twoclickMeta.replace(modulename + '::id', uiid); // add this module with its UIID to the flags dictionary
 	twoclickMeta.replace(modulename + '::type', slottype);
 	twoclickMeta.replace(modulename + '::size', slotnum);
+	// create a string "1 2 3 … n" representing the slots where n = the highest slot number
+	var slothistory = '';
+	for(s=0;s<slotnum;s++) {
+		index = (s+1) + " ";
+		if(s+1==slotnum) {
+			index = (s+1);
+		}
+		slothistory = slothistory.concat(index);
+	}
+	twoclickMeta.replace(modulename + '::history', slothistory);
 }
 
 clearMeta.local = 1;
