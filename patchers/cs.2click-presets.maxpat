@@ -107,8 +107,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 345.0, 107.0, 20.0 ],
-									"text" : "sprintf set %s %s"
+									"patching_rect" : [ 15.0, 345.0, 125.0, 20.0 ],
+									"text" : "sprintf set %s \\\"%s\\\""
 								}
 
 							}

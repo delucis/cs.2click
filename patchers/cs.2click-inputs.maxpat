@@ -4579,7 +4579,6 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
 									"patching_rect" : [ 180.0, 375.0, 112.0, 20.0 ],
-									"presentation_rect" : [ 181.0, 374.0, 0.0, 0.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0
@@ -4612,8 +4611,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 180.0, 345.0, 107.0, 20.0 ],
-									"text" : "sprintf set %s %s"
+									"patching_rect" : [ 180.0, 345.0, 125.0, 20.0 ],
+									"text" : "sprintf set %s \\\"%s\\\""
 								}
 
 							}
