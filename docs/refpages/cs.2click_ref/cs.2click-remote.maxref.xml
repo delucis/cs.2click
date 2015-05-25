@@ -81,6 +81,18 @@
 				<attribute name="style" get="1" set="1" type="symbol" size="1" value="onoff" />
 			</attributelist>
 		</attribute>
+		<attribute name="protect" get="1" set="1" type="int" size="1">
+			<digest>
+				Protect Mode
+			</digest>
+			<description>
+				Given as input, the word <m>protect</m>, followed by a 0 or a non-zero number, disables or enables steal mode. If protect mode is enabled, when an attempt is made to route audio to or from an already in-use cs.2click module slot (using the full-syntax <m>set</m> message), the attempt will fail. Off by default. When <m>protect</m> is off, the full-syntax <m>set</m> message will overwrite a full slot with the new routing.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Protect Mode" />
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="onoff" />
+			</attributelist>
+		</attribute>
 	</attributelist>
 
 	<!--EXAMPLE-->
