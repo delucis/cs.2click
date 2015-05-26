@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 430.0, 705.0 ],
+		"rect" : [ 0.0, 44.0, 430.0, 681.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,628 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"hint" : "",
+					"id" : "obj-3",
+					"ignoreclick" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 180.0, 405.0, 20.0, 20.0 ],
+					"rounded" : 60.0,
+					"text" : "6",
+					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+					"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "live.text",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 210.0, 405.0, 180.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.text[4]",
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2,
+							"parameter_mmax" : 1.0,
+							"parameter_enum" : [ "val1", "val2" ]
+						}
+
+					}
+,
+					"text" : "Remote control",
+					"transition" : 1,
+					"varname" : "live.text[4]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
+					"hidden" : 1,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 9,
+							"architecture" : "x86"
+						}
+,
+						"rect" : [ 445.0, 577.0, 667.0, 230.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"gridonopen" : 0,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 0,
+						"toolbarvisible" : 0,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"title" : "Remote control",
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-38",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 195.0, 90.0, 149.0, 32.0 ],
+									"text" : "set fm-synth ezdac-left, set fm-synth ezdac-right"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-36",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 90.0, 165.0, 32.0 ],
+									"text" : "set cyclebank 6 to-ezdac 1, set cyclebank 5 to-ezdac 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-34",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 240.0, 165.0, 87.0, 18.0 ],
+									"text" : "clear fm-synth"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-33",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 135.0, 165.0, 94.0, 18.0 ],
+									"text" : "clear cyclebank"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-32",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 165.0, 104.0, 18.0 ],
+									"text" : "clear cyclebank 6"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-30",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 45.0, 135.0, 299.0, 20.0 ],
+									"text" : "“clear” messages empty filled slots, or entire modules",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 405.0, 135.0, 156.0, 20.0 ],
+									"text" : "pack cyclebank to-ezdac"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-23",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 525.0, 15.0, 120.0, 21.0 ],
+									"text" : "input modules",
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-22",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 390.0, 15.0, 112.0, 21.0 ],
+									"text" : "output modules",
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-20",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 566.0, 93.0, 71.0, 18.0 ],
+									"text" : "ezdac-right"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-19",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 553.0, 69.0, 64.0, 18.0 ],
+									"text" : "ezdac-left"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-18",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 420.0, 69.0, 58.0, 18.0 ],
+									"text" : "fm-synth"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 540.0, 45.0, 58.0, 18.0 ],
+									"text" : "to-ezdac"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-13",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 405.0, 45.0, 65.0, 18.0 ],
+									"text" : "cyclebank"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 405.0, 165.0, 62.0, 18.0 ],
+									"text" : "set $1 $2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-27",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 45.0, 60.0, 299.0, 20.0 ],
+									"text" : "“set” messages connect specific slots or modules",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"border" : 0,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"hint" : "",
+									"id" : "obj-28",
+									"ignoreclick" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 15.0, 60.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "2",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-7",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 15.0, 345.0, 34.0 ],
+									"text" : "You can connect and disconnect cs.2click modules remotely with messages to the [cs.2click-remote] abstraction.",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"border" : 0,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"hint" : "",
+									"id" : "obj-25",
+									"ignoreclick" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 15.0, 135.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "1",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"hidden" : 1,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "front" ],
+									"patching_rect" : [ 645.0, 40.0, 42.0, 20.0 ],
+									"text" : "t front"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"hidden" : 1,
+									"id" : "obj-5",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 645.0, 10.0, 25.0, 25.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"hidden" : 1,
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 645.0, 70.0, 71.0, 20.0 ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+									"text" : "thispatcher"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 14.0,
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 405.0, 192.5, 171.0, 23.0 ],
+									"text" : "cs.2click-remote @steal 1",
+									"varname" : "cs.2click-pattrstorage"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"background" : 1,
+									"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+									"id" : "obj-29",
+									"maxclass" : "panel",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 525.0, 15.0, 120.0, 110.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"background" : 1,
+									"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+									"id" : "obj-26",
+									"maxclass" : "panel",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 390.0, 15.0, 112.0, 110.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 24.5, 195.0, 390.0, 195.0, 390.0, 189.0, 414.5, 189.0 ],
+									"source" : [ "obj-32", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 144.5, 195.0, 390.0, 195.0, 390.0, 189.0, 414.5, 189.0 ],
+									"source" : [ "obj-33", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 249.5, 195.0, 390.0, 195.0, 390.0, 189.0, 414.5, 189.0 ],
+									"source" : [ "obj-34", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 24.5, 127.0, 375.0, 127.0, 375.0, 189.0, 390.0, 189.0, 390.0, 189.0, 414.5, 189.0 ],
+									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 204.5, 126.0, 375.0, 126.0, 375.0, 189.0, 414.5, 189.0 ],
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 210.0, 428.0, 59.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"default_fontname" : "Helvetica Neue",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Helvetica Neue",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p remote",
+					"varname" : "pattrstorage[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+					"border" : 0,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"hint" : "",
 					"id" : "obj-10",
 					"ignoreclick" : 1,
 					"maxclass" : "textbutton",
@@ -44,7 +666,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 180.0, 330.0, 20.0, 20.0 ],
+					"patching_rect" : [ 180.0, 345.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "5",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
@@ -62,7 +684,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 210.0, 330.0, 180.0, 20.0 ],
+					"patching_rect" : [ 210.0, 345.0, 180.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[3]",
@@ -727,7 +1349,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 210.0, 353.0, 87.0, 20.0 ],
+					"patching_rect" : [ 210.0, 368.0, 61.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -741,7 +1363,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p pattrstorage",
+					"text" : "p presets",
 					"varname" : "pattrstorage"
 				}
 
@@ -2013,7 +2635,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 495.0, 405.0, 21.0 ],
+					"patching_rect" : [ 15.0, 465.0, 405.0, 21.0 ],
 					"text" : "How to use in your own projects",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -2029,7 +2651,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 645.0, 405.0, 34.0 ],
+					"patching_rect" : [ 15.0, 615.0, 405.0, 34.0 ],
 					"text" : "For example, if you type the following into a new object box, you will create an input module called my-input-module with 4 channels:",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -2045,7 +2667,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 675.0, 364.0, 20.0 ],
+					"patching_rect" : [ 15.0, 645.0, 364.0, 20.0 ],
 					"text" : "bpatcher cs.2click-inputs @args my-input-module 4",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -2061,7 +2683,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.5, 525.0, 407.0, 104.0 ],
+					"patching_rect" : [ 15.5, 495.0, 407.0, 104.0 ],
 					"text" : "Using these modules in your patches is as simple as creating a [bpatcher] with the patch cs.2click-outputs or cs.2click-inputs as its first argument.\n\nYou also need to provide a unique name for your [bpatcher] and a number to set how many channels it is. You can do this in the inspector or when creating the [bpatcher]. The unique name will be displayed in a slot to show where it’s being routed to or from.",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -2738,6 +3360,15 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-19" : [ "live.text[1]", "live.text", 0 ],
@@ -2745,55 +3376,63 @@
 			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
+			"obj-9" : [ "live.text[4]", "live.text", 0 ],
 			"obj-2" : [ "live.text[2]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "cs.2click-outputs.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click.js",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-send~.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-led.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-inputs.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-receive~.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-presets.maxpat",
-				"bootpath" : "/Users/chris/Desktop/desktop/Max/music264-spring-2015/students/cs.2click/lib",
-				"patcherrelativepath" : "./lib",
+				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cs.2click-remote.maxpat",
+				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
