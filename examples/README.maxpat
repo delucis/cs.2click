@@ -17,8 +17,8 @@
 		"gridonopen" : 0,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
-		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"statusbarvisible" : 0,
+		"toolbarvisible" : 0,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
 		"enablehscroll" : 1,
@@ -27,6 +27,7 @@
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"title" : "README",
 		"boxes" : [ 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
@@ -106,8 +107,8 @@
 						"gridonopen" : 0,
 						"gridsize" : [ 15.0, 15.0 ],
 						"gridsnaponopen" : 0,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
+						"statusbarvisible" : 0,
+						"toolbarvisible" : 0,
 						"boxanimatetime" : 200,
 						"imprint" : 0,
 						"enablehscroll" : 1,
@@ -116,6 +117,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"title" : "Preset storage & recall",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
@@ -126,7 +128,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 200.0, 315.0, 92.0, 18.0 ],
-									"presentation_rect" : [ 226.0, 312.0, 0.0, 0.0 ],
 									"text" : "storagewindow"
 								}
 
@@ -772,8 +773,8 @@
 						"gridonopen" : 0,
 						"gridsize" : [ 15.0, 15.0 ],
 						"gridsnaponopen" : 0,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
+						"statusbarvisible" : 0,
+						"toolbarvisible" : 0,
 						"boxanimatetime" : 200,
 						"imprint" : 0,
 						"enablehscroll" : 1,
@@ -782,6 +783,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"title" : "More examples",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
@@ -2861,11 +2863,11 @@
 		"parameters" : 		{
 			"obj-9" : [ "live.text", "live.text", 0 ],
 			"obj-19" : [ "live.text[1]", "live.text", 0 ],
+			"obj-13" : [ "live.text[3]", "live.text", 0 ],
 			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
-			"obj-2" : [ "live.text[2]", "live.text", 0 ],
-			"obj-13" : [ "live.text[3]", "live.text", 0 ]
+			"obj-2" : [ "live.text[2]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
