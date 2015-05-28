@@ -826,7 +826,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 645.0, 126.0, 18.0 ],
+									"patching_rect" : [ 90.0, 645.0, 126.0, 18.0 ],
 									"text" : "help cs.2click-remote"
 								}
 
@@ -841,7 +841,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 675.0, 55.0, 20.0 ],
+									"patching_rect" : [ 90.0, 675.0, 55.0, 20.0 ],
 									"text" : "pcontrol"
 								}
 
@@ -856,7 +856,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 15.0, 615.0, 135.0, 20.0 ],
+									"patching_rect" : [ 90.0, 615.0, 135.0, 20.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_longname" : "live.text[6]",
@@ -1230,7 +1230,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "front" ],
-									"patching_rect" : [ 165.0, 645.0, 42.0, 20.0 ],
+									"patching_rect" : [ 15.0, 645.0, 42.0, 20.0 ],
 									"text" : "t front"
 								}
 
@@ -1244,7 +1244,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 165.0, 615.0, 25.0, 25.0 ]
+									"patching_rect" : [ 15.0, 615.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1258,7 +1258,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 165.0, 675.0, 71.0, 20.0 ],
+									"patching_rect" : [ 15.0, 675.0, 71.0, 20.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
