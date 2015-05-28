@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 430.0, 681.0 ],
+		"rect" : [ 0.0, 44.0, 430.0, 645.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -30,30 +30,6 @@
 		"title" : "README",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"border" : 0,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"hint" : "",
-					"id" : "obj-3",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 180.0, 405.0, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "6",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
-					"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-9",
 					"maxclass" : "live.text",
@@ -62,7 +38,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 210.0, 405.0, 180.0, 20.0 ],
+					"patching_rect" : [ 210.0, 390.0, 180.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[4]",
@@ -707,7 +683,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 210.0, 428.0, 59.0, 20.0 ],
+					"patching_rect" : [ 210.0, 413.0, 59.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -723,30 +699,6 @@
 ,
 					"text" : "p remote",
 					"varname" : "pattrstorage[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"border" : 0,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"hint" : "",
-					"id" : "obj-10",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 180.0, 345.0, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "5",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
-					"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
 
 			}
@@ -826,8 +778,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 90.0, 645.0, 126.0, 18.0 ],
-									"text" : "help cs.2click-remote"
+									"patching_rect" : [ 90.0, 645.0, 128.0, 18.0 ],
+									"text" : "help cs.2click-presets"
 								}
 
 							}
@@ -2706,7 +2658,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 210.0, 308.0, 105.0, 20.0 ],
+					"patching_rect" : [ 210.0, 323.0, 105.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -2726,30 +2678,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"border" : 0,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"hint" : "",
-					"id" : "obj-1",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 180.0, 285.0, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "4",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
-					"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "live.text",
@@ -2758,7 +2686,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 210.0, 285.0, 180.0, 20.0 ],
+					"patching_rect" : [ 210.0, 300.0, 180.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.text[2]",
@@ -2787,7 +2715,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 465.0, 405.0, 21.0 ],
+					"patching_rect" : [ 15.0, 435.0, 405.0, 21.0 ],
 					"text" : "How to use in your own projects",
 					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 				}
@@ -2803,7 +2731,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 615.0, 405.0, 34.0 ],
+					"patching_rect" : [ 15.0, 585.0, 405.0, 34.0 ],
 					"text" : "For example, if you type the following into a new object box, you will create an input module called my-input-module with 4 channels:",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -2819,7 +2747,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 645.0, 364.0, 20.0 ],
+					"patching_rect" : [ 15.0, 615.0, 364.0, 20.0 ],
 					"text" : "bpatcher cs.2click-inputs @args my-input-module 4",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
@@ -2835,7 +2763,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.5, 495.0, 407.0, 104.0 ],
+					"patching_rect" : [ 15.5, 465.0, 407.0, 104.0 ],
 					"text" : "Using these modules in your patches is as simple as creating a [bpatcher] with the patch cs.2click-outputs or cs.2click-inputs as its first argument.\n\nYou also need to provide a unique name for your [bpatcher] and a number to set how many channels it is. You can do this in the inspector or when creating the [bpatcher]. The unique name will be displayed in a slot to show where it’s being routed to or from.",
 					"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 				}
