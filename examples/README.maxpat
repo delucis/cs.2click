@@ -98,7 +98,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 445.0, 577.0, 667.0, 230.0 ],
+						"rect" : [ 443.0, 534.0, 667.0, 241.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -119,6 +119,64 @@
 						"tags" : "",
 						"title" : "Remote control",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"hidden" : 1,
+									"id" : "obj-10",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 240.0, 126.0, 18.0 ],
+									"text" : "help cs.2click-remote"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"hidden" : 1,
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 270.0, 55.0, 20.0 ],
+									"text" : "pcontrol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 12.0,
+									"id" : "obj-9",
+									"maxclass" : "live.text",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 15.0, 210.0, 135.0, 20.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.text[5]",
+											"parameter_shortname" : "live.text",
+											"parameter_type" : 2,
+											"parameter_mmax" : 1.0,
+											"parameter_enum" : [ "val1", "val2" ]
+										}
+
+									}
+,
+									"text" : "Read the help file",
+									"transition" : 1,
+									"varname" : "live.text[4]"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
@@ -499,6 +557,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -628,6 +695,15 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -720,7 +796,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 809.0, 44.0, 316.0, 615.0 ],
+						"rect" : [ 809.0, 44.0, 316.0, 645.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -741,6 +817,64 @@
 						"tags" : "",
 						"title" : "Preset storage & recall",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"hidden" : 1,
+									"id" : "obj-21",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 645.0, 126.0, 18.0 ],
+									"text" : "help cs.2click-remote"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Helvetica Neue",
+									"fontsize" : 12.0,
+									"hidden" : 1,
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 675.0, 55.0, 20.0 ],
+									"text" : "pcontrol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 12.0,
+									"id" : "obj-29",
+									"maxclass" : "live.text",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 15.0, 615.0, 135.0, 20.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.text[6]",
+											"parameter_shortname" : "live.text",
+											"parameter_type" : 2,
+											"parameter_mmax" : 1.0,
+											"parameter_enum" : [ "val1", "val2" ]
+										}
+
+									}
+,
+									"text" : "Read the help file",
+									"transition" : 1,
+									"varname" : "live.text[4]"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Helvetica Neue",
 									"fontsize" : 12.0,
@@ -1096,7 +1230,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "front" ],
-									"patching_rect" : [ 15.0, 645.0, 42.0, 20.0 ],
+									"patching_rect" : [ 165.0, 645.0, 42.0, 20.0 ],
 									"text" : "t front"
 								}
 
@@ -1110,7 +1244,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 615.0, 25.0, 25.0 ]
+									"patching_rect" : [ 165.0, 615.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -1124,7 +1258,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 15.0, 675.0, 71.0, 20.0 ],
+									"patching_rect" : [ 165.0, 675.0, 71.0, 20.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
@@ -1277,6 +1411,24 @@
 									"hidden" : 1,
 									"midpoints" : [ 54.5, 132.0, 42.0, 132.0, 42.0, 252.0, 63.0, 252.0, 63.0, 270.0, 105.0, 270.0, 105.0, 282.0, 129.5, 282.0 ],
 									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"disabled" : 0,
+									"hidden" : 1,
+									"source" : [ "obj-29", 0 ]
 								}
 
 							}
@@ -3371,13 +3523,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-19" : [ "live.text[1]", "live.text", 0 ],
 			"obj-13" : [ "live.text[3]", "live.text", 0 ],
-			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-8::obj-8" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-12::obj-9" : [ "live.text[5]", "live.text", 0 ],
+			"obj-4" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-2" : [ "live.text[2]", "live.text", 0 ],
 			"obj-8::obj-21" : [ "toggle", "toggle", 0 ],
-			"obj-9" : [ "live.text[4]", "live.text", 0 ],
-			"obj-2" : [ "live.text[2]", "live.text", 0 ]
+			"obj-19" : [ "live.text[1]", "live.text", 0 ],
+			"obj-11::obj-29" : [ "live.text[6]", "live.text", 0 ],
+			"obj-9" : [ "live.text[4]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
