@@ -9,7 +9,7 @@
     "homepatcher" : "cs.2click-README.maxpat",
     "version": "0.4.0",
     "max_version_max" : "none",
-    "max_version_min" : "619",
+    "max_version_min" : "6.1.9",
     "os" : 	{
         "macintosh" : 		{
             "platform" : [ "ia32", "x64" ],
