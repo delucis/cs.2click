@@ -3,7 +3,7 @@
     "authors" : [  ],
 	  "categories" : [  ],
     "name": "cs.2click",
-    "description": "cs.2click provides a better audio router for a modular system.",
+    "description": "cs.2click provides better audio routing for modular (and other dynamic) systems.",
     "tags" : [ "audio", "send", "receive", "routing", "presets" ],
     "type": "package",
     "homepatcher" : "cs.2click-README.maxpat",
