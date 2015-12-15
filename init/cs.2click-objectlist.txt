@@ -1,6 +1,7 @@
 max oblist "cs.2click objects" cs.2click-inputs;
 max oblist "cs.2click objects" cs.2click-outputs;
 max oblist "cs.2click objects" cs.2click-presets;
+max oblist "cs.2click objects" cs.2click-remote;
 max oblist "cs.2click objects" cs.2click-led;
 max oblist "cs.2click objects" cs.2click-send~;
 max oblist "cs.2click objects" cs.2click-receive~;

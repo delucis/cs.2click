@@ -26,5 +26,12 @@
     "category": [
       "cs.2click"
     ]
+  },
+  "cs.2click-remote": {
+    "digest": "Control a cs.2click system programmatically.",
+    "module": "cs.2click",
+    "category": [
+      "cs.2click"
+    ]
   }
 }
