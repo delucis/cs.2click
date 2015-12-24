@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 122.0, 44.0, 533.0, 660.0 ],
+		"rect" : [ 207.0, 44.0, 533.0, 660.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 122.0, 70.0, 533.0, 634.0 ],
+						"rect" : [ 207.0, 70.0, 533.0, 634.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -68,6 +68,156 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-12",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 255.0, 345.0, 235.0, 36.0 ],
+									"text" : "Compare the output modules. The one on the right has metering turned off."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"border" : 0,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"hint" : "",
+									"id" : "obj-13",
+									"ignoreclick" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 230.0, 345.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "2",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-11",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 55.0, 345.0, 107.0, 21.0 ],
+									"text" : "Turn on the DSP"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
+									"border" : 0,
+									"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"hint" : "",
+									"id" : "obj-25",
+									"ignoreclick" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 30.0, 345.0, 20.0, 20.0 ],
+									"rounded" : 60.0,
+									"text" : "1",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textovercolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Courier New",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-8",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 45.0, 565.0, 190.0, 21.0 ],
+									"presentation_rect" : [ 25.0, 590.0, 0.0, 0.0 ],
+									"text" : "meter-demo-A 4 @meter 1",
+									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ],
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Courier New",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-6",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 290.0, 565.0, 190.0, 21.0 ],
+									"presentation_rect" : [ 223.0, 588.0, 0.0, 0.0 ],
+									"text" : "meter-demo-B 4 @meter 0",
+									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ],
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"args" : [ "meter-demo-A", 4, "@meter", 1 ],
+									"id" : "obj-5",
+									"maxclass" : "bpatcher",
+									"name" : "cs.2click-outputs.maxpat",
+									"numinlets" : 4,
+									"numoutlets" : 0,
+									"patching_rect" : [ 80.0, 480.0, 120.0, 75.0 ],
+									"presentation_rect" : [ 22.0, 506.0, 0.0, 0.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "ezdac~",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 60.0, 375.0, 45.0, 45.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 60.0, 440.0, 73.0, 21.0 ],
+									"text" : "cycle~ 440"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgcolor" : [ 0.960784, 0.960784, 0.960784, 1.0 ],
 									"fontface" : 1,
 									"fontname" : "Arial",
@@ -85,46 +235,15 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 1,
-									"fontname" : "Courier New",
-									"fontsize" : 13.0,
-									"frgb" : 0.0,
-									"id" : "obj-20",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 160.0, 385.0, 355.0, 21.0 ],
-									"text" : "meter-demo-o 4 @meter 0",
-									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ],
-									"textjustification" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"frgb" : 0.0,
-									"id" : "obj-1",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 160.0, 365.0, 355.0, 21.0 ],
-									"text" : "In this case, the bpatcher’s arguments are:"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
 									"frgb" : 0.0,
 									"id" : "obj-22",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 160.0, 295.0, 360.0, 50.0 ],
+									"patching_rect" : [ 25.0, 295.0, 490.0, 36.0 ],
 									"text" : "By default, all cs.2click-outputs slots have handy metering LEDs, which light up to indicate signal presence. Setting the @meter attribute to 0 will turn off this metering.",
 									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 								}
@@ -132,14 +251,13 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "meter-demo-o", 4, "@meter", 0 ],
+									"args" : [ "meter-demo-B", 4, "@meter", 0 ],
 									"id" : "obj-23",
 									"maxclass" : "bpatcher",
-									"name" : "cs.2click-inputs.maxpat",
-									"numinlets" : 0,
-									"numoutlets" : 4,
-									"outlettype" : [ "signal", "signal", "signal", "signal" ],
-									"patching_rect" : [ 25.0, 295.0, 120.0, 75.0 ]
+									"name" : "cs.2click-outputs.maxpat",
+									"numinlets" : 4,
+									"numoutlets" : 0,
+									"patching_rect" : [ 325.0, 480.0, 120.0, 75.0 ]
 								}
 
 							}
@@ -201,7 +319,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 160.0, 115.0, 355.0, 65.0 ],
+									"patching_rect" : [ 160.0, 115.0, 359.0, 65.0 ],
 									"text" : "Instead of simply reading “OUTPUTS”, you can have the top bar of cs.2click-outputs display a module’s name by setting the @label attribute to 1 in the inspector. This can be useful if you want to see your naming scheme at a glance.",
 									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
 								}
@@ -212,10 +330,9 @@
 									"args" : [ "label-demo-o", 4, "@label", 1 ],
 									"id" : "obj-7",
 									"maxclass" : "bpatcher",
-									"name" : "cs.2click-inputs.maxpat",
-									"numinlets" : 0,
-									"numoutlets" : 4,
-									"outlettype" : [ "signal", "signal", "signal", "signal" ],
+									"name" : "cs.2click-outputs.maxpat",
+									"numinlets" : 4,
+									"numoutlets" : 0,
 									"patching_rect" : [ 25.0, 115.0, 120.0, 75.0 ]
 								}
 
@@ -237,11 +354,90 @@
 
 							}
  ],
-						"lines" : [  ]
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 3 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.5, 467.0, 435.5, 467.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.5, 467.0, 401.833344, 467.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.5, 467.0, 368.166656, 467.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.5, 467.0, 334.5, 467.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 3 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.5, 467.0, 190.5, 467.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 2 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.5, 467.0, 156.833328, 467.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.5, 467.0, 123.166664, 467.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.5, 467.0, 89.5, 467.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+ ]
 					}
 ,
 					"patching_rect" : [ 214.429688, 375.0, 64.0, 20.0 ],
-					"presentation_rect" : [ 211.0, 375.0, 0.0, 0.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
