@@ -30,6 +30,134 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
+					"id" : "obj-107",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 0.0, 120.0, 105.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 120.0, 105.0, 15.0 ],
+					"varname" : "#1-8-out-slot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
+					"id" : "obj-101",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 0.0, 105.0, 105.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 105.0, 105.0, 15.0 ],
+					"varname" : "#1-7-out-slot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
+					"id" : "obj-90",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 0.0, 90.0, 105.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 90.0, 105.0, 15.0 ],
+					"varname" : "#1-6-out-slot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
+					"id" : "obj-73",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 0.0, 75.0, 105.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 75.0, 105.0, 15.0 ],
+					"varname" : "#1-5-out-slot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
+					"id" : "obj-64",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 0.0, 60.0, 105.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 60.0, 105.0, 15.0 ],
+					"varname" : "#1-4-out-slot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
+					"id" : "obj-41",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 0.0, 45.0, 105.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 45.0, 105.0, 15.0 ],
+					"varname" : "#1-3-out-slot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
+					"id" : "obj-15",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 0.0, 30.0, 105.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 30.0, 105.0, 15.0 ],
+					"varname" : "#1-2-out-slot"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
+					"id" : "obj-2",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 0.0, 15.0, 105.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 15.0, 105.0, 15.0 ],
+					"varname" : "#1-1-out-slot"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.95, 0.95, 0.95, 1.0 ],
 					"fontface" : 1,
 					"fontname" : "Arial",
@@ -232,8 +360,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 120.0, 465.0, 74.0, 20.0 ],
-									"text" : "prepend set"
+									"patching_rect" : [ 120.0, 465.0, 77.0, 20.0 ],
+									"text" : "prepend text"
 								}
 
 							}
@@ -663,134 +791,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 540.0, 600.0, 111.0, 20.0 ],
 					"text" : "pvar #0-slots-label"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-107",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 120.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 120.0, 105.0, 15.0 ],
-					"varname" : "#1-8-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-101",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 105.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 105.0, 105.0, 15.0 ],
-					"varname" : "#1-7-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-90",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 90.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 90.0, 105.0, 15.0 ],
-					"varname" : "#1-6-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-73",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 75.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 75.0, 105.0, 15.0 ],
-					"varname" : "#1-5-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-64",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 60.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 60.0, 105.0, 15.0 ],
-					"varname" : "#1-4-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-41",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 45.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 45.0, 105.0, 15.0 ],
-					"varname" : "#1-3-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-15",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 30.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 30.0, 105.0, 15.0 ],
-					"varname" : "#1-2-out-slot"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"hltcolor" : [ 0.05, 0.97, 0.39, 0.5 ],
-					"id" : "obj-2",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 0.0, 15.0, 105.0, 15.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 15.0, 105.0, 15.0 ],
-					"varname" : "#1-1-out-slot"
 				}
 
 			}
@@ -10662,43 +10662,6 @@
 			}
 , 			{
 				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"id" : "obj-76",
-					"maxclass" : "panel",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 15.0, 120.0, 120.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 15.0, 120.0, 120.0 ],
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
-					"fontface" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 9.0,
-					"frgb" : 0.0,
-					"id" : "obj-49",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, -1.0, 120.0, 17.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -1.0, 120.0, 17.0 ],
-					"text" : "O U T P U T S",
-					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"textjustification" : 1,
-					"varname" : "#0-slots-label"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "(signal) Audio signal to be output (ch 3)",
 					"id" : "obj-118",
 					"maxclass" : "inlet",
@@ -10772,6 +10735,53 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1230.0, 570.0, 25.0, 25.0 ],
 					"varname" : "#1-8-inlet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"id" : "obj-76",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 15.0, 120.0, 120.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 15.0, 120.0, 120.0 ],
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"bgcolor" : [ 0.25, 0.25, 0.25, 1.0 ],
+					"bgoncolor" : [ 0.25, 0.25, 0.25, 1.0 ],
+					"bgovercolor" : [ 0.25, 0.25, 0.25, 1.0 ],
+					"bgoveroncolor" : [ 0.25, 0.25, 0.25, 1.0 ],
+					"border" : 0,
+					"fontface" : 1,
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 9.0,
+					"id" : "obj-49",
+					"ignoreclick" : 1,
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 0.0, 0.0, 120.0, 16.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 120.0, 16.0 ],
+					"rounded" : 0.0,
+					"text" : "O U T P U T S",
+					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"textoncolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"textovercolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"textoveroncolor" : [ 0.96, 0.96, 0.96, 1.0 ],
+					"truncate" : 2,
+					"varname" : "#0-slots-label"
 				}
 
 			}
