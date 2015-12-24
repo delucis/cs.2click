@@ -59,6 +59,32 @@
 	</methodlist>
 
 	<!--ATTRIBUTES-->
+	<attributelist>
+		<attribute name="label" get="1" set="1" type="int" size="1">
+			<digest>
+				Label Mode
+			</digest>
+			<description>
+				By default, all <o>cs.2click-inputs</o> modules are labelled “INPUTS”. Setting <m>@label</m> to 1 will turn on label mode, displaying the module’s unique name instead. This can be useful if you want to see your naming scheme at a glance. Default is 0.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Label Mode" />
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="onoff" />
+			</attributelist>
+		</attribute>
+		<attribute name="meter" get="1" set="1" type="int" size="1">
+			<digest>
+				Meter Mode
+			</digest>
+			<description>
+				By default, all <o>cs.2click-inputs</o> slots have handy metering LEDs behind their numbers, which light up to indicate signal presence. Setting <m>@meter</m> to 0 will turn off this metering. Default is 1.
+			</description>
+			<attributelist>
+				<attribute name="label" get="1" set="1" type="symbol" size="1" value="Meter Mode" />
+				<attribute name="style" get="1" set="1" type="symbol" size="1" value="onoff" />
+			</attributelist>
+		</attribute>
+	</attributelist>
 
 	<!--EXAMPLE-->
 	<examplelist>
