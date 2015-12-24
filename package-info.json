@@ -1,38 +1,35 @@
 {
-	"author" : "Chris Swithinbank",
-	"authors" : [  ],
-	"description" : "cs.2click provides better audio routing for modular (and other dynamic) systems.",
-	"displayname" : "",
-	"extends" : "",
-	"extensible" : 0,
-	"homepatcher" : "cs.2click-README.maxpat",
-	"max_version_max" : "none",
-	"max_version_min" : "6.1.9",
-	"name" : "cs.2click",
-	"os" : 	{
-		"macintosh" : 		{
-			"platform" : [ "ia32", "x64" ],
-			"min_version" : "none"
-		}
-,
-		"windows" : 		{
-			"platform" : [ "ia32", "x64" ],
-			"min_version" : "none"
-		}
-
-	}
-,
-	"tags" : [ "audio", "send", "receive", "routing", "presets" ],
-	"version" : "0.4.1",
-	"website" : "https://github.com/delucis/cs.2click",
-	"filelist" : 	{
-		"examples" : [ "cs.2click-README.maxpat", "readme-presets.json" ],
-		"patchers" : [ "cs.2click-inputs.maxpat", "cs.2click-led.maxpat", "cs.2click-outputs.maxpat", "cs.2click-presets.maxpat", "cs.2click-receive~.maxpat", "cs.2click-remote.maxpat", "cs.2click-send~.maxpat" ],
-		"help" : [ "cs.2click-inputs.maxhelp", "cs.2click-led.maxhelp", "cs.2click-outputs.maxhelp", "cs.2click-presets.maxhelp", "cs.2click-remote.maxhelp", "help-presets.json" ],
-		"interfaces" : [ "cs.2click-obj-qlookup.json" ],
-		"docs" : [ "_c74_common.css", "_c74_common.xml", "_c74_common.xsl", "_c74_compat.html", "_c74_platform.xsl", "refpages/_c74_ref_common.xsl", "refpages/_c74_ref_modules.xml", "refpages/cs.2click_ref/_c74_contents.xml", "refpages/cs.2click_ref/_c74_ref.xsl", "refpages/cs.2click_ref/cs.2click-inputs.maxref.xml", "refpages/cs.2click_ref/cs.2click-led.maxref.xml", "refpages/cs.2click_ref/cs.2click-outputs.maxref.xml", "refpages/cs.2click_ref/cs.2click-presets.maxref.xml", "refpages/cs.2click_ref/cs.2click-remote.maxref.xml", "refpages/cs.2click_ref/images/cs.2click-inputs.png", "refpages/cs.2click_ref/images/cs.2click-led.png", "refpages/cs.2click_ref/images/cs.2click-outputs.png", "refpages/cs.2click_ref/images/cs.2click-presets.png", "refpages/cs.2click_ref/images/cs.2click-remote.png" ],
-		"clippings" : [ "cs.2click/inputs module.maxpat", "cs.2click/outputs module.maxpat", "cs.2click/signal presence LED.maxpat" ],
-		"javascript" : [ "cs.2click.js" ]
-	}
-
+    "author": "Chris Swithinbank",
+    "authors" : [  ],
+	  "categories" : [  ],
+    "name": "cs.2click",
+    "description": "cs.2click provides better audio routing for modular (and other dynamic) systems.",
+    "tags" : [ "audio", "send", "receive", "routing", "presets" ],
+    "type": "package",
+    "homepatcher" : "cs.2click-README.maxpat",
+    "version": "0.4.0",
+    "max_version_max" : "none",
+    "max_version_min" : "6.1.9",
+    "os" : 	{
+        "macintosh" : 		{
+            "platform" : [ "ia32", "x64" ],
+            "min_version" : "none"
+        },
+        "windows" : 		{
+            "platform" : [ "ia32", "x64" ],
+            "min_version" : "none"
+        }
+    },
+    "website": "https://github.com/delucis/cs.2click",
+    "major_version": "0",
+    "minor_version": "40",
+    "min_max_version": "619",
+    "min_osx_version": "None",
+    "min_win_version": "None",
+    "link_mac32": "https://github.com/delucis/cs.2click/archive/v0.4.0.zip",
+    "link_mac64": "https://github.com/delucis/cs.2click/archive/v0.4.0.zip",
+    "link_win32": "https://github.com/delucis/cs.2click/archive/v0.4.0.zip",
+    "link_win64": "https://github.com/delucis/cs.2click/archive/v0.4.0.zip",
+    "relative_path": "None",
+    "alert_text": "Thanks for downloading the cs.2click package! \n\nIf this is your first time using these modules, see \nthe README.maxpat in the examples folder for \na quick introduction."
 }
