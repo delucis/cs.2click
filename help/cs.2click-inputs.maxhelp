@@ -33,6 +33,238 @@
 				"box" : 				{
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 9,
+							"architecture" : "x86"
+						}
+,
+						"rect" : [ 680.0, 70.0, 533.0, 634.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 13.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 0,
+						"gridsize" : [ 5.0, 5.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 0,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 0,
+						"enablevscroll" : 0,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"showontab" : 1,
+						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.960784, 0.960784, 0.960784, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 16.0,
+									"frgb" : 0.0,
+									"id" : "obj-19",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 10.0, 260.0, 515.0, 24.0 ],
+									"text" : "Meter Mode",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Courier New",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-20",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 160.0, 385.0, 355.0, 21.0 ],
+									"text" : "meter-demo-i 4 @meter 0",
+									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ],
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-21",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 160.0, 365.0, 355.0, 21.0 ],
+									"text" : "In this case, the bpatcher’s arguments are:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-22",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 160.0, 295.0, 355.0, 50.0 ],
+									"text" : "By default, all cs.2click-inputs slots have handy metering LEDs, which light up to indicate signal presence. Setting the @meter attribute to 0 will turn off this metering.",
+									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"args" : [ "meter-demo-i", 4, "@meter", 0 ],
+									"id" : "obj-23",
+									"maxclass" : "bpatcher",
+									"name" : "cs.2click-inputs.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 4,
+									"outlettype" : [ "signal", "signal", "signal", "signal" ],
+									"patching_rect" : [ 25.0, 295.0, 120.0, 75.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.960784, 0.960784, 0.960784, 1.0 ],
+									"fontface" : 1,
+									"fontname" : "Arial",
+									"fontsize" : 16.0,
+									"frgb" : 0.0,
+									"id" : "obj-34",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 10.0, 80.0, 515.0, 24.0 ],
+									"text" : "Label Mode",
+									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Courier New",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-27",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 160.0, 220.0, 355.0, 21.0 ],
+									"text" : "label-demo-i 4 @label 1",
+									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ],
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-18",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 160.0, 200.0, 355.0, 21.0 ],
+									"text" : "In this case, the bpatcher’s arguments are:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"frgb" : 0.0,
+									"id" : "obj-16",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 160.0, 115.0, 355.0, 65.0 ],
+									"presentation_rect" : [ 73.5, 167.0, 0.0, 0.0 ],
+									"text" : "Instead of simply reading “INPUTS”, you can have the top bar of cs.2click-inputs display a module’s name by setting the @label attribute to 1 in the inspector. This can be useful if you want to see your naming scheme at a glance.",
+									"textcolor" : [ 0.203182, 0.203182, 0.203182, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"args" : [ "label-demo-i", 4, "@label", 1 ],
+									"id" : "obj-7",
+									"maxclass" : "bpatcher",
+									"name" : "cs.2click-inputs.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 4,
+									"outlettype" : [ "signal", "signal", "signal", "signal" ],
+									"patching_rect" : [ 25.0, 115.0, 120.0, 75.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"border" : 0,
+									"filename" : "helpname.js",
+									"id" : "obj-2",
+									"ignoreclick" : 1,
+									"jsarguments" : [ "cs.2click-inputs" ],
+									"maxclass" : "jsui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 10.0, 10.0, 330.429688, 53.625 ]
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 210.0, 375.0, 64.0, 20.0 ],
+					"presentation_rect" : [ 212.0, 376.0, 0.0, 0.0 ],
+					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"default_fontsize" : 13.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Arial",
+						"fontsize" : 13.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p extras",
+					"varname" : "basic_tab[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Helvetica Neue",
+					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -448,7 +680,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 122.0, 70.0, 533.0, 634.0 ],
+						"rect" : [ 0.0, 26.0, 533.0, 634.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -546,7 +778,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 225.0, 440.0, 289.0, 36.0 ],
+									"patching_rect" : [ 225.0, 440.0, 290.0, 36.0 ],
 									"text" : "A global dictionary named cs.2click-routing-pairs stores all the routings you set up.",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -626,7 +858,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 225.0, 155.0, 293.0, 36.0 ],
+									"patching_rect" : [ 225.0, 155.0, 296.0, 36.0 ],
 									"text" : "The cycle-bank patcher is sending a sine wave of a different frequency out each outlet.",
 									"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
 								}
@@ -1337,7 +1569,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 210.0, 375.0, 50.0, 20.0 ],
+					"patching_rect" : [ 285.0, 375.0, 50.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -1360,70 +1592,70 @@
 		"lines" : [  ],
 		"parameters" : 		{
 			"obj-3::obj-8" : [ "live.text", "live.text", 0 ],
-			"obj-3::obj-4" : [ "live.text[1]", "live.text", 0 ],
-			"obj-3::obj-11" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-3::obj-11" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-3::obj-4" : [ "live.text[1]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "helpname.js",
 				"bootpath" : "/Applications/Max 6.1/Cycling '74/help-resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/Cycling '74/help-resources",
+				"patcherrelativepath" : "../../../../../../../Applications/Max 6.1/Cycling '74/help-resources",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "helpdetails.js",
 				"bootpath" : "/Applications/Max 6.1/Cycling '74/help-resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/Cycling '74/help-resources",
+				"patcherrelativepath" : "../../../../../../../Applications/Max 6.1/Cycling '74/help-resources",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-outputs.maxpat",
 				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
-				"patcherrelativepath" : "../../../../../../Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click.js",
 				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/javascript",
-				"patcherrelativepath" : "../../../../../../Documents/Max/Packages/cs.2click/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-send~.maxpat",
 				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
-				"patcherrelativepath" : "../../../../../../Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-led.maxpat",
 				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
-				"patcherrelativepath" : "../../../../../../Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-inputs.maxpat",
 				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
-				"patcherrelativepath" : "../../../../../../Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cs.2click-receive~.maxpat",
 				"bootpath" : "/Users/chris/Documents/Max/Packages/cs.2click/patchers",
-				"patcherrelativepath" : "../../../../../../Documents/Max/Packages/cs.2click/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "helpargs.js",
 				"bootpath" : "/Applications/Max 6.1/Cycling '74/help-resources",
-				"patcherrelativepath" : "../../../../../../../../Applications/Max 6.1/Cycling '74/help-resources",
+				"patcherrelativepath" : "../../../../../../../Applications/Max 6.1/Cycling '74/help-resources",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
