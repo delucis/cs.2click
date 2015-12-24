@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 0.0, 44.0, 1280.0, 752.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -427,7 +427,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 660.0, 645.0, 95.0, 20.0 ],
+					"patching_rect" : [ 900.0, 675.0, 95.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -827,7 +827,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 540.0, 675.0, 103.0, 20.0 ],
+					"patching_rect" : [ 780.0, 705.0, 103.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Helvetica Neue",
@@ -856,7 +856,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 540.0, 615.0, 225.0, 18.0 ],
+					"patching_rect" : [ 780.0, 645.0, 225.0, 18.0 ],
 					"text" : "N A M I N G   C O N F L I C T S   T E S T\t",
 					"textcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"textjustification" : 1
@@ -873,7 +873,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 540.0, 645.0, 61.0, 20.0 ],
+					"patching_rect" : [ 780.0, 675.0, 61.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
