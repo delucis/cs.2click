@@ -144,6 +144,17 @@ function buildslots()
 
 			this.patcher.bringtofront(twoclickObjects[4*k+3]);
 		}
+		resizepanel();
+}
+
+// resizepanel -- fits background panel to number of slots
+function resizepanel()
+{
+	backpanelName = uiid + "-module-backpanel";
+	backpanel = this.patcher.getnamed(backpanelName);
+	if (backpanel) {
+		backpanel.message("presentation_size",120,slotnum*15);
+	}
 }
 
 // addclearbutton -- add a clear slot button to a given slot number & type

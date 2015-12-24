@@ -10749,7 +10749,8 @@
 					"patching_rect" : [ 0.0, 15.0, 120.0, 120.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 15.0, 120.0, 120.0 ],
-					"rounded" : 0
+					"rounded" : 0,
+					"varname" : "#0-module-backpanel"
 				}
 
 			}
