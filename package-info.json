@@ -7,7 +7,7 @@
     "tags" : [ "audio", "send", "receive", "routing", "presets" ],
     "type": "package",
     "homepatcher" : "cs.2click-README.maxpat",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "max_version_max" : "none",
     "max_version_min" : "6.1.9",
     "os" : 	{
@@ -22,14 +22,14 @@
     },
     "website": "https://github.com/delucis/cs.2click",
     "major_version": "0",
-    "minor_version": "40",
+    "minor_version": "50",
     "min_max_version": "619",
     "min_osx_version": "None",
     "min_win_version": "None",
-    "link_mac32": "https://github.com/delucis/cs.2click/archive/v0.4.0.zip",
-    "link_mac64": "https://github.com/delucis/cs.2click/archive/v0.4.0.zip",
-    "link_win32": "https://github.com/delucis/cs.2click/archive/v0.4.0.zip",
-    "link_win64": "https://github.com/delucis/cs.2click/archive/v0.4.0.zip",
+    "link_mac32": "https://github.com/delucis/cs.2click/archive/v0.5.0.zip",
+    "link_mac64": "https://github.com/delucis/cs.2click/archive/v0.5.0.zip",
+    "link_win32": "https://github.com/delucis/cs.2click/archive/v0.5.0.zip",
+    "link_win64": "https://github.com/delucis/cs.2click/archive/v0.5.0.zip",
     "relative_path": "None",
     "alert_text": "Thanks for downloading the cs.2click package! \n\nIf this is your first time using these modules, see \nthe README.maxpat in the examples folder for \na quick introduction."
 }
