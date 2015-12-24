@@ -9968,7 +9968,8 @@
 					"presentation_rect" : [ 0.0, -1.0, 120.0, 17.0 ],
 					"text" : "I N P U T S",
 					"textcolor" : [ 0.96, 0.96, 0.96, 1.0 ],
-					"textjustification" : 1
+					"textjustification" : 1,
+					"varname" : "#0-slots-label"
 				}
 
 			}
