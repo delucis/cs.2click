@@ -38,8 +38,6 @@ For cases where you need to control a system of cs.2click modules with messages,
 
 Download the [latest release](https://github.com/delucis/cs.2click/releases/latest), to your Max packages folder. You can find this under `~/Documents/Max/Packages` for Max 6 or `~/Documents/Max 7/Packages` for Max 7.
 
-I’d highly recommend using Nathanaël Lécaudé’s [Max Package Downloader](https://github.com/natcl/max_package_downloader) to help stay up-to-date with new version releases.
-
 ## Compatibility
 
 These modules have been tested with Max 6 and 7. They will not work with Max/MSP 5 or lower. Please report bugs under the issues tab above.
